@@ -1,0 +1,48 @@
+name: Continuous Integration
+
+on: [push]
+
+jobs:
+  jstests:
+    runs-on: ubuntu-latest
+    steps:
+      - run: set
+      - name: Checkout
+        uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: Print version
+        run: node --version
+
+      - name: Install dependencies
+        working-directory: ${{ github.workspace }}/
+        run: npm install
+
+      - name: Lint
+        working-directory: ${{ github.workspace }}/
+        run: make jslint
+
+      - name: Unit tests
+        working-directory: ${{ github.workspace }}/
+        run: make jstest
+
+      - name: Test Report
+        uses: dorny/test-reporter@v1
+        if: success() || failure()
+        with:
+          name: JavaScript tests
+          path: ${{ github.workspace }}/results/**/*.xml
+          reporter: java-junit
+
+#   sanitytests:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - run: set
+#       - name: Checkout
+#         uses: actions/checkout@v3
+#       - run: |
+#           ls ${{ github.workspace }}
+#       - name: sanitytests
+#         run: bash ${{ github.workspace }}/docs/sanitytests.sh

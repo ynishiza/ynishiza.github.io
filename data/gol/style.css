@@ -1,0 +1,42 @@
+/*
+ * 2015 Yui Nishizawa
+ */
+#main {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+header {
+	margin: 10px;
+}
+.gol_container {
+	width: 3000px;
+	background: black;
+}
+.gol_cell {
+	/*padding: 5px;*/
+	display: inline-block;
+	vertical-align: top;
+	min-width: 10px;
+	min-height: 10px;
+	background: #444;
+	margin: 1px;
+	font-size: 10px;
+}
+.gol_cell:hover {
+	background: blue;
+}
+.unselectable {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+.gol_row {
+	height: 11px;
+}
+input {
+	min-width: 50px;
+}
+.gol_live {
+	background: #8E8;
+}

@@ -1,0 +1,6 @@
+# Hakyll cache
+_cache
+_site
+
+# Test results
+results
