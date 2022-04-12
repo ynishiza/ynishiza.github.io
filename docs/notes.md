@@ -229,6 +229,10 @@ In particular, it does not necessarily correspond to the structuring of the same
 * [Notes](https://www.evernote.com/l/ALn5o-rDw-tOhoyLljuGb0kbdyanya6qRFk) <!--PAGETEST: Notes-->
 
 
+## redis
+* [Notes](https://www.evernote.com/l/ALlqVXP4ByRO7oZJct0EJIgi_eaNi9Cz3oM) <!--PAGETEST: Notes-->
+* [Basics](https://www.evernote.com/l/ALlBJc1bdnBFFrFDPGVvRhkhlaISEU1xBFQ) <!--PAGETEST: Cheatsheet: redis-->
+
 
 ## snort
 * [Notes]() <!--PAGETEST: Notes-->
@@ -237,14 +241,13 @@ In particular, it does not necessarily correspond to the structuring of the same
 * [Basics - preprocessor rules](https://www.evernote.com/l/ALnTcKpXyB1KopruFFzpIgr2sczQhsaLeVA) <!--PAGETEST: preprocessor rules-->
 * [pulledpork](https://www.evernote.com/l/ALmzzlVFaYFGubginfMCkEKKTR5ae8pokdE) <!--PAGETEST: pulledpork-->
 
-
-## redis
-* [Notes](https://www.evernote.com/l/ALlqVXP4ByRO7oZJct0EJIgi_eaNi9Cz3oM) <!--PAGETEST: Notes-->
-* [Basics](https://www.evernote.com/l/ALlBJc1bdnBFFrFDPGVvRhkhlaISEU1xBFQ) <!--PAGETEST: Cheatsheet: redis-->
+## Sumologic
+* [Notes](https://www.evernote.com/l/ALlPiiPrnSRG_6kFEVbkZv-1x-4r2AHikgU) <!--PAGETEST: Notes.*Sumo-->
+* [Basics](https://www.evernote.com/l/ALm7YzMrKXNBIYGtTgBxXaiCFpPZbGUaw6s) <!--PAGETEST: Cheat.*Sumo-->
 
 
 ## Terraform
-* [Notes]() <!--PAGETEST: Notes-->
+* [Notes](https://www.evernote.com/l/ALndvp0mgI1Ddbg3wK8xb5ukPiDNXdSCVH8) <!--PAGETEST: Notes-->
 * [Basics](https://www.evernote.com/l/ALkr_CYOACBAmITmNYN4gGIMSPaVp-SN9lM) <!--PAGETEST: Cheatsheet: terraform-->
 * [Basics - module development](https://www.evernote.com/l/ALklvCeZjJRD0LMLH4_Vyp-OtrtIBiG_kl8) <!--PAGETEST: module development-->
 * [Basics - providers + module](https://www.evernote.com/l/ALk-wb7_8KBIbZ_SIF2WNrlDFpFYbsYEOfo) <!--PAGETEST: providers + module-->
@@ -354,6 +357,16 @@ In particular, it does not necessarily correspond to the structuring of the same
 * [write, mesg, wall](https://www.evernote.com/l/ALkgrL5Xz7RPSpVZIVVIDe1XdtcUkxjUm34) <!--PAGETEST: write-->
 * [xargs](https://www.evernote.com/l/ALl8WZOODW5HzblhDyS0zbFHJMwuP_PoROY) <!--PAGETEST: xargs-->
 * [xxd](https://www.evernote.com/l/ALn78tHo4rZPQKUTnza2_4V3VayuapnTcr0) <!--PAGETEST: xxd-->
+
+## Thirdparty
+* [fzf](https://www.evernote.com/l/ALnCLHCnRKZF_LgH-zq0zQqoxFgPN0E16xU) <!--PAGETEST: fzf-->
+* [htop](https://www.evernote.com/l/ALlSDqrnMoBP2KCo3yaYNga1glfk_quNUpU) <!--PAGETEST: htop-->
+* [ncdu](https://www.evernote.com/l/ALkscI29L9ZNT6VgChujqgd99b7HS5j3dYQ) <!--PAGETEST: ncdu-->
+* [nmap](https://www.evernote.com/l/ALnX1Kp4wIxNz6kGIWenjwaL_0NT0W14O2A) <!--PAGETEST: nmap-->
+* [tmux](https://www.evernote.com/l/ALmzQnypFGBDKpxfh7zTDFGcFp0GG6U8Qi0) <!--PAGETEST: tmux-->
+* [tmuxinator](https://www.evernote.com/l/ALnyt8eW6ZFIioS9_Kk3NR6S39HtMaRj9xk) <!--PAGETEST: tmuxinator-->
+* [vsftpd](https://www.evernote.com/l/ALmgs9raEetO37JgJwZkiwUPQzrY5J5ygTI) <!--PAGETEST: vsftpd-->
+* [watchman](https://www.evernote.com/l/ALleVIPzQD5FabQg8oJEmXneqtKECy-yNks) <!--PAGETEST: watchman-->
 
 [Top](#contents)
 
