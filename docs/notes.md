@@ -20,7 +20,7 @@ In particular, it does not necessarily correspond to the structuring of the same
 1. [Tools](#tools)
 1. [Unix-based system](#unix-based-system)
 1. [Programming](#programming)
-1. [Reading](#reading)
+1. [Studies](#studies)
 
 -----
 
@@ -34,6 +34,15 @@ In particular, it does not necessarily correspond to the structuring of the same
 * [syslog](https://www.evernote.com/l/ALk5hbj4olVAY4mzImymOMR51d2Iv0cPcMw) <!--PAGETEST: syslog-->
 * ...
 
+## Database
+* [General](https://www.evernote.com/l/ALluyTgp1cZP5ZW6mx5Y1OKBe-zSsXdlHFY) <!--PAGETEST: general-->
+* [Database types](https://www.evernote.com/l/ALkbJaNChU1DEZkjuaBuRt8Y0U5mgtvwXGk) <!--PAGETEST: types-->
+* [Mismatches](https://www.evernote.com/l/ALmEp2FBeTJDgYHS8Y0__-6uBjCrSY5iXwo) <!--PAGETEST: mismatch-->
+
+# Distributed Systems
+* [General](https://www.evernote.com/l/ALmai9VJyv5LLoALGx_shbEJAFz8qYuATlU) <!--PAGETEST: distributed sys-->
+* [CAP theorem](https://www.evernote.com/l/ALkOfJE2m99DU4_kyTDrDcNQ6Nhwrb2Krac) <!--PAGETEST: CAP-->
+* [Consistency](https://www.evernote.com/l/ALnzyBSEWqJDdbkRZq05clbW1J_hC4yrAKQ) <!--PAGETEST: consistency-->
 
 ## HTTP
 * [General](https://www.evernote.com/l/ALmSc8A97g5Jh6lC3oGKLKiXUJyPQM4YPTo) <!--PAGETEST: General-->
@@ -46,6 +55,11 @@ In particular, it does not necessarily correspond to the structuring of the same
 * [Security - Content Security Policy (CSP)](https://www.evernote.com/l/ALmQOXU9LI9F8Jk6TUHRvwhjhLKZsIumO3o) <!--PAGETEST: Content Security Policy (CSP)-->
 * [Security - HTTP Strict Transport Security (HSTS)](https://www.evernote.com/l/ALnds1gQdtJEsZPgfur4MXXba2hpE0VJpNk) <!--PAGETEST: HTTP Strict Transport Security (HSTS)-->
 * [Websockets](https://www.evernote.com/l/ALkuOScGAVVBGachrSCG8PH4h3z6IwoznlI) <!--PAGETEST: Websockets-->
+
+## Machine
+* [Application Binary Interface (ABI)](https://www.evernote.com/l/ALlmOuAeMShNDKA6pxuMfv0C73Hv56TkCSQ) <!--PAGETEST: ABI-->
+* [Architecture](https://www.evernote.com/l/ALkvROSnVkRM6p7SBL5LKmsqqH3O_tNbTL4) <!--PAGETEST: Architec-->
+* [Machine code](https://www.evernote.com/l/ALmnoUFipElOn5eDSUF7dJXCF41cSHodFgY) <!--PAGETEST: Machine code-->
 
 ## Network
 * [URI](https://www.evernote.com/l/ALkhAKoPveBEe43vCW5Uu-CqqFsO9c6wxqs) <!--PAGETEST: URI-->
@@ -77,8 +91,8 @@ In particular, it does not necessarily correspond to the structuring of the same
 * [Concurrent programming](https://www.evernote.com/l/ALlWpHtiw7pAl4WvyiEG0iBe26FU_l0rvmI) <!--PAGETEST: Concurrent programming-->
 * [Paradigms](https://www.evernote.com/l/ALmDUJryEBNBtpg8n7qm-d3raBISeX0sBOQ) <!--PAGETEST: Paradigms-->
 * [Principles and patterns](https://www.evernote.com/l/ALkEf4BCfSRCzbSC6863oIdfUVoGjHaWl_0) <!--PAGETEST: Principles and Patterns-->
-* [Program execution](https://www.evernote.com/l/ALlArFgZEdlJ8pizhOWcRq9_YzvKlSflShI) <!--PAGETEST: Program execution-->
-* [Programming language theory](https://www.evernote.com/l/ALlhkplE_aRHOobl3h9t9_pTHInTorkT-7M) <!--PAGETEST: Programming language theory-->
+* [Program execution](https://www.evernote.com/l/ALlArFgZEdlJ8pizhOWcRq9_YzvKlSflShI) <!--PAGETEST: execution-->
+* [Programming language theory](https://www.evernote.com/l/ALlhkplE_aRHOobl3h9t9_pTHInTorkT-7M) <!--PAGETEST: theory-->
 * [Programming languages - grammar](https://www.evernote.com/l/ALnFF0Jfp-dITpIsl17FmFMzNYRj-QuDfwY) <!--PAGETEST: grammar-->
 * [Programming languages - parsing](https://www.evernote.com/l/ALnA9Hgj8uhIc4MnOWkfNvFOmu6ohsfHUKc) <!--PAGETEST: parsing-->
 * [Type system](https://www.evernote.com/l/ALn7g2l-mKJFc5dClO_MROaEBcBmxe4JWS8) <!--PAGETEST: Type system-->
@@ -177,7 +191,6 @@ In particular, it does not necessarily correspond to the structuring of the same
 * [API](https://www.evernote.com/l/ALnc8iAA1iJI86nXOxe77CBum4d2qBfTBDY) <!--PAGETEST: API-->
 * [queries](https://www.evernote.com/l/ALkGR0p1l-ZA2baRE9ywBNIuT6BCiIak--g) <!--PAGETEST: queries-->
 
-
 ## git
 * [Notes](https://www.evernote.com/l/ALnYJmT9LIhGYIYHTzyl1nTjNWiw4p2yoVk) <!--PAGETEST: Notes-->
 * [CLI](https://www.evernote.com/l/ALmZH-3S-r5LG7MRq12wCrvWSFgX1b7oqMo) <!--PAGETEST: CLI-->
@@ -185,6 +198,8 @@ In particular, it does not necessarily correspond to the structuring of the same
 * [config](https://www.evernote.com/l/ALkg6rFwpPRIqpjWjQFeEoX65rNBEcBcD8M) <!--PAGETEST: config-->
 * [plumbing](https://www.evernote.com/l/ALl8DZO6GZFOJIRViREQP3cC1SVCM8hZf6c) <!--PAGETEST: plumbing-->
 * [tricks](https://www.evernote.com/l/ALkznx8YzetFeK_Vc7wVSBHL6ZvOL7mdB1Y) <!--PAGETEST: tricks-->
+* [usage](https://www.evernote.com/l/ALm2S_OyQDtBwpC6qbdxnasgobVcZP2DS_I) <!--PAGETEST: usage-->
+* [troubleshooting](https://www.evernote.com/l/ALk5_4hHkehDFp8zBtRe9MEQUofcVjgRxEE) <!--PAGETEST: troubleshooting-->
 
 
 ## gpg
@@ -195,6 +210,21 @@ In particular, it does not necessarily correspond to the structuring of the same
 * [gpgconf](https://www.evernote.com/l/ALk-fT25mUpPNp-q28b9MGhenJb4V3MV5kc) <!--PAGETEST: gpgconf-->
 * [gpg-agent](https://www.evernote.com/l/ALk9IgA5IrVPiq5e5C6TYxb_4NxJ5vklNII) <!--PAGETEST: gpg-agent-->
 * [dirmngr](https://www.evernote.com/l/ALlGdz0dvXhEbqwQdD-YP1wgfp93MqAbklk) <!--PAGETEST: dirmngr-->
+
+## Jenkins
+* [Notes](https://www.evernote.com/l/ALn6MOZBB1hIu4eFvwbdVEd6hpTKx_lQlCA) <!--PAGETEST: notes-->
+* [Basics](https://www.evernote.com/l/ALmkHUxyiU9KppohVVxRZKTErACnjc-TKP0) <!--PAGETEST: pipeline-->
+* [Basics - steps](https://www.evernote.com/l/ALl4mWCuu9tJaKhbcweEtQNEojYWqQSLkn0) <!--PAGETEST: steps-->
+* [Tricks](https://www.evernote.com/l/ALlBWV7l325IPLoRymGkL8pFmaQpmnldeWo) <!--PAGETEST: tricks-->
+
+## LaTex
+* [Notes](https://www.evernote.com/l/ALmhp1qgXd9OjZ1Ashxa9-oGhidmejdTzP0) <!--PAGETEST: notes.*latex-->
+* [Basics](https://www.evernote.com/l/ALl56WJnKKdJFKWLGSDL2bKd56fjZzlS38o) <!--PAGETEST: latex-->
+
+## macOS
+* [Usage + troubleshooting](https://www.evernote.com/l/ALkz0UpiILpCObgtAjSL1kqq6bi72I10Fa8) <!--PAGETEST: tricks.*trouble-->
+* [Homebrew: Basics](https://www.evernote.com/l/ALllFcuT4npDK4PG52WKs2fZqBZD2xB5UmE) <!--PAGETEST: homebrew-->
+* [Homebrew: Tricks](https://www.evernote.com/l/ALnBQpu7sW9COZzgy-YWMkzJfnPWJnsDhks) <!--PAGETEST: tricks-->
 
 
 ## Make
@@ -235,7 +265,6 @@ In particular, it does not necessarily correspond to the structuring of the same
 
 
 ## snort
-* [Notes]() <!--PAGETEST: Notes-->
 * [Basics](https://www.evernote.com/l/ALmgYLBMg5FPFaOb20j-S2nkEgI7Q07lctY) <!--PAGETEST: Cheatsheet: snort-->
 * [Basics - preprocessors](https://www.evernote.com/l/ALnug0A3591K3Z9uu80t9847BknI23KV8hc) <!--PAGETEST: preprocessors-->
 * [Basics - preprocessor rules](https://www.evernote.com/l/ALnTcKpXyB1KopruFFzpIgr2sczQhsaLeVA) <!--PAGETEST: preprocessor rules-->
@@ -263,6 +292,7 @@ In particular, it does not necessarily correspond to the structuring of the same
 
 
 ## Misc
+* [Berkley Packet Filter (BPF)](https://www.evernote.com/l/ALkoGSTcdAlH556Pnk43WBghZZRYiQNJLDI) <!--PAGETEST: bpf-->
 * [GraphQL](https://www.evernote.com/l/ALmsGH2jKoxFerYgnOSSuC4E3PTpzug9A08) <!--PAGETEST: GraphQL-->
 * ...more
 
@@ -275,6 +305,7 @@ In particular, it does not necessarily correspond to the structuring of the same
 * [Notes - general](https://www.evernote.com/l/ALkeGhLiJmVFKa5uH3XoG0WwBUd5UQUegnA) <!--PAGETEST: general-->
 * [Notes - `/proc`](https://www.evernote.com/l/ALnyJfenF0VOHavFAxAOEWhK_rsz1i2pyI8) <!--PAGETEST: /proc-->
 * [Notes - file system](https://www.evernote.com/l/ALm85NIXDHNHXozv4ZGsdHeV8JKDZ0tWF6E) <!--PAGETEST: file system-->
+* [Notes - ANSI escape code](https://www.evernote.com/l/ALmc8ES-TztDzoOCw_KHY3Sni5731nw7DPs) <!--PAGETEST: ANSI-->
 * [Basics - file permission + ownership](https://www.evernote.com/l/ALm8E_CX-CJIt43fFBLatd1VADNTlU1sTlM) <!--PAGETEST: file permission-->
 * [Basics - named pipes](https://www.evernote.com/l/ALldWTHB2v9Mh5EM0MGevCJpirHai4j2sJM) <!--PAGETEST: named pipe-->
 * [Basics - resolv.conf](https://www.evernote.com/l/ALlj_8-lilNFwIieB67Q2HCb8enjngDJtlA) <!--PAGETEST: resolv.conf-->
@@ -310,6 +341,8 @@ In particular, it does not necessarily correspond to the structuring of the same
 
 
 ## Commands
+* [General](https://www.evernote.com/l/ALnHvPdZGaBMSIOGcMxqpziWK8Sd-npp67M) <!--PAGETEST: general commands-->
+* [General - file system](https://www.evernote.com/l/ALkcV6QwrrdMU6BBlIxVvNOTYw1kWq58FMU) <!--PAGETEST: file system-->
 * [General - user user administration](https://www.evernote.com/l/ALmrdaUuKutMaLk2xU6aXpRmtOYes7NvfgA) <!--PAGETEST: user administration-->
 * [General - text processing](https://www.evernote.com/l/ALmC7Dd452lEZqGHS5wcei7M2doaP9Eaqrk) <!--PAGETEST: text processing-->
 * [arp](https://www.evernote.com/l/ALkud0UWWJFJnbs47t8ANP-V_Lia2xriEWo) <!--PAGETEST: arp-->
@@ -358,11 +391,24 @@ In particular, it does not necessarily correspond to the structuring of the same
 * [xargs](https://www.evernote.com/l/ALl8WZOODW5HzblhDyS0zbFHJMwuP_PoROY) <!--PAGETEST: xargs-->
 * [xxd](https://www.evernote.com/l/ALn78tHo4rZPQKUTnza2_4V3VayuapnTcr0) <!--PAGETEST: xxd-->
 
-## Thirdparty
+## Linux
+* [apt](https://www.evernote.com/l/ALk01EAP_r1IAoNsY9UWyWHn2C4XQdOLNOM) <!--PAGETEST: apt-->
+* [cron, crontab](https://www.evernote.com/l/ALnq9tGtL85GoL_2t0E6CMOCW6_yqVf-kz8) <!--PAGETEST: cron-->
+* [logger](https://www.evernote.com/l/ALli_HIyCilHI63GSx812QFP9QVKrLimS84) <!--PAGETEST: logger-->
+* [lshw](https://www.evernote.com/l/ALnk7-OilpRJhITryDObv832-6QfiQixiQI) <!--PAGETEST: lshw-->
+* [resolvconf](https://www.evernote.com/l/ALkDo7mENOhCBIvW2ZGF8LqKRsCPdawIMmg) <!--PAGETEST: resolv-->
+* [sysctl](https://www.evernote.com/l/ALm-oYkxbPxIIp7KTQm5IuJTSRAUYphg24E) <!--PAGETEST: sysctl-->
+
+## macos
+* [log](https://www.evernote.com/l/ALnNTvE5F7dCB7XBRr0Xx4xYwgUuINYylls) <!--PAGETEST: log-->
+
+## Third-party
 * [fzf](https://www.evernote.com/l/ALnCLHCnRKZF_LgH-zq0zQqoxFgPN0E16xU) <!--PAGETEST: fzf-->
 * [htop](https://www.evernote.com/l/ALlSDqrnMoBP2KCo3yaYNga1glfk_quNUpU) <!--PAGETEST: htop-->
 * [ncdu](https://www.evernote.com/l/ALkscI29L9ZNT6VgChujqgd99b7HS5j3dYQ) <!--PAGETEST: ncdu-->
 * [nmap](https://www.evernote.com/l/ALnX1Kp4wIxNz6kGIWenjwaL_0NT0W14O2A) <!--PAGETEST: nmap-->
+* [psmic](https://www.evernote.com/l/ALlOYS5ph6hDk45Zh9NUyJqRjiT1mIdikZI) <!--PAGETEST: psmic-->
+* [rsyslog](https://www.evernote.com/l/ALnoNiU1EO9JhImQWb7Cm4tlqeKxdWcNJxU) <!--PAGETEST: rsyslog-->
 * [tmux](https://www.evernote.com/l/ALmzQnypFGBDKpxfh7zTDFGcFp0GG6U8Qi0) <!--PAGETEST: tmux-->
 * [tmuxinator](https://www.evernote.com/l/ALnyt8eW6ZFIioS9_Kk3NR6S39HtMaRj9xk) <!--PAGETEST: tmuxinator-->
 * [vsftpd](https://www.evernote.com/l/ALmgs9raEetO37JgJwZkiwUPQzrY5J5ygTI) <!--PAGETEST: vsftpd-->
@@ -545,6 +591,9 @@ In particular, it does not necessarily correspond to the structuring of the same
 * [Notes](https://www.evernote.com/l/ALnU5Hfe1nJMi7Dv2uOEX6ZTjgArRUHXCOU) <!--PAGETEST: Notes-->
 * [Basics](https://www.evernote.com/l/ALlY7Z7uTxxF3bWQ72sVR3JvzxB6b9OwEvg) <!--PAGETEST: Cheatsheet: x86-->
 
+## Misc
+* [YAML](https://www.evernote.com/l/ALmOdlhHdmpEpr9JqBaUsnOh9WwVmJqXxk0) <!--PAGETEST: yaml-->
+
 
 [Top](#contents)
 
@@ -552,7 +601,21 @@ In particular, it does not necessarily correspond to the structuring of the same
 ---
 
 
-# Reading
+# Studies
+
+## Books
+* [Concepts, Techniques, and Models of computer programming](https://www.evernote.com/l/ALli_xHbnn5LV5U3RTHmW_6mo1xo_qDIsyc) <!--PAGETEST: models of computer-->
+* [Dsitributed Systems Principles and Paradigms](https://www.evernote.com/l/ALkp3A6rD8pPJbUkRhQYH4c_RThxqXjxkZ4) <!--PAGETEST: distributed systems-->
+* [Site Reliability Workbook](https://www.evernote.com/l/ALngRXkK6EdAP44CZ4pgQFJM6qWmepIgKH8) <!--PAGETEST: site reliability-->
+
+## Papers
+* [A critique of the remote procedure call paradigm](https://www.evernote.com/l/ALk-0XAj5tRC6aBPgB3L5rxa5sV-UNsYi5A) <!--PAGETEST: critique-->
+* [A note on distributed computing](https://www.evernote.com/l/ALkqjFcJe5lN042zfXOH8tpXMorCfKuFsbA) <!--PAGETEST: distributed computing-->
+* [Actors - a model of computing](https://www.evernote.com/l/ALmUYMK7FhJIcoWilBFKPTrq2KTIRmVzWEw) <!--PAGETEST: actors-->
+* [Architectural style and design of network-based software architectures](https://www.evernote.com/l/ALl8QnOY1yxFcr-UI8-vFfJKx8LfuibHvuk) <!--PAGETEST: software architectures-->
+* [Role based access controls](https://www.evernote.com/l/ALmaLif90edLd4lbwoYHVAFI5AE9g8nJyw4) <!--PAGETEST: role based-->
+
+## Documentation
 * [RFC 6455: Websocket protocol](https://www.evernote.com/l/ALnoYHqmCuNOi5HH64gto-LtC33DoNM3K8k) <!--PAGETEST: Websocket protocol-->
 * [RFC 7230: Hypertext Transfer Protocol (HTTP/1.1) Message syntax and routing](https://www.evernote.com/l/ALmQtOMYQsdC06Hoceaoh25vNmbDg7yfQDQ) <!--PAGETEST: Message syntax and routing-->
 * [RFC 7230: Hypertext Transfer Protocol (HTTP/1.1) Semantics and content](https://www.evernote.com/l/ALm7bLpqerFHup9I2n_Hq_i8l6zRv2yWGZc) <!--PAGETEST: Semantics and content-->

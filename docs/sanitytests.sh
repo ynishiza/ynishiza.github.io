@@ -1,4 +1,4 @@
-#!/usr/local/bin/bash
+#!/bin/bash
 set -eu -o pipefail
 
 # shellcheck disable=SC2034
@@ -57,9 +57,9 @@ main() {
 	while [[ $# -gt 0 ]]
 	do
 		case "$1" in
-			# -d|--debug)
-			# 	set -x
-			# 	;;
+			-d|--debug)
+				set -x
+				;;
 			--startindex)
 				startindex="$2"
 				shift
@@ -84,9 +84,42 @@ main() {
 		shift
 	done
 
+	if [[ $# -gt 0 ]]; then usageAndExit; fi
 	echo "" >"$LOGFILE"
  	writeLogPipe date
 	test_links "$__dir/notes.md" "$startline" "$startindex"
+}
+
+test_links() {
+	local file="$1"
+	local startline="$2"
+	local startindex="$3"
+
+	# step: get links
+	# shellcheck disable=SC2002
+	IFS=$'\n' \
+		read -r -d '' -a my_arr < \
+		<( cat "$file" | awk "$startline < NR " | grep "\[.*\] *(https" \
+		&& printf '\0' )
+
+	local total="$((${#my_arr[@]} - 1))"
+	echo "startindex=$startindex total=$total"
+
+	# case: invalid startindex
+	if [[ "$startindex" -gt "$total" ]]
+	then
+		echo "Bad start index "
+		exit 1
+	fi
+
+	for ((i="$startindex";i<="$total";i++))
+	do
+		line="${my_arr[$i]}"
+		printf "Testing link #:%d/%d line=%s" "$i" "$total" "$line"
+		_test_single_link "$line"
+	done
+
+	echo "Links validated indexes: $startindex - $total (out of 0 - $total)"
 }
 
 declare LINKTEST_TAG="PAGETEST"
@@ -103,74 +136,44 @@ e.g. <!--$LINKTEST_TAG: notes.*html-->"
 	exit 1
 }
 
+function _test_single_link() {
+	line="$1"
 
-test_links() {
-	local file="$1"
-	local startline="$2"
-	local startindex="$3"
+	# case: missing test tag
+	if ! (grep "$LINKTEST_TAG:" <<<"$line" >/dev/null); then _print_linktest_error "Missing $LINKTEST_TAG" "$line"; fi
 
-	# step: get links
-	# shellcheck disable=SC2002
-	IFS=$'\n' \
-		read -r -d '' -a my_arr < \
-		<( cat "$file" | awk "$startline < NR " | grep "\[.*\] *(https" \
-		&& printf '\0' )
+	# note: get columns
+	# shellcheck disable=SC2001
+	parts="$(echo "$line" | sed -e "s=.*\[\(.*\)\](\(https.*\)).*<!--$LINKTEST_TAG: *\(.*\) *-->.*=\1$LINKTEST_DELIM\2$LINKTEST_DELIM\3=")"
+	notename="$(echo "$parts" | cut -f1 -d"$LINKTEST_DELIM")"
+	notelink="$(echo "$parts" | cut -f2 -d"$LINKTEST_DELIM")"
+	expectedpattern="$(echo "$parts" | cut -f3 -d"$LINKTEST_DELIM")"
 
-
-	local total="$(("${#my_arr[@]}" - 1))"
-	echo "startindex=$startindex total=$total"
-
-	# case: invalid startindex
-	if [[ "$startindex" -gt "$total" ]]
+	# case: empty expected result
+	if [[ -z "$expectedpattern" ]]
 	then
-		echo "Bad start index "
-		exit 1
+		_print_linktest_error "Missing test expectation" "$line"
 	fi
 
-	for ((i="$startindex";i<="$total";i++))
-	do
-		line="${my_arr[$i]}"
+	# step: get page content
+	# -L = follow redirect.
+	# 	e.g. Evernote's link redirects to a viewer app
+	pagecontent="$(curl -v -X GET -L -s "$notelink" 2>>"$LOGFILE")"
+	writeLogPipe "$pagecontent"
 
-		printf "Testing link #:%d/%d line=%s" "$i" "$total" "$line"
-
-		# case: missing test tag
-		if ! (grep "$LINKTEST_TAG:" <<<"$line" >/dev/null); then _print_linktest_error "Missing $LINKTEST_TAG" "$line"; fi
-
-		# note: get columns
-		# shellcheck disable=SC2001
-		parts="$(echo "$line" | sed -e "s=.*\[\(.*\)\](\(https.*\)).*<!--$LINKTEST_TAG: *\(.*\) *-->.*=\1$LINKTEST_DELIM\2$LINKTEST_DELIM\3=")"
-		notename="$(echo "$parts" | cut -f1 -d"$LINKTEST_DELIM")"
-		notelink="$(echo "$parts" | cut -f2 -d"$LINKTEST_DELIM")"
-		expectedpattern="$(echo "$parts" | cut -f3 -d"$LINKTEST_DELIM")"
-
-		# case: empty expected result
-		if [[ -z "$expectedpattern" ]]
-		then
-			_print_linktest_error "Missing test expectation" "$line"
-		fi
-
-		# step: get page content
-		# -L = follow redirect.
-		# 	e.g. Evernote's link redirects to a viewer app
-		pagecontent="$(curl -v -X GET -L -s "$notelink" 2>>"$LOGFILE")"
-		writeLogPipe "$pagecontent"
-
-		# main: test
-		if (grep -i "$expectedpattern" <<<"$pagecontent" >/dev/null)
-		then
-			# case: test pass
-			printf "%ssuccess%s" "$TAB" "$NEWLINE"
-		else
-			# case: test failure
-			echo "
+	# main: test
+	if (grep -i "$expectedpattern" <<<"$pagecontent" >/dev/null)
+	then
+		# case: test pass
+		printf "%ssuccess%s" "$TAB" "$NEWLINE"
+	else
+		# case: test failure
+		echo "
 Test failed for note $notename
 expected: $expectedpattern
 result: $pagecontent"
-			exit 1
-		fi
-	done
-
-	echo "Links validated indexes: $startindex - $total (out of 0 - $total)"
+		exit 1
+	fi
 }
 
 (main "$@")

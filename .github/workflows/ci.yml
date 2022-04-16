@@ -6,6 +6,7 @@ jobs:
   sanitytests:
     runs-on: ubuntu-latest
     steps:
+      - run: set
       - name: Checkout
         uses: actions/checkout@v3
       - run: |
