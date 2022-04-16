@@ -12,14 +12,13 @@ declare LOGFILE
 LOGFILE="/tmp/$(basename "$0").log"
 
 writeLogPipe() {
-	read -r line
-	echo "$line" >>"$LOGFILE"
+	echo "$*" >>"$LOGFILE"
 }
 
 # Usage
 usage() {
 	cat <<END
- $0 [--startindex n]
+ $0 [--startindex n] [-d|--debug] [--startline l]
 END
 }
 
@@ -58,7 +57,9 @@ main() {
 	while [[ $# -gt 0 ]]
 	do
 		case "$1" in
-			# case: option with value
+			# -d|--debug)
+			# 	set -x
+			# 	;;
 			--startindex)
 				startindex="$2"
 				shift
@@ -84,8 +85,8 @@ main() {
 	done
 
 	echo "" >"$LOGFILE"
-	date | writeLogPipe
-	test_links "./notes.md" "$startline" "$startindex"
+ 	writeLogPipe date
+	test_links "$__dir/notes.md" "$startline" "$startindex"
 }
 
 declare LINKTEST_TAG="PAGETEST"
@@ -152,7 +153,7 @@ test_links() {
 		# -L = follow redirect.
 		# 	e.g. Evernote's link redirects to a viewer app
 		pagecontent="$(curl -v -X GET -L -s "$notelink" 2>>"$LOGFILE")"
-		echo "$pagecontent" | writeLogPipe
+		writeLogPipe "$pagecontent"
 
 		# main: test
 		if (grep -i "$expectedpattern" <<<"$pagecontent" >/dev/null)
