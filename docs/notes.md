@@ -222,7 +222,7 @@ In particular, it does not necessarily correspond to the structuring of the same
 * [Basics](https://www.evernote.com/l/ALl56WJnKKdJFKWLGSDL2bKd56fjZzlS38o) <!--PAGETEST: latex-->
 
 ## macOS
-* [Usage + troubleshooting](https://www.evernote.com/l/ALkz0UpiILpCObgtAjSL1kqq6bi72I10Fa8) <!--PAGETEST: tricks.*trouble-->
+* [Usage + troubleshooting](https://www.evernote.com/l/ALkz0UpiILpCObgtAjSL1kqq6bi72I10Fa8) <!--PAGETEST: usage.*trouble-->
 * [Homebrew: Basics](https://www.evernote.com/l/ALllFcuT4npDK4PG52WKs2fZqBZD2xB5UmE) <!--PAGETEST: homebrew-->
 * [Homebrew: Tricks](https://www.evernote.com/l/ALnBQpu7sW9COZzgy-YWMkzJfnPWJnsDhks) <!--PAGETEST: tricks-->
 
@@ -441,6 +441,7 @@ In particular, it does not necessarily correspond to the structuring of the same
 ## HTML/CSS
 
 ### CSS
+* [Notes](https://www.evernote.com/l/ALnqCgQOBcRNfYsJ_UYrrBKi1Vv2dKEochQ) <!--PAGETEST: Notes.*- CSS-->
 * [Notes - BEM](https://www.evernote.com/l/ALm07RFOwA9Aa75crbN1XnjUvUqJRM41Xh8) <!--PAGETEST: Notes.*BEM-->
 * [Basics](https://www.evernote.com/l/ALm8o5Mdj3VJ8Jpa-BXWZTKM3kF-xAF3UKw) <!--PAGETEST: Cheatsheet: css-->
 * [Basics - @media](https://www.evernote.com/l/ALkoBZUkwjpC_qSO4GBTltUL1majl9lunYo) <!--PAGETEST: @media-->
@@ -450,7 +451,7 @@ In particular, it does not necessarily correspond to the structuring of the same
 * [Tricks](https://www.evernote.com/l/ALmjYBmVB_dMVr6DmtgiNdcVg-rMDvaOvZk) <!--PAGETEST: Tricks-->
 
 ### HTML
-* [Notes](https://www.evernote.com/l/ALnEQJ6R1JBFMpgOAyHdHm735JPq08eXLPg) <!--PAGETEST: Notes-->
+* [Notes](https://www.evernote.com/l/ALnEQJ6R1JBFMpgOAyHdHm735JPq08eXLPg) <!--PAGETEST: Notes.*- HTML-->
 * [Basics](https://www.evernote.com/l/ALlVLuc9eNBPvqCKnWK6BoV3HK4W3_JmoSo) <!--PAGETEST: Cheatsheet: html-->
 * [Tricks](https://www.evernote.com/l/ALn-toIgeH1Al6XnYVMDvgt7R6GuBGD3vEQ) <!--PAGETEST: Tricks-->
 
