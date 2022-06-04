@@ -217,7 +217,7 @@ In particular, it does not necessarily correspond to the structuring of the same
 * [Basics - steps](https://www.evernote.com/l/ALl4mWCuu9tJaKhbcweEtQNEojYWqQSLkn0) <!--PAGETEST: steps-->
 * [Tricks](https://www.evernote.com/l/ALlBWV7l325IPLoRymGkL8pFmaQpmnldeWo) <!--PAGETEST: tricks-->
 
-## LaTex
+## LaTeX
 * [Notes](https://www.evernote.com/l/ALmhp1qgXd9OjZ1Ashxa9-oGhidmejdTzP0) <!--PAGETEST: notes.*latex-->
 * [Basics](https://www.evernote.com/l/ALl56WJnKKdJFKWLGSDL2bKd56fjZzlS38o) <!--PAGETEST: latex-->
 

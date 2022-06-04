@@ -84,7 +84,7 @@ main() {
 		shift
 	done
 
-	if [[ $# -gt 0 ]]; then usageAndExit; fi
+	[[ $# -gt 0 ]] && usageAndExit
 	echo "" >"$LOGFILE"
  	writeLogPipe date
 	test_links "$__dir/notes.md" "$startline" "$startindex"
@@ -106,11 +106,7 @@ test_links() {
 	echo "startindex=$startindex total=$total"
 
 	# case: invalid startindex
-	if [[ "$startindex" -gt "$total" ]]
-	then
-		echo "Bad start index "
-		exit 1
-	fi
+	[[ "$startindex" -gt "$total" ]] && echo "Bad start index " && exit 1
 
 	for ((i="$startindex";i<="$total";i++))
 	do
@@ -140,7 +136,7 @@ function _test_single_link() {
 	line="$1"
 
 	# case: missing test tag
-	if ! (grep "$LINKTEST_TAG:" <<<"$line" >/dev/null); then _print_linktest_error "Missing $LINKTEST_TAG" "$line"; fi
+	! (grep "$LINKTEST_TAG:" <<<"$line" >/dev/null) && _print_linktest_error "Missing $LINKTEST_TAG" "$line"
 
 	# note: get columns
 	# shellcheck disable=SC2001
@@ -150,10 +146,7 @@ function _test_single_link() {
 	expectedpattern="$(echo "$parts" | cut -f3 -d"$LINKTEST_DELIM")"
 
 	# case: empty expected result
-	if [[ -z "$expectedpattern" ]]
-	then
-		_print_linktest_error "Missing test expectation" "$line"
-	fi
+	[[ -z "$expectedpattern" ]] && _print_linktest_error "Missing test expectation" "$line"
 
 	# step: get page content
 	# -L = follow redirect.
