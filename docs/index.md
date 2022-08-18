@@ -3,6 +3,11 @@ layout: home
 ---
 
 [notes](./notes)
+<style>
+img {
+  background:transparent url(./data/loading.gif) center center/10% no-repeat;
+}
+</style>
 
 ![](https://slsilent.files.wordpress.com/2022/04/multiples-2.png)
 <img src="https://slsilent.files.wordpress.com/2022/06/0-5000-1_cropped.png" alt="drawing" />
