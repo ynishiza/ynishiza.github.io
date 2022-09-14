@@ -6,11 +6,16 @@ permalink: /notes/
 ---
 
 # About
+These are personal notes which I create when trying to learn something new
+i.e. as a method to determine the most natural place for a new thing among the existing things in my consciousness, in order that it may eventually merged with the rest.
+Typically, this involves identifying a structure in itself, so that it may be naturally related to and thus find an optimal fit among other existing structures in my consciousness.
+In short, it is like trying to determine the right place for a new puzzle piece (albeit the piece itself may be malleable).
 
-These are personal notes which directly mirror how knowledge is structured in my mind, which in turn is based on a structuring I have converged to over the years in pursuit of optimality, and will ever be in pursuit.
+As a result, it can also be said conversely, that these notes in turn directly represent how knowledge is organized and appear to me in my consciousness.
+i.e. that these notes are a direct reflection of my mind.
 
-Hence, while it would of course be a pleasure if another may find utility in it, please note that these notes are not for that purpose.
-In particular, it does not necessarily correspond to the structuring of the same knowledge in another's mind, or that it is also an optimal structuring for another.
+Hence, while it would of course be a pleasure if another being also discovers some utility in it, please note that these notes were not intended for that purpose.
+In particular, it does not necessarily correspond to the structuring of the same knowledge in another's mind, or that it is in an optimal form for another nor another usage.
 
 # Contents
 
@@ -220,6 +225,8 @@ In particular, it does not necessarily correspond to the structuring of the same
 ## LaTeX
 * [Notes](https://www.evernote.com/l/ALmhp1qgXd9OjZ1Ashxa9-oGhidmejdTzP0) <!--PAGETEST: notes.*latex-->
 * [Basics](https://www.evernote.com/l/ALl56WJnKKdJFKWLGSDL2bKd56fjZzlS38o) <!--PAGETEST: latex-->
+* [Pacakges](https://www.evernote.com/l/ALnCKDeU8I5DToZjJhXj7WxuO1xilWH05CI) <!--PAGETEST: latex.*packages-->
+* [tricks](https://www.evernote.com/l/ALm1tAA8PZ5CuZQgNgOe1KQMtzxTr8hAbeY) <!--PAGETEST: latex.*tricks-->
 
 ## macOS
 * [Usage + troubleshooting](https://www.evernote.com/l/ALkz0UpiILpCObgtAjSL1kqq6bi72I10Fa8) <!--PAGETEST: usage.*trouble-->
@@ -289,6 +296,7 @@ In particular, it does not necessarily correspond to the structuring of the same
 * [Basics](https://www.evernote.com/l/ALn-RF9vcLBO87hRzHzraGtYjfAKVaOtZWo) <!--PAGETEST: Cheatsheet: wireshark-->
 * [Display filter](https://www.evernote.com/l/ALkI3ZULjodNwLTEnhzpCmH3XNyRd3bZHyY) <!--PAGETEST: Display filter-->
 * [Usage](https://www.evernote.com/l/ALnZOi_LSIlLeqWKodNJ1FWdiRPPPF7AqO0) <!--PAGETEST: Usage-->
+* [Berkley Packet Filter (BPF)](https://www.evernote.com/l/ALkoGSTcdAlH556Pnk43WBghZZRYiQNJLDI) <!--PAGETEST: bpf-->
 
 
 ## Misc
@@ -615,16 +623,23 @@ In particular, it does not necessarily correspond to the structuring of the same
 # Studies
 
 ## Books
+* [DevOps Handbook](https://www.evernote.com/l/ALldNEHsjHJKl7goixJrVJYSMWIG-38F8os) <!--PAGETEST: DevOps-->
 * [Concepts, Techniques, and Models of computer programming](https://www.evernote.com/l/ALli_xHbnn5LV5U3RTHmW_6mo1xo_qDIsyc) <!--PAGETEST: models of computer-->
-* [Dsitributed Systems Principles and Paradigms](https://www.evernote.com/l/ALkp3A6rD8pPJbUkRhQYH4c_RThxqXjxkZ4) <!--PAGETEST: distributed systems-->
+* [Distributed Systems Principles and Paradigms](https://www.evernote.com/l/ALkp3A6rD8pPJbUkRhQYH4c_RThxqXjxkZ4) <!--PAGETEST: distributed systems-->
+* [Mythical Man Month](https://www.evernote.com/l/ALkA42ZFCa1C4JUKaid3DOOpj-9u6gSIBWY) <!--PAGETEST: Mythical-->
 * [Site Reliability Workbook](https://www.evernote.com/l/ALngRXkK6EdAP44CZ4pgQFJM6qWmepIgKH8) <!--PAGETEST: site reliability-->
+* [Structure and Interpretation of Computer Programs (SICP)](https://www.evernote.com/l/ALlsJNInDIhOTb4HA3GikzYdnzLKR3BX_8s) <!--PAGETEST: SICP-->
+* ...etc
 
 ## Papers
 * [A critique of the remote procedure call paradigm](https://www.evernote.com/l/ALk-0XAj5tRC6aBPgB3L5rxa5sV-UNsYi5A) <!--PAGETEST: critique-->
 * [A note on distributed computing](https://www.evernote.com/l/ALkqjFcJe5lN042zfXOH8tpXMorCfKuFsbA) <!--PAGETEST: distributed computing-->
 * [Actors - a model of computing](https://www.evernote.com/l/ALmUYMK7FhJIcoWilBFKPTrq2KTIRmVzWEw) <!--PAGETEST: actors-->
-* [Architectural style and design of network-based software architectures](https://www.evernote.com/l/ALl8QnOY1yxFcr-UI8-vFfJKx8LfuibHvuk) <!--PAGETEST: software architectures-->
+* [Architectural style and design of network-based software architectures (REST)](https://www.evernote.com/l/ALl8QnOY1yxFcr-UI8-vFfJKx8LfuibHvuk) <!--PAGETEST: software architectures-->
+* [First version of a dataflow procedure language](https://www.evernote.com/l/ALntmvqVtN1AGJug_jD_ns9w372SE835Ii0) <!--PAGETEST: First version-->
 * [Role based access controls](https://www.evernote.com/l/ALmaLif90edLd4lbwoYHVAFI5AE9g8nJyw4) <!--PAGETEST: role based-->
+* [What is an ontology](https://www.evernote.com/l/ALkw4I3YCkRNArLRWev_VqkBnMiindAj3RI) <!--PAGETEST: ontology-->
+* ...etc
 
 ## Documentation
 * [RFC 6455: Websocket protocol](https://www.evernote.com/l/ALnoYHqmCuNOi5HH64gto-LtC33DoNM3K8k) <!--PAGETEST: Websocket protocol-->

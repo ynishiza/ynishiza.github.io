@@ -2,7 +2,10 @@
 layout: home
 ---
 
-[notes](./notes)
+
+Content
+* [Coding principles](./codingprinciples.md)
+* [Notes](./notes)
 <style>
 img {
   background:transparent url(./data/loading.gif) center center/10% no-repeat;
