@@ -1,4 +1,5 @@
-/* global _ */
+/* global */
+import _ from 'https://cdn.jsdelivr.net/npm/lodash-es@4.17.21/lodash.min.js';
 
 export const GOL_LIVE = 1;
 export const GOL_DEAD = 0;

@@ -1,12 +1,26 @@
-/* global $ _ */
+/* global $ */
 import {
 	GOL_LIVE,
 	GOL_DEAD,
 	golCreate,
 	matrixForEach,
 } from './common.js';
+export const x = 1;
 
-export default class GolUI2 {
+const GOLUI_LIVE = "gol_live";
+const GOLUI_DEAD = "gol_dead";
+function setLive(cell) {
+	$(cell).addClass(GOLUI_LIVE).removeClass(GOLUI_DEAD);
+}
+function setDead(cell) {
+	$(cell).addClass(GOLUI_DEAD).removeClass(GOLUI_LIVE);
+}
+function toggleState(cell) {
+	if ($(cell).hasClass(GOLUI_DEAD)) setLive(cell);
+	else setDead(cell);
+}
+
+export default class GolUI {
 	constructor(m, n) {
 		if (!m || !n) throw new Error("Invalid size");
 		this.element = $("<div>")
@@ -28,13 +42,13 @@ export default class GolUI2 {
 					.text("_")
 					.addClass("gol_cell")
 					.addClass("unselectable")
-					.addClass(GolUI2.GOLUI_DEAD)
+					.addClass(GOLUI_DEAD)
 					.click(function() {
-						GolUI2.toggleState(this);
+						toggleState(this);
 					})
 					.mouseover(function(e) {
-						if (e.buttons === 1 && !e.shiftKey) GolUI2.setLive(this);
-						if (e.buttons === 1 && e.shiftKey) GolUI2.setDead(this);
+						if (e.buttons === 1 && !e.shiftKey) setLive(this);
+						if (e.buttons === 1 && e.shiftKey) setDead(this);
 					})
 					.get();
 
@@ -44,8 +58,6 @@ export default class GolUI2 {
 			}
 		}
 	}
-	static GOLUI_LIVE = "gol_live";
-	static GOLUI_DEAD = "gol_dead";
 	cells = null;
 	m = 0;
 	n = 0;
@@ -53,15 +65,15 @@ export default class GolUI2 {
 
 	set(gol) {
 		matrixForEach(gol, (v, i, j) => {
-			if (v === GOL_LIVE) GolUI2.setLive(this.cells[i][j]);
-			else GolUI2.setDead(this.cells[i][j]);
+			if (v === GOL_LIVE) setLive(this.cells[i][j]);
+			else setDead(this.cells[i][j]);
 		});
 	}
 	get() {
 		const nextGol = golCreate(this.m, this.n);
 
 		matrixForEach(this.cells, (cell, i, j) => {
-			nextGol[i][j] = $(cell).hasClass(GolUI2.GOLUI_LIVE) ? GOL_LIVE : GOL_DEAD;
+			nextGol[i][j] = $(cell).hasClass(GOLUI_LIVE) ? GOL_LIVE : GOL_DEAD;
 		});
 
 		return nextGol;
@@ -70,15 +82,5 @@ export default class GolUI2 {
 		$(this.element).remove();
 	}
 
-	static setLive(cell) {
-		$(cell).addClass(GolUI2.GOLUI_LIVE).removeClass(GolUI2.GOLUI_DEAD);
-	}
-	static setDead(cell) {
-		$(cell).addClass(GolUI2.GOLUI_DEAD).removeClass(GolUI2.GOLUI_LIVE);
-	}
-	static toggleState(cell) {
-		if ($(cell).hasClass(GolUI2.GOLUI_DEAD)) GolUI2.setLive(cell);
-		else GolUI2.setDead(cell);
-	}
 }
 
