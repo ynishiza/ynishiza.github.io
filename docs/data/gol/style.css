@@ -22,6 +22,9 @@ header {
 	margin: 1px;
 	font-size: 10px;
 }
+.gol_cell:hover {
+	background: blue;
+}
 .unselectable {
 	-webkit-user-select: none;
 	-moz-user-select: none;

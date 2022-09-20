@@ -1,4 +1,3 @@
-/* global $ */
 import {
 	GOL_LIVE,
 	GOL_DEAD,
@@ -39,13 +38,13 @@ export default class GolRunner {
 	isStarted() { return !!this.timer; }
 	updateInfo(gol) {
 		const stat = gol.stat || golStat(gol);
-		$('[name="info_epoc"]').text(this.epoc++);
-		$('[name="info_live"]').text(stat.live);
-		$('[name="info_dead"]').text(stat.total - stat.live);
-		$('[name="info_percent"]').text(stat.live / stat.total);
-		$('[name="info_newborn"]').text(stat.newBorn != null ? stat.newBorn : 'NA');
-		$('[name="info_newdead"]').text(stat.newDead != null ? stat.newDead : 'NA');
-		$('[name="info_survive"]').text(stat.survive != null ? stat.survive : 'NA');
-		$('[name="info_neighborcount"]').text(stat.neighborCount != null ? stat.neighborCount / stat.live : 'NA');
+		document.querySelector('[name="info_epoc"]').textContent = this.epoc++;
+		document.querySelector('[name="info_live"]').textContent = stat.live;
+		document.querySelector('[name="info_dead"]').textContent = stat.total - stat.live;
+		document.querySelector('[name="info_percent"]').textContent = stat.live / stat.total;
+		document.querySelector('[name="info_newborn"]').textContent = stat.newBorn != null ? stat.newBorn : 'NA';
+		document.querySelector('[name="info_newdead"]').textContent = stat.newDead != null ? stat.newDead : 'NA';
+		document.querySelector('[name="info_survive"]').textContent = stat.survive != null ? stat.survive : 'NA';
+		document.querySelector('[name="info_neighborcount"]').textContent = stat.neighborCount != null ? stat.neighborCount / stat.live : 'NA';
 	}
 }

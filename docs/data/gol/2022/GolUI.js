@@ -1,4 +1,3 @@
-/* global $ */
 import {
 	GOL_LIVE,
 	GOL_DEAD,
@@ -10,22 +9,26 @@ export const x = 1;
 const GOLUI_LIVE = "gol_live";
 const GOLUI_DEAD = "gol_dead";
 function setLive(cell) {
-	$(cell).addClass(GOLUI_LIVE).removeClass(GOLUI_DEAD);
+	cell.classList.add(GOLUI_LIVE);
+	cell.classList.remove(GOLUI_DEAD);
 }
 function setDead(cell) {
-	$(cell).addClass(GOLUI_DEAD).removeClass(GOLUI_LIVE);
+	cell.classList.remove(GOLUI_LIVE);
+	cell.classList.add(GOLUI_DEAD);
 }
 function toggleState(cell) {
-	if ($(cell).hasClass(GOLUI_DEAD)) setLive(cell);
+	if (cell.classList.contains(GOLUI_DEAD)) setLive(cell);
 	else setDead(cell);
 }
 
 export default class GolUI {
 	constructor(m, n) {
 		if (!m || !n) throw new Error("Invalid size");
-		this.element = $("<div>")
-			.addClass("gol_container")
-			.get();
+		this.element = document.createElement('div');
+		this.element.classList.add('gol_container');
+		// this.element = $("<div>")
+		// 	.addClass("gol_container")
+		// 	.get();
 		this.m = m;
 		this.n = n;
 		this.cells = new Array(m);
@@ -34,27 +37,23 @@ export default class GolUI {
 		for (let i = 0; i < m; i++) {
 			this.cells[i] = new Array(n);
 
-			const row = $("<div>")
-				.addClass("gol_row")
-				.appendTo(this.element);
+			const row = document.createElement("div");
+			row.classList.add('gol_row');
+			this.element.append(row);
 			for (let j = 0; j < n; j++) {
-				this.cells[i][j] = $("<span>")
-					.text("_")
-					.addClass("gol_cell")
-					.addClass("unselectable")
-					.addClass(GOLUI_DEAD)
-					.click(function() {
-						toggleState(this);
-					})
-					.mouseover(function(e) {
-						if (e.buttons === 1 && !e.shiftKey) setLive(this);
-						if (e.buttons === 1 && e.shiftKey) setDead(this);
-					})
-					.get();
+				const cell = document.createElement('span');
+				cell.classList.add('gol_cell', 'unselectable', GOL_DEAD);
+				cell.title = `${i},${j}`;
+					cell.addEventListener('click', () => toggleState(cell));
+					cell.addEventListener('mouseover', (e) => {
+						if (e.buttons === 1 && !e.shiftKey) setLive(cell);
+						if (e.buttons === 1 && e.shiftKey) setDead(cell);
+					});
 
-				this.cells[i][j][0].title = `${i},${j}`;
+				// this.cells[i][j][0].title = `${i},${j}`;
 
-				row.append(this.cells[i][j]);
+				this.cells[i][j] = cell;
+				row.append(cell);
 			}
 		}
 	}
@@ -73,14 +72,13 @@ export default class GolUI {
 		const nextGol = golCreate(this.m, this.n);
 
 		matrixForEach(this.cells, (cell, i, j) => {
-			nextGol[i][j] = $(cell).hasClass(GOLUI_LIVE) ? GOL_LIVE : GOL_DEAD;
+			nextGol[i][j] = cell.classList.contains(GOLUI_LIVE) ? GOL_LIVE : GOL_DEAD;
 		});
 
 		return nextGol;
 	}
 	destroy() {
-		$(this.element).remove();
+		this.element.remove();
 	}
-
 }
 

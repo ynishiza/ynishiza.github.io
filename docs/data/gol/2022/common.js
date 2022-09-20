@@ -1,6 +1,3 @@
-/* global */
-import _ from 'https://cdn.jsdelivr.net/npm/lodash-es@4.17.21/lodash.min.js';
-
 export const GOL_LIVE = 1;
 export const GOL_DEAD = 0;
 export const GOL_NEIGHBOR_INDICES = [
@@ -38,7 +35,7 @@ export function golStep(gol) {
 		let liveCount = 0;
 		let deadCount = 0;
 
-		_.forEach(GOL_NEIGHBOR_INDICES, function(ind) {
+		GOL_NEIGHBOR_INDICES.forEach((ind) => {
 			if (!gol[i + ind[0]]) return;
 			switch(gol[i + ind[0]][j + ind[1]]) {
 				case GOL_LIVE:

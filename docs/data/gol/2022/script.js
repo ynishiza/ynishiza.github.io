@@ -1,4 +1,3 @@
-/* global $ */
 const LOCALSTORAGE_KEY = "GOL";
 const m = 100;
 const n = 100;
@@ -22,55 +21,58 @@ function main() {
 	gol[10][6] = GOL_LIVE;
 	gol[10][7] = GOL_LIVE;
 	golUI.set(gol);
-	$(golUI.element).appendTo(document.body.querySelector("#main"));
+	document.body.querySelector("#main").append(golUI.element);
 
-	const updateIntervalBox = $('[name="update_interval"]')
-		.change(function() {
+	const updateIntervalBox = document.querySelector('[name="update_interval"]');
+	updateIntervalBox.addEventListener('change', () => {
 			if (runner.isStarted()) doStartDraw();
 		});
 	function doStartDraw() {
-		const x = +updateIntervalBox.val();
+		const x = parseInt(updateIntervalBox.value);
 		if (x > 0) runner.startDraw(x);
 		else alert("Invalid interval");
 	}
 
-	$('[name="save"]')
-		.click(function(e) {
+	document.querySelector('[name="save"]')
+		.addEventListener('click', (e) => {
 			const gol = golUI.get();
 			localStorage.setItem(LOCALSTORAGE_KEY, JSON.stringify(gol));
-      alert("Saved local");
+      alert("Saved state to local storage");
 		});
 
-	$('[name="load"]')
-		.click(function(e) {
+	document.querySelector('[name="load"]')
+		.addEventListener('click', (e) => {
 			try {
 				let gol = localStorage.getItem(LOCALSTORAGE_KEY);
 				gol = JSON.parse(gol);
 				golUI.set(gol);
+				setTimeout(() => {
+					alert("Loaded state from local storage");
+				});
 			} catch (err) {
 				alert("Failed to load GOL:\n" + err.message);
 			}
 		});
 
-	$('[name="start_stop"]')
-		.click(function(e) {
+	document.querySelector('[name="start_stop"]')
+		.addEventListener('click', (e) => {
 			if (runner.isStarted()) {
-				$(this).text("Start");
+				e.target.textContent = 'Start';
 				runner.stopDraw();
 			} else {
-				$(this).text("Stop");
+				e.target.textContent = 'Stop';
 				doStartDraw();
 			}
 		});
 
-	$('[name="clear"]')
-		.click(function() {
+	document.querySelector('[name="clear"]')
+		.addEventListener('click', () => {
 			runner.reset();
 		});
 
-	$('[name="random_generate"]')
-		.click(function() {
-			const p = +$('[name="random_prob"]').val();
+	document.querySelector('[name="random_generate"]')
+		.addEventListener('click', () => {
+			const p = parseFloat(document.querySelector('[name="random_prob"]').value);
 			if (!(p >= 0 && p <= 1)) alert("Invalid probability");
 
 			const gol = golCreate(golUI.m, golUI.n);
@@ -85,6 +87,7 @@ function main() {
 	doStartDraw();
 }
 
-$(document).ready(main);
+main();
+// $(document).ready(main);
 
 export default main;
