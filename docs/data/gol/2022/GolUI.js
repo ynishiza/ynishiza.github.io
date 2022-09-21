@@ -1,10 +1,9 @@
 import {
 	GOL_LIVE,
 	GOL_DEAD,
-	golCreate,
 	matrixForEach,
 } from './common.js';
-export const x = 1;
+import * as golUtils from './gol.js';
 
 const GOLUI_LIVE = "gol_live";
 const GOLUI_DEAD = "gol_dead";
@@ -43,14 +42,17 @@ export default class GolUI {
 			for (let j = 0; j < n; j++) {
 				const cell = document.createElement('span');
 				cell.classList.add('gol_cell', 'unselectable', GOL_DEAD);
+
 				cell.title = `${i},${j}`;
+					// action: toggle state
 					cell.addEventListener('click', () => toggleState(cell));
+					// action: draw
+					// e.g. press shift and drag to draw
 					cell.addEventListener('mouseover', (e) => {
+						// note: e.buttons === 1: left click
 						if (e.buttons === 1 && !e.shiftKey) setLive(cell);
 						if (e.buttons === 1 && e.shiftKey) setDead(cell);
 					});
-
-				// this.cells[i][j][0].title = `${i},${j}`;
 
 				this.cells[i][j] = cell;
 				row.append(cell);
@@ -67,16 +69,19 @@ export default class GolUI {
 			if (v === GOL_LIVE) setLive(this.cells[i][j]);
 			else setDead(this.cells[i][j]);
 		});
+		const size = golUtils.size(gol);
+		const cell = this.cells[0][0];
+		this.element.style.width = `${size.n * (cell.offsetWidth + 2) + 2}px`;
 	}
-	get() {
-		const nextGol = golCreate(this.m, this.n);
 
+	get() {
+		const nextGol = golUtils.create(this.m, this.n);
 		matrixForEach(this.cells, (cell, i, j) => {
 			nextGol[i][j] = cell.classList.contains(GOLUI_LIVE) ? GOL_LIVE : GOL_DEAD;
 		});
-
 		return nextGol;
 	}
+
 	destroy() {
 		this.element.remove();
 	}

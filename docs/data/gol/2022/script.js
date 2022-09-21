@@ -3,88 +3,131 @@ const m = 100;
 const n = 100;
 
 import {
-  golCreate,
   GOL_LIVE,
   GOL_DEAD,
   matrixForEach,
+	downloadJSON,
 } from './common.js';
-import GolUI2 from './GolUI.js';
+import * as golUtils from './gol.js';
+import GolUI from './GolUI.js';
 import GolRunner from './GolRunner.js';
 
 function main() {
-	const gol = golCreate(m, n);
-	const golUI = new GolUI2(m, n);
 
-  const runner = new GolRunner(golUI);
-
+	const statUI = {
+		epoc: document.querySelector('#info_epoc'),
+		live: document.querySelector('#info_live'),
+		dead: document.querySelector('#info_dead'),
+		percent: document.querySelector('#info_percent'),
+		newborn: document.querySelector('#info_newborn'),
+		newdead: document.querySelector('#info_newdead'),
+		survive: document.querySelector('#info_survive'),
+		neighborCount: document.querySelector('#info_neighborcount'),
+	};
+	// step: initialize main GOL data
+	const gol = golUtils.create(m, n);
+	const golUI = new GolUI(m, n);
+	const golRunner = new GolRunner(golUI, statUI);
 	gol[10][5] = GOL_LIVE;
 	gol[10][6] = GOL_LIVE;
 	gol[10][7] = GOL_LIVE;
 	golUI.set(gol);
+
+
 	document.body.querySelector("#main").append(golUI.element);
 
+	// step: initialize controls
 	const updateIntervalBox = document.querySelector('[name="update_interval"]');
-	updateIntervalBox.addEventListener('change', () => {
-			if (runner.isStarted()) doStartDraw();
-		});
-	function doStartDraw() {
+	const startStop = document.querySelector('[name="start_stop"]');
+	function _doStartDraw() {
 		const x = parseInt(updateIntervalBox.value);
-		if (x > 0) runner.startDraw(x);
-		else alert("Invalid interval");
+		if (!(x > 0)) {
+			alert("Invalid interval");
+		}
+		golRunner.startDraw(x);
+	}
+	function _syncControls() {
+		if (golRunner.isStarted()) {
+			startStop.textContent = 'Stop';
+		} else {
+			startStop.textContent = 'Start';
+		}
 	}
 
-	document.querySelector('[name="save"]')
-		.addEventListener('click', (e) => {
-			const gol = golUI.get();
-			localStorage.setItem(LOCALSTORAGE_KEY, JSON.stringify(gol));
-      alert("Saved state to local storage");
+	updateIntervalBox.addEventListener('change', () => {
+			if (golRunner.isStarted()) _doStartDraw();
 		});
 
+	document.querySelector('[name="save"]')
+		.addEventListener('click', e => {
+			golRunner.stopDraw();
+			_saveData(golRunner);
+		});
 	document.querySelector('[name="load"]')
-		.addEventListener('click', (e) => {
+		.addEventListener('click', e => {
 			try {
-				let gol = localStorage.getItem(LOCALSTORAGE_KEY);
-				gol = JSON.parse(gol);
-				golUI.set(gol);
-				setTimeout(() => {
-					alert("Loaded state from local storage");
-				});
+				golRunner.stopDraw();
+				_loadData(golRunner);
 			} catch (err) {
 				alert("Failed to load GOL:\n" + err.message);
 			}
 		});
+	document.querySelector('[name="download"]')
+		.addEventListener('click', () => {
+			golRunner.stopDraw();
+			downloadJSON('gol.json', golRunner.toJSON());
+		});
 
-	document.querySelector('[name="start_stop"]')
-		.addEventListener('click', (e) => {
-			if (runner.isStarted()) {
-				e.target.textContent = 'Start';
-				runner.stopDraw();
-			} else {
-				e.target.textContent = 'Stop';
-				doStartDraw();
-			}
+	startStop.addEventListener('click', e => {
+		if (golRunner.isStarted()) golRunner.stopDraw();
+		else golRunner.startDraw();
 		});
 
 	document.querySelector('[name="clear"]')
 		.addEventListener('click', () => {
-			runner.reset();
+			golRunner.reset();
 		});
-
 	document.querySelector('[name="random_generate"]')
 		.addEventListener('click', () => {
 			const p = parseFloat(document.querySelector('[name="random_prob"]').value);
-			if (!(p >= 0 && p <= 1)) alert("Invalid probability");
-
-			const gol = golCreate(golUI.m, golUI.n);
-			matrixForEach(gol, (v, i, j) => {
-				const x = Math.random();
-				gol[i][j] = x < p ? GOL_LIVE : GOL_DEAD;
-			});
-
-			runner.reset(gol);
+			const gol = golUtils.create(golUI.m, golUI.n);
+			golRunner.reset(golUtils.random(gol, p));
 		});
 
-	doStartDraw();
+	// setup: gol manual change
+	golUI.element.addEventListener('click', function() {
+		golRunner.stopDraw();
+	});
+
+	// setup:
+	window.addEventListener('click', e => {
+		_syncControls();
+	});
+
+	// setup: handle uncaught errors
+	window.addEventListener('error', e => {
+		alert(`error: ${e.error.stack || e.message}`);
+		golRunner.stopDraw();
+	});
+
+	// step:
+	_doStartDraw();
+
+}
+
+function _saveData(golRunner) {
+	const data = golRunner.toJSON();
+	localStorage.setItem(LOCALSTORAGE_KEY, JSON.stringify(data));
+	alert("Saved state to local storage");
+	return data;
+}
+function _loadData(golRunner) {
+	const data = JSON.parse(localStorage.getItem(LOCALSTORAGE_KEY));
+	golRunner.fromJSON(data);
+	setTimeout(() => {
+		alert("Loaded state from local storage");
+	});
+	return data;
 }
 
 main();

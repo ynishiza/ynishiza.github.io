@@ -9,29 +9,32 @@ Tried it for fun back then.
 <a href="./gol2015">Original 2015 version</a>
 
 <head>
-  <link href="data/gol/style.css" rel="stylesheet">
+  <link href="data/gol/2022/style.css" rel="stylesheet">
 </head>
 <body>
   <header>
-    <label>Interval (ms): <input name="update_interval" type="number" value="100" min="1"></label>
-    <button name="start_stop">Stop</button>
-    <button name="save">Save</button>
-    <button name="load">Load</button>
-    <button name="clear">Clear</button>
-    <div>
-      <label>Probability (live): <input name="random_prob" step="0.01" type="number" value="0.08" max="1" min="0"></label>
-      <button name="random_generate">Generate</button>
-    </div>
-    <div>
-      <label>Epoc:<span name="info_epoc"></span></label>
-      <label>Percentage alive:<span name="info_percent"></span></label>
-      <label>Total living:<span name="info_live"></span></label>
-      <label>Total dead:<span name="info_dead"></span></label>
-      <label>New born:<span name="info_newborn"></span></label>
-      <label>New dead:<span name="info_newdead"></span></label>
-      <label>Survive:<span name="info_survive"></span></label>
-      <label>Average neighbor count:<span name="info_neighborcount"></span></label>
-    </div>
+		<section class="gol_controls">
+			<label>Interval (ms): <input name="update_interval" type="number" value="100" min="1"></label>
+			<button name="start_stop">Stop</button>
+			<button name="save">Save</button>
+			<button name="load">Load</button>
+			<button name="download">Download</button>
+			<button name="clear">Clear</button>
+			<section class="gol_generate">
+				<label>Probability (live): <input name="random_prob" step="0.01" type="number" value="0.08" max="1" min="0"></label>
+				<button name="random_generate">Generate</button>
+			</section>
+		</section>
+    <section class="gol_stats">
+      <label>Epoc:<span id="info_epoc"></span></label>
+      <label>Percentage alive:<span id="info_percent"></span></label>
+      <label>Total living:<span id="info_live"></span></label>
+      <label>Total dead:<span id="info_dead"></span></label>
+      <label>New born:<span id="info_newborn"></span></label>
+      <label>New dead:<span id="info_newdead"></span></label>
+      <label>Survive:<span id="info_survive"></span></label>
+      <label>Step average neighbor count:<span id="info_neighborcount"></span></label>
+    </section>
     <div id="main"></div>
   </header>
 </body>
