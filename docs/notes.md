@@ -222,10 +222,10 @@ In particular, it does not necessarily correspond to the structuring of the same
 * [Basics - steps](https://www.evernote.com/l/ALl4mWCuu9tJaKhbcweEtQNEojYWqQSLkn0) <!--PAGETEST: steps-->
 * [Tricks](https://www.evernote.com/l/ALlBWV7l325IPLoRymGkL8pFmaQpmnldeWo) <!--PAGETEST: tricks-->
 
-## LaTeX
+## TeX/LaTeX
 * [Notes](https://www.evernote.com/l/ALmhp1qgXd9OjZ1Ashxa9-oGhidmejdTzP0) <!--PAGETEST: notes.*latex-->
 * [Basics](https://www.evernote.com/l/ALl56WJnKKdJFKWLGSDL2bKd56fjZzlS38o) <!--PAGETEST: latex-->
-* [Pacakges](https://www.evernote.com/l/ALnCKDeU8I5DToZjJhXj7WxuO1xilWH05CI) <!--PAGETEST: latex.*packages-->
+* [Packages](https://www.evernote.com/l/ALnCKDeU8I5DToZjJhXj7WxuO1xilWH05CI) <!--PAGETEST: latex.*packages-->
 * [tricks](https://www.evernote.com/l/ALm1tAA8PZ5CuZQgNgOe1KQMtzxTr8hAbeY) <!--PAGETEST: latex.*tricks-->
 
 ## macOS
@@ -471,6 +471,7 @@ In particular, it does not necessarily correspond to the structuring of the same
 * [Basics - builtins](https://www.evernote.com/l/ALkoSI13NRNGjLdKZ_BMVCQoChNLIs_IqFk) <!--PAGETEST: builtins-->
 * [Basics - class](https://www.evernote.com/l/ALkg5Jeaui5Ib63TBJOFq3XrzMv98uXv73A) <!--PAGETEST: class-->
 * [Basics - ES6](https://www.evernote.com/l/ALlrssNrL5pIib4_QU82FhgqECWCYjdAfu4) <!--PAGETEST: ES6-->
+* [Basics - ES6 modules](https://www.evernote.com/l/ALkuWXr1LPpJqJ8bofxnkCFeRxRKYFi8CVg) <!--PAGETEST: ES6 modules-->
 * [Basics - exception handling](https://www.evernote.com/l/ALkFQQmmDg1JBZvXo1HefvYnnCG7b41A3_0) <!--PAGETEST: exception handling-->
 * [Basics - Promise API](https://www.evernote.com/l/ALk1SONixlhBv4hWZU-krcpYLgYbgMG2l6s) <!--PAGETEST: Promise API-->
 * [Basics - RegExp](https://www.evernote.com/l/ALmRhZYqRoxAD78f1_FsjaRPGjP6GxJfbQo) <!--PAGETEST: RegExp-->

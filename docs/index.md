@@ -6,7 +6,7 @@ layout: home
 Content
 * [Coding principles](./codingprinciples.md)
 * [Notes](./notes)
-* [Fun:GOL](./gol)
+* [Fun:GOL](./gol2022)
 <style>
 img {
   background:transparent url(./data/loading.gif) center center/10% no-repeat;

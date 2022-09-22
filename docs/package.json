@@ -1,0 +1,28 @@
+{
+  "name": "docs",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "chai-subset": "^1.6.0",
+    "eslint": "^8.23.1",
+    "karma": "^6.4.1",
+    "karma-chrome-launcher": "^3.1.1",
+    "karma-junit-reporter": "^2.0.1",
+    "karma-mocha": "^2.0.1",
+    "mocha": "^10.0.0",
+    "mocha-jenkins-reporter": "^0.4.8"
+  },
+  "scripts": {
+    "test": "karma start --single-run --browsers ChromeHeadless",
+    "lint": "eslint data test"
+  },
+  "author": "Yui Nishizawa",
+  "license": "ISC",
+  "dependencies": {
+  }
+}
