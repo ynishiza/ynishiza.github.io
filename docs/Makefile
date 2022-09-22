@@ -4,16 +4,19 @@ default: help
 
 install: ## Initial setup 
 	$(BUNDLER) install
-	npm install eslint@^8
+	npm install
 
 uninstall: ## Clear setup files 
 	rm -r ./.gem ./node_modules
 
 jslint: ## Lint
-	npx eslint data/
+	npm run lint
 
-sanitytest: ## Sanity test
+sanitytests: ## Sanity test
 	bash ./sanitytests.sh
+
+jstest: ## js test
+	npm run test
 
 serve: ## Start test server
 	$(BUNDLER) exec jekyll serve

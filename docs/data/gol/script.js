@@ -1,3 +1,4 @@
+/* eslint-disable */
 /*
  * 2015 Yui Nishizawa
  */
