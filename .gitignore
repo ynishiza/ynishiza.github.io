@@ -1,6 +1,8 @@
-# 
-_site
-.jekyll-cache
+# Installations
 node_modules
 .gem
+
+# Caches 
+_site
+.jekyll-cache
 results
