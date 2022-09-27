@@ -1,6 +1,7 @@
 import {
 	GOL_LIVE,
 	GOL_DEAD,
+	for2d,
 	matrixForEach,
 } from './common.js';
 import * as golUtils from './gol.js';
@@ -30,6 +31,32 @@ export default class GolUI {
 		this.cells = new Array(m);
 
 		// Initialize
+		let row;
+		for2d((i, j) => {
+			if (i === 0) {
+				this.cells[i] = new Array(n);
+				row = document.createElement("div");
+				row.classList.add('gol_row');
+				this.element.append(row);
+			}
+
+			const cell = document.createElement('span');
+			cell.classList.add('gol_cell', 'unselectable', GOL_DEAD);
+
+			cell.title = `${i},${j}`;
+			// action: toggle state
+			cell.addEventListener('click', () => toggleState(cell));
+			// action: draw
+			// e.g. press shift and drag to draw
+			cell.addEventListener('mouseover', (e) => {
+				// note: e.buttons === 1: left click
+				if (e.buttons === 1 && !e.shiftKey) setLive(cell);
+				if (e.buttons === 1 && e.shiftKey) setDead(cell);
+			});
+
+			this.cells[i][j] = cell;
+			row.append(cell);
+		});
 		for (let i = 0; i < m; i++) {
 			this.cells[i] = new Array(n);
 
@@ -41,15 +68,15 @@ export default class GolUI {
 				cell.classList.add('gol_cell', 'unselectable', GOL_DEAD);
 
 				cell.title = `${i},${j}`;
-					// action: toggle state
-					cell.addEventListener('click', () => toggleState(cell));
-					// action: draw
-					// e.g. press shift and drag to draw
-					cell.addEventListener('mouseover', (e) => {
-						// note: e.buttons === 1: left click
-						if (e.buttons === 1 && !e.shiftKey) setLive(cell);
-						if (e.buttons === 1 && e.shiftKey) setDead(cell);
-					});
+				// action: toggle state
+				cell.addEventListener('click', () => toggleState(cell));
+				// action: draw
+				// e.g. press shift and drag to draw
+				cell.addEventListener('mouseover', (e) => {
+					// note: e.buttons === 1: left click
+					if (e.buttons === 1 && !e.shiftKey) setLive(cell);
+					if (e.buttons === 1 && e.shiftKey) setDead(cell);
+				});
 
 				this.cells[i][j] = cell;
 				row.append(cell);

@@ -188,6 +188,7 @@ In particular, it does not necessarily correspond to the structuring of the same
 ## Docker
 * [Notes](https://www.evernote.com/l/ALndczHp1i5B87GOEWhsrcQZiwumciIhwig) <!--PAGETEST: Notes-->
 * [CLI](https://www.evernote.com/l/ALkecJ32VBNDXay_-1D9R2LZN5tptLLea1E) <!--PAGETEST: CLI-->
+* [Registry](https://www.evernote.com/l/ALlVxLq146VBp4gWh9CVETIjxsG82Ti6Fb4) <!--PAGETEST: Registry-->
 * [Usage + troubleshooting](https://www.evernote.com/l/ALlXk6Bc2hJDZZ4gOZ1XlKNagF8JPD2mJQs) <!--PAGETEST: troubleshooting-->
 
 

@@ -3,9 +3,9 @@ const m = 100;
 const n = 100;
 
 import {
-  GOL_LIVE,
-  GOL_DEAD,
-  matrixForEach,
+	GOL_LIVE,
+	GOL_DEAD,
+	matrixForEach,
 	downloadJSON,
 	readTextFile,
 } from './common.js';
@@ -14,7 +14,6 @@ import GolUI from './GolUI.js';
 import GolRunner from './GolRunner.js';
 
 function main() {
-
 	const statUI = {
 		epoc: document.querySelector('#info_epoc'),
 		live: document.querySelector('#info_live'),
@@ -25,6 +24,7 @@ function main() {
 		survive: document.querySelector('#info_survive'),
 		neighborCount: document.querySelector('#info_neighborcount'),
 	};
+
 	// step: initialize main GOL data
 	const gol = golUtils.create(m, n);
 	const golUI = new GolUI(m, n);
@@ -56,7 +56,8 @@ function main() {
 		}
 	}
 
-	updateIntervalBox.addEventListener('change', () => {
+	updateIntervalBox
+		.addEventListener('change', () => {
 			golRunner.stopDraw();
 			_doStartDraw();
 		});
@@ -104,7 +105,7 @@ function main() {
 	startStop.addEventListener('click', e => {
 		if (golRunner.isStarted()) golRunner.stopDraw();
 		else golRunner.startDraw();
-		});
+	});
 
 	document.querySelector('[name="clear"]')
 		.addEventListener('click', () => {
@@ -134,7 +135,7 @@ function main() {
 
 		// case: only alert once.
 		// Otherwise, may cause numerous error reports
-		if (errorNotified)  return;
+		if (errorNotified)	return;
 
 		alert('Error occurred. See dev console');
 		errorNotified = true;
