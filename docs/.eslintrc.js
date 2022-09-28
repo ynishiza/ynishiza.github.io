@@ -2,19 +2,19 @@
 module.exports = {
 	env: {
 		browser: true,
-		es2021: true,
+		es2022: true,
 		mocha: true,
 	},
-	extends: "eslint:recommended",
+	extends: 'eslint:recommended',
 	overrides: [
 	],
 	parserOptions: {
-		ecmaVersion: "latest",
-		sourceType: "module"
+		sourceType: 'module'
 	},
 	rules: {
-		"no-unused-vars": ["off"],
-		"no-trailing-spaces": ["error"],
-		"indent": ["error", "tab", { "SwitchCase": 1, "MemberExpression": 1 }],
+		'no-unused-vars': ['off'],
+		'no-trailing-spaces': ['error'],
+		indent: ['error', 'tab', { 'SwitchCase': 1, 'MemberExpression': 1 }],
+		quotes: ['error', 'single'],
 	}
 }

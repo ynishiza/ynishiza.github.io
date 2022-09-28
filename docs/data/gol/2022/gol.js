@@ -63,7 +63,7 @@ function golNeighborInfo(i, j, gol) {
 // note: generate a random GOL from a seed
 // p = probability that a cell is live
 function golRandom(gol, p) {
-	if (!(p >= 0 && p <= 1)) alert("Invalid live probability");
+	if (!(p >= 0 && p <= 1)) alert('Invalid live probability');
 	matrixForEach(gol, (v, i, j) => {
 		const x = Math.random();
 		gol[i][j] = x < p ? GOL_LIVE : GOL_DEAD;

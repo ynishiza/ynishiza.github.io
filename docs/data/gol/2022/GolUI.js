@@ -6,8 +6,8 @@ import {
 } from './common.js';
 import * as golUtils from './gol.js';
 
-const GOLUI_LIVE = "gol_live";
-const GOLUI_DEAD = "gol_dead";
+const GOLUI_LIVE = 'gol_live';
+const GOLUI_DEAD = 'gol_dead';
 function setLive(cell) {
 	cell.classList.add(GOLUI_LIVE);
 	cell.classList.remove(GOLUI_DEAD);
@@ -23,7 +23,7 @@ function toggleState(cell) {
 
 export default class GolUI {
 	constructor(m, n) {
-		if (!m || !n) throw new Error("Invalid size");
+		if (!m || !n) throw new Error('Invalid size');
 		this.element = document.createElement('div');
 		this.element.classList.add('gol_container');
 		this.m = m;
@@ -35,7 +35,7 @@ export default class GolUI {
 		for2d((i, j) => {
 			if (i === 0) {
 				this.cells[i] = new Array(n);
-				row = document.createElement("div");
+				row = document.createElement('div');
 				row.classList.add('gol_row');
 				this.element.append(row);
 			}
@@ -60,7 +60,7 @@ export default class GolUI {
 		for (let i = 0; i < m; i++) {
 			this.cells[i] = new Array(n);
 
-			const row = document.createElement("div");
+			const row = document.createElement('div');
 			row.classList.add('gol_row');
 			this.element.append(row);
 			for (let j = 0; j < n; j++) {

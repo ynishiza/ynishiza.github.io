@@ -1,4 +1,4 @@
-const LOCALSTORAGE_KEY = "GOL";
+const LOCALSTORAGE_KEY = 'GOL';
 const m = 100;
 const n = 100;
 
@@ -35,7 +35,7 @@ function main() {
 	golUI.set(gol);
 
 
-	document.body.querySelector("#gol_main").append(golUI.element);
+	document.body.querySelector('#gol_main').append(golUI.element);
 
 	// step: initialize controls
 	const updateIntervalBox = document.querySelector('[name="update_interval"]');
@@ -43,7 +43,7 @@ function main() {
 	function _doStartDraw() {
 		const x = parseInt(updateIntervalBox.value);
 		if (!(x > 0)) {
-			alert("Invalid interval");
+			alert('Invalid interval');
 		}
 		golRunner.startDraw(x);
 		_syncControls();
@@ -73,7 +73,7 @@ function main() {
 				golRunner.stopDraw();
 				_loadData(golRunner);
 			} catch (err) {
-				alert("Failed to load GOL:\n" + err.message);
+				alert('Failed to load GOL:\n' + err.message);
 			}
 		});
 	document.querySelector('[name="download"]')
@@ -150,14 +150,14 @@ function main() {
 function _saveData(golRunner) {
 	const data = golRunner.toJSON();
 	localStorage.setItem(LOCALSTORAGE_KEY, JSON.stringify(data));
-	alert("Saved state to local storage");
+	alert('Saved state to local storage');
 	return data;
 }
 function _loadData(golRunner) {
 	const data = JSON.parse(localStorage.getItem(LOCALSTORAGE_KEY));
 	golRunner.fromJSON(data);
 	setTimeout(() => {
-		alert("Loaded state from local storage");
+		alert('Loaded state from local storage');
 	});
 	return data;
 }
