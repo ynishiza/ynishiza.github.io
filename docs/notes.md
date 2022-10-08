@@ -444,8 +444,16 @@ In particular, it does not necessarily correspond to the structuring of the same
 
 ## Haskell
 
-* [Notes](https://www.evernote.com/l/ALk5-mBfkxxFR6y9yWdX1GRX2J0NKgYnoDM) <!--PAGETEST: Notes-->
-* [Basics](https://www.evernote.com/l/ALljokgwO1FFFZ4fFpD0vVqBOhGNLrxIgYs) <!--PAGETEST: Cheatsheet: haskell-->
+* [Notes](https://www.evernote.com/l/ALn3isr9HMVKJJuQugkFZqqQkM5xFw5Di40) <!--PAGETEST: Haskell-->
+* [Notes - Functor, Applicative, Monads](https://www.evernote.com/l/ALnX5-EPZBtL7YHbLoF3Q3uyXWzWL9CgwkA) <!--PAGETEST: monad-->
+* [Basics](https://www.evernote.com/l/ALn4tdd8bvNAioFkf66IVrz75rpSx1Rst-E) <!--PAGETEST: Cheatsheet: Haskell-->
+* [Basics - Builtins (Prelude)](https://www.evernote.com/l/ALn4pqmDdK9KjqOmCQi4pIXYnli7wHbV9eI) <!--PAGETEST: Prelude-->
+* [Basics - functions](https://www.evernote.com/l/ALky-0KGJbxBko2fOTK9CI-TV-H6CcJLOrg) <!--PAGETEST: function-->
+* [Basics - Semigroup, Monoid](https://www.evernote.com/l/ALl4jFXkaglDfKI8WG0YrKBZLEylDl2BS84) <!--PAGETEST: Semigroup-->
+* [Basics - Foldable, Traversable](https://www.evernote.com/l/ALlNj4mAnYZFbqr9tgx6QRtKLhr8mrzvJAM) <!--PAGETEST: Foldable-->
+* [Basics - type,typeclass](https://www.evernote.com/l/ALldcOgbsGtF1ZbJ5-AajFqG-73reqHVgws) <!--PAGETEST: typeclass-->
+* [Basics - module](https://www.evernote.com/l/ALluNodjBrhHzq_k-XqRSElIgEimsbzIbVQ) <!--PAGETEST: module-->
+* [external modules](https://www.evernote.com/l/ALmALdFVJLRAw7GTlQNcoiJolD10zIeUyCI) <!--PAGETEST: external-->
 
 ## HTML/CSS
 
