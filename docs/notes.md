@@ -238,6 +238,9 @@ In particular, it does not necessarily correspond to the structuring of the same
 ## Make
 * [Notes](https://www.evernote.com/l/ALkPOLh1QjNKZawXxLAfvrgxAwrHRCW3qlc) <!--PAGETEST: make-->
 * [Basics](https://www.evernote.com/l/ALnbjG_G2qxJ56_LpRFtX7wgmWwrF2qVtxc) <!--PAGETEST: Cheatsheet: make-->
+* [Basics - variables](https://www.evernote.com/l/ALn1qvP9kS1NcqWnX_-3bUnXSdAbIeH0FdM) <!--PAGETEST: Cheatsheet: make var-->
+* [Basics - functions](https://www.evernote.com/l/ALlNXCI00Y9GsqprTSJj8FBkae3zxynKrn8) <!--PAGETEST: Cheatsheet: make func-->
+* [Basics - implicit rules](https://www.evernote.com/l/ALmyq38bEvNEXKPOL3FzU0esalfqjkGlr40) <!--PAGETEST: Cheatsheet: make implicit-->
 * [Tricks](https://www.evernote.com/l/ALnnBabYafNC-bNEmeQK26_Q_hSLvluvnbY) <!--PAGETEST: Tricks-->
 * [Usage](https://www.evernote.com/l/ALnMzzS9NiJLUIjQHTsWu0lakpM7x0wVbKY) <!--PAGETEST: Usage-->
 
