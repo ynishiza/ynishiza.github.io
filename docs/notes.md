@@ -450,17 +450,21 @@ In particular, it does not necessarily correspond to the structuring of the same
 * [Notes](https://www.evernote.com/l/ALn3isr9HMVKJJuQugkFZqqQkM5xFw5Di40) <!--PAGETEST: Haskell-->
 * [Notes - Functor, Applicative, Monads](https://www.evernote.com/l/ALnX5-EPZBtL7YHbLoF3Q3uyXWzWL9CgwkA) <!--PAGETEST: monad-->
 * [Basics](https://www.evernote.com/l/ALn4tdd8bvNAioFkf66IVrz75rpSx1Rst-E) <!--PAGETEST: Cheatsheet: Haskell-->
-* [Basics - type signature,kind](https://www.evernote.com/l/ALlVxCxZEuZAN6ACf1ZrP5YWSE_n0ev3ceA) <!--PAGETEST: Cheatsheet: Haskell.*kind-->
 * [Basics - Builtins (Prelude)](https://www.evernote.com/l/ALn4pqmDdK9KjqOmCQi4pIXYnli7wHbV9eI) <!--PAGETEST: Prelude-->
+* [Basics - Show/Read](https://www.evernote.com/l/ALnoiY7_7bRCep8hcCvTkHAXSWv3Sea2vss) <!--PAGETEST: Show-->
 * [Basics - functions](https://www.evernote.com/l/ALky-0KGJbxBko2fOTK9CI-TV-H6CcJLOrg) <!--PAGETEST: function-->
 * [Basics - function fixity](https://www.evernote.com/l/ALnQQ1dIQ5hH_5ChKxMnrfpI130ujXbKihw) <!--PAGETEST: fixity-->
 * [Basics - recursive declarations](https://www.evernote.com/l/ALmlh1nzCvVGjZLMade7FDsxXXhwGqM5dvw) <!--PAGETEST: recursive-->
-* [Basics - type,typeclass](https://www.evernote.com/l/ALldcOgbsGtF1ZbJ5-AajFqG-73reqHVgws) <!--PAGETEST: typeclass-->
+* [Basics - type signature,kind](https://www.evernote.com/l/ALlVxCxZEuZAN6ACf1ZrP5YWSE_n0ev3ceA) <!--PAGETEST: Cheatsheet: Haskell.*kind-->
+* [Basics - type](https://www.evernote.com/l/ALldcOgbsGtF1ZbJ5-AajFqG-73reqHVgws) <!--PAGETEST: type-->
+* [Basics - typeclass](https://www.evernote.com/l/ALm0ZX7lLGVLD5tMtsl6g6L1ZmuKpwO_794) <!--PAGETEST: typeclass-->
 * [Basics - module](https://www.evernote.com/l/ALluNodjBrhHzq_k-XqRSElIgEimsbzIbVQ) <!--PAGETEST: module-->
 * [class - Semigroup, Monoid](https://www.evernote.com/l/ALl4jFXkaglDfKI8WG0YrKBZLEylDl2BS84) <!--PAGETEST: Semigroup-->
 * [class - Category, Arrow](https://www.evernote.com/l/ALkaOhynaM1JPIn1XXD0nHB-G2ixU_0LU60) <!--PAGETEST: Category-->
 * [class - Functor, Applicative, Monads](https://www.evernote.com/l/ALnxXNFDmZVEjavYgkUVnALGhbyhCMrC9m0) <!--PAGETEST: Monad-->
 * [class - Foldable, Traversable](https://www.evernote.com/l/ALlNj4mAnYZFbqr9tgx6QRtKLhr8mrzvJAM) <!--PAGETEST: Foldable-->
+* [tool - GHC](https://www.evernote.com/l/ALkfZT59KXVIV7tFZkdtX_--UbNwWNmXSI0) <!--PAGETEST: GHC-->
+* [tool - Stack](https://www.evernote.com/l/ALnOIslEdi9H4YocOgpRgITvt4T7YWr6G3E) <!--PAGETEST: Stack-->
 * [examples](https://www.evernote.com/l/ALkYmrakuphDBLgQLbGpmPiW0hqVZGOmGMU) <!--PAGETEST: examples-->
 * [external modules](https://www.evernote.com/l/ALmALdFVJLRAw7GTlQNcoiJolD10zIeUyCI) <!--PAGETEST: external-->
 
