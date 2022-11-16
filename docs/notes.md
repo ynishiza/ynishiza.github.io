@@ -2,7 +2,7 @@
 layout: page
 title: Notes
 permalink: /notes/
-
+# * []() <!--PAGETEST: -->
 ---
 
 # About
@@ -94,6 +94,7 @@ In particular, it does not necessarily correspond to the structuring of the same
 ## Programming concepts
 * [Algebraic effects](https://www.evernote.com/l/ALkXIG5jF-BMGZhGSD1hghHBZymBSh3p4CM) <!--PAGETEST: Algebraic effects-->
 * [Concurrent programming](https://www.evernote.com/l/ALlWpHtiw7pAl4WvyiEG0iBe26FU_l0rvmI) <!--PAGETEST: Concurrent programming-->
+* [Continuation](https://www.evernote.com/l/ALkNkSv7-qlDObNYJwiiRZUbSjp8KH7SEZk) <!--PAGETEST: continuation-->
 * [Paradigms](https://www.evernote.com/l/ALmDUJryEBNBtpg8n7qm-d3raBISeX0sBOQ) <!--PAGETEST: Paradigms-->
 * [Principles and patterns](https://www.evernote.com/l/ALkEf4BCfSRCzbSC6863oIdfUVoGjHaWl_0) <!--PAGETEST: Principles and Patterns-->
 * [Program execution](https://www.evernote.com/l/ALlArFgZEdlJ8pizhOWcRq9_YzvKlSflShI) <!--PAGETEST: execution-->
@@ -164,6 +165,7 @@ In particular, it does not necessarily correspond to the structuring of the same
 ## Neovim
 * [neovim - basic](https://www.evernote.com/l/ALmN2i38e0JHt5yKNcubryrRsQGIDG6YvVo) <!--PAGETEST: neovim-->
 * [neovim - LSP](https://www.evernote.com/l/ALkhIf8ZV6RJ94F8C8pzZRSTTQvi5e2Iv6s) <!--PAGETEST: LSP-->
+* [neovim - LSP language servers](https://www.evernote.com/l/ALlQr32UH11DRqJrSqJ5SImsJ3IZFeq0v9k) <!--PAGETEST: server-->
 * [neovim - LSP usage](https://www.evernote.com/l/ALl26n5ERa1E86lxC8AubPwDfELuSP8-meE) <!--PAGETEST: LSP usage-->
 * [tricks ](https://www.evernote.com/l/ALn9s-qr_t5OMZEhvPqhfvGfzEaqHNe_Su8) <!--PAGETEST: tricks -->
 
@@ -203,8 +205,7 @@ In particular, it does not necessarily correspond to the structuring of the same
 * [refs](https://www.evernote.com/l/ALlPBBLf1xxIIYaBKBYlA1Jc1U9-LeGBhAc) <!--PAGETEST: refs-->
 * [config](https://www.evernote.com/l/ALkg6rFwpPRIqpjWjQFeEoX65rNBEcBcD8M) <!--PAGETEST: config-->
 * [plumbing](https://www.evernote.com/l/ALl8DZO6GZFOJIRViREQP3cC1SVCM8hZf6c) <!--PAGETEST: plumbing-->
-* [tricks](https://www.evernote.com/l/ALkznx8YzetFeK_Vc7wVSBHL6ZvOL7mdB1Y) <!--PAGETEST: tricks-->
-* [usage](https://www.evernote.com/l/ALm2S_OyQDtBwpC6qbdxnasgobVcZP2DS_I) <!--PAGETEST: usage-->
+* [idioms](https://www.evernote.com/l/ALm2S_OyQDtBwpC6qbdxnasgobVcZP2DS_I) <!--PAGETEST: idioms-->
 * [troubleshooting](https://www.evernote.com/l/ALk5_4hHkehDFp8zBtRe9MEQUofcVjgRxEE) <!--PAGETEST: troubleshooting-->
 
 
@@ -449,9 +450,10 @@ In particular, it does not necessarily correspond to the structuring of the same
 
 * [Notes](https://www.evernote.com/l/ALn3isr9HMVKJJuQugkFZqqQkM5xFw5Di40) <!--PAGETEST: Haskell-->
 * [Notes - Functor, Applicative, Monads](https://www.evernote.com/l/ALnX5-EPZBtL7YHbLoF3Q3uyXWzWL9CgwkA) <!--PAGETEST: monad-->
+* [Notes - monad Transform](https://www.evernote.com/l/ALnVGSzqtqFILa-plfSK4MduXTiSEXc9jLk) <!--PAGETEST: monad-->
 * [Basics](https://www.evernote.com/l/ALn4tdd8bvNAioFkf66IVrz75rpSx1Rst-E) <!--PAGETEST: Cheatsheet: Haskell-->
 * [Basics - Builtins (Prelude)](https://www.evernote.com/l/ALn4pqmDdK9KjqOmCQi4pIXYnli7wHbV9eI) <!--PAGETEST: Prelude-->
-* [Basics - Show/Read](https://www.evernote.com/l/ALnoiY7_7bRCep8hcCvTkHAXSWv3Sea2vss) <!--PAGETEST: Show-->
+* [Basics - Char,String,Show/Read](https://www.evernote.com/l/ALnoiY7_7bRCep8hcCvTkHAXSWv3Sea2vss) <!--PAGETEST: String-->
 * [Basics - functions](https://www.evernote.com/l/ALky-0KGJbxBko2fOTK9CI-TV-H6CcJLOrg) <!--PAGETEST: function-->
 * [Basics - function fixity](https://www.evernote.com/l/ALnQQ1dIQ5hH_5ChKxMnrfpI130ujXbKihw) <!--PAGETEST: fixity-->
 * [Basics - recursive declarations](https://www.evernote.com/l/ALmlh1nzCvVGjZLMade7FDsxXXhwGqM5dvw) <!--PAGETEST: recursive-->
@@ -461,12 +463,17 @@ In particular, it does not necessarily correspond to the structuring of the same
 * [Basics - module](https://www.evernote.com/l/ALluNodjBrhHzq_k-XqRSElIgEimsbzIbVQ) <!--PAGETEST: module-->
 * [class - Semigroup, Monoid](https://www.evernote.com/l/ALl4jFXkaglDfKI8WG0YrKBZLEylDl2BS84) <!--PAGETEST: Semigroup-->
 * [class - Category, Arrow](https://www.evernote.com/l/ALkaOhynaM1JPIn1XXD0nHB-G2ixU_0LU60) <!--PAGETEST: Category-->
+* [class - Contravariant, Profunctor](https://www.evernote.com/l/ALmp7GOxAOBB76c8_57WpQfewQg6bequ9MA) <!--PAGETEST: Contravariant-->
+* [class - Foldable, Traversable](https://www.evernote.com/l/ALlNj4mAnYZFbqr9tgx6QRtKLhr8mrzvJAM) <!--PAGETEST: Foldable-->
 * [class - Functor, Applicative, Monads](https://www.evernote.com/l/ALnxXNFDmZVEjavYgkUVnALGhbyhCMrC9m0) <!--PAGETEST: Monad-->
+* [class - wrapper types](https://www.evernote.com/l/ALm7ycP3AmxISYxrhKtgaGNrLNWfTYCEnP4) <!--PAGETEST: wrapper-->
+* [monad -continuation](https://www.evernote.com/l/ALnKuSQG1kdO46LrqIhItmklhOm3lri4I7w) <!--PAGETEST: continuation-->
 * [monad - transformers](https://www.evernote.com/l/ALmkBt7kxGtOFpDqL5WZD3XNkXIE_umX8oQ) <!--PAGETEST: transformers-->
 * [monad - state](https://www.evernote.com/l/ALkmVS8bnQ1LNJ6Pfj9Qr5NMGD5AhD7N3hQ) <!--PAGETEST: state-->
-* [class - Foldable, Traversable](https://www.evernote.com/l/ALlNj4mAnYZFbqr9tgx6QRtKLhr8mrzvJAM) <!--PAGETEST: Foldable-->
 * [tool - GHC](https://www.evernote.com/l/ALkfZT59KXVIV7tFZkdtX_--UbNwWNmXSI0) <!--PAGETEST: GHC-->
 * [tool - Stack](https://www.evernote.com/l/ALnOIslEdi9H4YocOgpRgITvt4T7YWr6G3E) <!--PAGETEST: Stack-->
+* [modules - optparse-applicative](https://www.evernote.com/l/ALnj8Dh_OV1N9ovLbNSzDu8ATDBYyqeJvm4) <!--PAGETEST: optparse-->
+* [modules - text,fmt](https://www.evernote.com/l/ALlqXMDUCQxKBI4rDDXTgCfOz9bG6fgq948) <!--PAGETEST: text-->
 * [examples](https://www.evernote.com/l/ALkYmrakuphDBLgQLbGpmPiW0hqVZGOmGMU) <!--PAGETEST: examples-->
 * [external modules](https://www.evernote.com/l/ALmALdFVJLRAw7GTlQNcoiJolD10zIeUyCI) <!--PAGETEST: external-->
 
@@ -574,7 +581,7 @@ In particular, it does not necessarily correspond to the structuring of the same
 * [Basics - plugin](https://www.evernote.com/l/ALnYnCKWLHRD1LzEQNOaCIwWPhatZDQm1PQ) <!--PAGETEST: plugin-->
 * [CLI](https://www.evernote.com/l/ALnZy-EX_DRDl4mkiBR_89u5pzEraqiGCJw) <!--PAGETEST: cli-->
 * [TypeScript](https://www.evernote.com/l/ALkjpzQagUFHU4haoV5UWUS88th_9ZfooUg) <!--PAGETEST: typescript-->
-* [Usage](https://www.evernote.com/l/ALlJs6TbwrZBbr7V6oBK4kwV19LuGRV9JAE) <!--PAGETEST: usage-->
+* [Idioms + tricks](https://www.evernote.com/l/ALlJs6TbwrZBbr7V6oBK4kwV19LuGRV9JAE) <!--PAGETEST: idioms-->
 * [Troubleshooting](https://www.evernote.com/l/ALkH3N85ngJAyKcIglcLFHfz7MCFYewbW60) <!--PAGETEST: trouble-->
 
 ## Markdown
