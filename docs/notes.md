@@ -454,28 +454,40 @@ In particular, it does not necessarily correspond to the structuring of the same
 * [Basics](https://www.evernote.com/l/ALn4tdd8bvNAioFkf66IVrz75rpSx1Rst-E) <!--PAGETEST: Cheatsheet: Haskell-->
 * [Basics - Builtins (Prelude)](https://www.evernote.com/l/ALn4pqmDdK9KjqOmCQi4pIXYnli7wHbV9eI) <!--PAGETEST: Prelude-->
 * [Basics - Char,String,Show/Read](https://www.evernote.com/l/ALnoiY7_7bRCep8hcCvTkHAXSWv3Sea2vss) <!--PAGETEST: String-->
+* [Basics - List,Tuple](https://www.evernote.com/l/ALkv8vlfycVEqbjdmHoXaROVWhqNvCPfu-w) <!--PAGETEST: List-->
 * [Basics - functions](https://www.evernote.com/l/ALky-0KGJbxBko2fOTK9CI-TV-H6CcJLOrg) <!--PAGETEST: function-->
 * [Basics - function fixity](https://www.evernote.com/l/ALnQQ1dIQ5hH_5ChKxMnrfpI130ujXbKihw) <!--PAGETEST: fixity-->
 * [Basics - recursive declarations](https://www.evernote.com/l/ALmlh1nzCvVGjZLMade7FDsxXXhwGqM5dvw) <!--PAGETEST: recursive-->
-* [Basics - type signature,kind](https://www.evernote.com/l/ALlVxCxZEuZAN6ACf1ZrP5YWSE_n0ev3ceA) <!--PAGETEST: Cheatsheet: Haskell.*kind-->
-* [Basics - type](https://www.evernote.com/l/ALldcOgbsGtF1ZbJ5-AajFqG-73reqHVgws) <!--PAGETEST: type-->
-* [Basics - typeclass](https://www.evernote.com/l/ALm0ZX7lLGVLD5tMtsl6g6L1ZmuKpwO_794) <!--PAGETEST: typeclass-->
 * [Basics - module](https://www.evernote.com/l/ALluNodjBrhHzq_k-XqRSElIgEimsbzIbVQ) <!--PAGETEST: module-->
+* [Basics - exceptions](https://www.evernote.com/l/ALkGmIIlrYJBp4-K2yx5GI3dCrqIYblxXfc) <!--PAGETEST: exceptions-->
+* [Basics - strictness](https://www.evernote.com/l/ALnL7Ln6aTZEtJy4E4DLRYTmMjBmNdLiAog) <!--PAGETEST: strict-->
+* [Basics - primitives](https://www.evernote.com/l/ALnlQYXV7AJP6bpOhSho0v98N9xlid6Pz1o) <!--PAGETEST: primitives-->
+* [Basics - generics](https://www.evernote.com/l/ALlyFQnIItlMKqmejddm9rNPaXHU12Xre1o) <!--PAGETEST: generics-->
 * [class - Semigroup, Monoid](https://www.evernote.com/l/ALl4jFXkaglDfKI8WG0YrKBZLEylDl2BS84) <!--PAGETEST: Semigroup-->
 * [class - Category, Arrow](https://www.evernote.com/l/ALkaOhynaM1JPIn1XXD0nHB-G2ixU_0LU60) <!--PAGETEST: Category-->
 * [class - Contravariant, Profunctor](https://www.evernote.com/l/ALmp7GOxAOBB76c8_57WpQfewQg6bequ9MA) <!--PAGETEST: Contravariant-->
 * [class - Foldable, Traversable](https://www.evernote.com/l/ALlNj4mAnYZFbqr9tgx6QRtKLhr8mrzvJAM) <!--PAGETEST: Foldable-->
 * [class - Functor, Applicative, Monads](https://www.evernote.com/l/ALnxXNFDmZVEjavYgkUVnALGhbyhCMrC9m0) <!--PAGETEST: Monad-->
 * [class - wrapper types](https://www.evernote.com/l/ALm7ycP3AmxISYxrhKtgaGNrLNWfTYCEnP4) <!--PAGETEST: wrapper-->
+* [type system](https://www.evernote.com/l/ALldcOgbsGtF1ZbJ5-AajFqG-73reqHVgws) <!--PAGETEST: Cheatsheet: .* basics-->
+* [type system - coerce](https://www.evernote.com/l/ALlA1dPJtTNBirbGIVN-0Dorwb2L_JEAsCw) <!--PAGETEST:  coerce-->
+* [type system - kind](https://www.evernote.com/l/ALl0XWg7tsFFd7tT-oEIJvvAmid6dpsOx0Y) <!--PAGETEST: kind-->
+* [type system - type signature](https://www.evernote.com/l/ALlVxCxZEuZAN6ACf1ZrP5YWSE_n0ev3ceA) <!--PAGETEST: type signature -->
+* [type system - typeclass](https://www.evernote.com/l/ALm0ZX7lLGVLD5tMtsl6g6L1ZmuKpwO_794) <!--PAGETEST: typeclass-->
+* [type system - typeclass derivation](https://www.evernote.com/l/ALmwj6dLf1RFraPnFtYPBOln2DfzYM4Ji54) <!--PAGETEST: derivation-->
 * [monad -continuation](https://www.evernote.com/l/ALnKuSQG1kdO46LrqIhItmklhOm3lri4I7w) <!--PAGETEST: continuation-->
 * [monad - transformers](https://www.evernote.com/l/ALmkBt7kxGtOFpDqL5WZD3XNkXIE_umX8oQ) <!--PAGETEST: transformers-->
 * [monad - state](https://www.evernote.com/l/ALkmVS8bnQ1LNJ6Pfj9Qr5NMGD5AhD7N3hQ) <!--PAGETEST: state-->
 * [tool - GHC](https://www.evernote.com/l/ALkfZT59KXVIV7tFZkdtX_--UbNwWNmXSI0) <!--PAGETEST: GHC-->
 * [tool - Stack](https://www.evernote.com/l/ALnOIslEdi9H4YocOgpRgITvt4T7YWr6G3E) <!--PAGETEST: Stack-->
+* [modules - ST](https://www.evernote.com/l/ALnqIo9qY4xHyoFoufmJqi0EdAvDQ3shG2U) <!--PAGETEST: ST-->
+* [modules - System, IO](https://www.evernote.com/l/ALnJyH7wga5AtJbu0E3Lf7cmEPuevDXKREQ) <!--PAGETEST: IO-->
+* [modules - mtl](https://www.evernote.com/l/ALnqIo9qY4xHyoFoufmJqi0EdAvDQ3shG2U) <!--PAGETEST: mtl-->
 * [modules - optparse-applicative](https://www.evernote.com/l/ALnj8Dh_OV1N9ovLbNSzDu8ATDBYyqeJvm4) <!--PAGETEST: optparse-->
 * [modules - text,fmt](https://www.evernote.com/l/ALlqXMDUCQxKBI4rDDXTgCfOz9bG6fgq948) <!--PAGETEST: text-->
+* [modules - testing](https://www.evernote.com/l/ALlBzo3WnWBIpqvLcWQ9qTF-KxWPU51H_S8) <!--PAGETEST: testing-->
 * [examples](https://www.evernote.com/l/ALkYmrakuphDBLgQLbGpmPiW0hqVZGOmGMU) <!--PAGETEST: examples-->
-* [external modules](https://www.evernote.com/l/ALmALdFVJLRAw7GTlQNcoiJolD10zIeUyCI) <!--PAGETEST: external-->
+* [external modules](https://www.evernote.com/l/ALmALdFVJLRAw7GTlQNcoiJolD10zIeUyCI) <!--PAGETEST: modules-->
 
 ## HTML/CSS
 
