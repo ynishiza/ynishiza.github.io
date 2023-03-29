@@ -452,8 +452,8 @@ In particular, it does not necessarily correspond to the structuring of the same
 * [Notes - Functor, Applicative, Monads](https://www.evernote.com/l/ALnX5-EPZBtL7YHbLoF3Q3uyXWzWL9CgwkA) <!--PAGETEST: monad-->
 * [Notes - monad Transform](https://www.evernote.com/l/ALnVGSzqtqFILa-plfSK4MduXTiSEXc9jLk) <!--PAGETEST: monad-->
 * [Notes - type,kind](https://www.evernote.com/shard/s185/sh/404dfb44-40e0-40b5-92b5-bdb1cb6554ce/4oCL4yGJ0oF4oMN_Fv-LBXxk3nwEHg9bB3wQSaQ5F5SNus-MiSg8RpbpzQ) <!--PAGETEST: type-->
-* [Notes - primitives](https://www.evernote.com/shard/s185/sh/23fe82c9-1273-4f51-aeb8-671d645b69ab/JkDQPlWfIZxaHchVRU9r2e3n2R6aeQ8PpTDeGcwOufj7NYXcy8leHIhrjA) <!--PAGETEST: primitive-->
-* [Notes - dependent types](https://www.evernote.com/shard/s185/sh/dce4c9b2-5f59-4198-a886-6b700d51057a/ogU21jQ0sW11bqibHxBmzHJ_BYI7giXIUKT03OmLYWbKY5fLKzu1lL9usQ) <!--PAGETEST: dependent-->
+* [Notes - primitives](https://www.evernote.com/shard/s185/sh/23fe82c9-1273-4f51-aeb8-671d645b69ab/bXyZ2aUb6KEOkf4IAEJv4My_DDQMg15rV61DuYFqPvDLhnt23AIhN0pTfA) <!--PAGETEST: primitive-->
+* [Notes - dependent types](https://www.evernote.com/shard/s185/sh/dce4c9b2-5f59-4198-a886-6b700d51057a/Ora9oPDhW6SLvwsZwstfKPeUVWISZHqZLHpLmw8EJ1EjgCp_Bqo3CSmbPw) <!--PAGETEST: dependent-->
 * [Basics](https://www.evernote.com/l/ALn4tdd8bvNAioFkf66IVrz75rpSx1Rst-E) <!--PAGETEST: Cheatsheet: basics-->
 * [Basics - Builtins (Prelude)](https://www.evernote.com/l/ALn4pqmDdK9KjqOmCQi4pIXYnli7wHbV9eI) <!--PAGETEST: Prelude-->
 * [Basics - Char,String,Show/Read](https://www.evernote.com/l/ALnoiY7_7bRCep8hcCvTkHAXSWv3Sea2vss) <!--PAGETEST: String-->
@@ -466,7 +466,7 @@ In particular, it does not necessarily correspond to the structuring of the same
 * [Basics - strictness](https://www.evernote.com/l/ALnL7Ln6aTZEtJy4E4DLRYTmMjBmNdLiAog) <!--PAGETEST: strict-->
 * [Basics - primitives](https://www.evernote.com/l/ALnlQYXV7AJP6bpOhSho0v98N9xlid6Pz1o) <!--PAGETEST: primitives-->
 * [Basics - generics](https://www.evernote.com/l/ALlyFQnIItlMKqmejddm9rNPaXHU12Xre1o) <!--PAGETEST: generics-->
-* [Basics - templates](https://www.evernote.com/shard/s185/sh/68364595-7986-4953-b9c6-989c68894cb8/aOT3yKgnqiUIDdKHsNraEqdsXqbaFnP68uoquoOXM4bSOL9vIaynodM95Q) <!--PAGETEST: template-->
+* [Basics - templates](https://www.evernote.com/shard/s185/sh/68364595-7986-4953-b9c6-989c68894cb8/viVJxWp28xlILpG2kFRGIbyW7t0RKqsTPH_8xarBKNroyq1UOHMFsGs6BQ) <!--PAGETEST: template-->
 * [class - Semigroup, Monoid](https://www.evernote.com/l/ALl4jFXkaglDfKI8WG0YrKBZLEylDl2BS84) <!--PAGETEST: Semigroup-->
 * [class - Category, Arrow](https://www.evernote.com/l/ALkaOhynaM1JPIn1XXD0nHB-G2ixU_0LU60) <!--PAGETEST: Category-->
 * [class - Contravariant, Profunctor](https://www.evernote.com/l/ALmp7GOxAOBB76c8_57WpQfewQg6bequ9MA) <!--PAGETEST: Contravariant-->
@@ -483,7 +483,7 @@ In particular, it does not necessarily correspond to the structuring of the same
 * [concept - continuation](https://www.evernote.com/l/ALkNkSv7-qlDObNYJwiiRZUbSjp8KH7SEZk) <!--PAGETEST: continuation-->
 * [monad - transformers](https://www.evernote.com/l/ALmkBt7kxGtOFpDqL5WZD3XNkXIE_umX8oQ) <!--PAGETEST: transformers-->
 * [monad - state](https://www.evernote.com/l/ALkmVS8bnQ1LNJ6Pfj9Qr5NMGD5AhD7N3hQ) <!--PAGETEST: state-->
-* [monad - free](https://www.evernote.com/shard/s185/sh/756df130-3d8b-4f67-a8f5-a7f93334a7f4/PTcB4PzvHRRpBE7FOSAophRD0-Cz-TPXu4zty3uTJwmaW57ui4CtuWmEWg) <!--PAGETEST: free-->
+* [monad - free](https://www.evernote.com/shard/s185/sh/756df130-3d8b-4f67-a8f5-a7f93334a7f4/UsxYV7uQ2LLjj8UwFbnWgG7xOaGv4S1CiKZ4-JvKJWKBRsrBXdFo85z4dg) <!--PAGETEST: free-->
 * [tool - GHC](https://www.evernote.com/l/ALkfZT59KXVIV7tFZkdtX_--UbNwWNmXSI0) <!--PAGETEST: GHC-->
 * [tool - Stack](https://www.evernote.com/l/ALnOIslEdi9H4YocOgpRgITvt4T7YWr6G3E) <!--PAGETEST: Stack-->
 * [modules ](https://www.evernote.com/l/ALmALdFVJLRAw7GTlQNcoiJolD10zIeUyCI) <!--PAGETEST: Modules-->
@@ -493,8 +493,8 @@ In particular, it does not necessarily correspond to the structuring of the same
 * [modules - optparse-applicative](https://www.evernote.com/l/ALnj8Dh_OV1N9ovLbNSzDu8ATDBYyqeJvm4) <!--PAGETEST: optparse-->
 * [modules - text,fmt](https://www.evernote.com/l/ALlqXMDUCQxKBI4rDDXTgCfOz9bG6fgq948) <!--PAGETEST: text-->
 * [modules - testing](https://www.evernote.com/l/ALlBzo3WnWBIpqvLcWQ9qTF-KxWPU51H_S8) <!--PAGETEST: testing-->
-* [modules - network](https://www.evernote.com/shard/s185/sh/7d6d9f94-873c-4826-957d-e198c7b2604b/uVUazeMpfUe1Q2CmiAoJ6keMeQAHMpeevW8UBH7PzYqHqKUuTCtyRCAvJA) <!--PAGETEST: network-->
-* [modules - type level (singletons, fin, dec)](https://www.evernote.com/shard/s185/sh/d04c344f-13ed-4366-b6f7-2c14bf679957/Z7EZXfnvRS6dmNXEb31bn-Abvr1_Iap3cZ8L7__DPMaHocywoMzAz0UjAw) <!--PAGETEST: type level-->
+* [modules - network](https://www.evernote.com/shard/s185/sh/7d6d9f94-873c-4826-957d-e198c7b2604b/tUM9rRFsUCciVzs3nfsB2i9Df7VXlnNg7xjEg4PtiFPDTJqdy_aYaTv3UA) <!--PAGETEST: network-->
+* [modules - type level (singletons, fin, dec)](https://www.evernote.com/shard/s185/sh/d04c344f-13ed-4366-b6f7-2c14bf679957/b5vVfNczAxGuP3MutIzf3nBZx6hmVGDsF1KdRf3XzXA6qCk6sD2HYQCjrw) <!--PAGETEST: type level-->
 * [examples](https://www.evernote.com/l/ALkYmrakuphDBLgQLbGpmPiW0hqVZGOmGMU) <!--PAGETEST: examples-->
 * [external modules](https://www.evernote.com/l/ALmALdFVJLRAw7GTlQNcoiJolD10zIeUyCI) <!--PAGETEST: modules-->
 
