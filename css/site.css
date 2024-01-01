@@ -1,3 +1,35 @@
 img {
   max-width: 100%
 }
+
+.svg-icon { width: 16px; height: 16px; display: inline-block; fill: #828282; padding-right: 5px; vertical-align: text-top; }
+
+footer {
+  text-align: left;
+}
+
+footer .info-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  text-align: left;
+}
+
+footer .info-list > li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+footer .info-list > li:nth-child(n+2) {
+  margin: 0 2rem;
+}
+
+footer .hakyll {
+  float: right;
+  vertical-align: middle;
+}
+
+nav a {
+  text-transform: none;
+}

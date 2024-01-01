@@ -1,8 +1,9 @@
+# Ref: https://github.com/marketplace/actions/build-hakyll-site-for-github-pages
 name: Deploy Hakyll website to GitHub Pages
 
 on:
   push:
-    branches: ["hakyll", "master"]
+    branches: ["master"]
   workflow_dispatch:
 
 permissions:

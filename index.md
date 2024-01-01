@@ -1,12 +1,7 @@
 Content
 
-a
-a
-
 * [Coding principles](./codingprinciples.html)
-
 * [Notes](./notes.html)
-
 * [Fun:GOL](./gol2022.html)
 
 <style>

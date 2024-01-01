@@ -1,9 +1,3 @@
----
-layout: page
-title: About
-permalink: /about/
----
-
 Yui Nishizawa
 
 [PGP](./data/public.asc)
@@ -11,3 +5,5 @@ Yui Nishizawa
 [Writing: Silent Notes](https://slsilent.wordpress.com/)
 
 [Site source code](https://github.com/ynishiza/githubpage)
+
+[Resume](https://github.com/ynishiza/resume/blob/master/pdf/resume_v1_1.pdf)

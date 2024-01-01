@@ -1,7 +1,2 @@
-# Project template
+Source code for https://ynishiza.github.io
 
-Run
-
-```
-./create.sh <PROJECT_PATH>
-```
