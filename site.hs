@@ -1,12 +1,24 @@
 --------------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
 
--- import           Data.Monoid (mappend)
 import Hakyll
+import Text.Pandoc.Extensions
+import Text.Pandoc.Options
 
---------------------------------------------------------------------------------
+config :: Configuration
+config =
+  defaultConfiguration
+    { providerDirectory = "pages/"
+    }
+
+pandocOptions :: ReaderOptions
+pandocOptions =
+  defaultHakyllReaderOptions
+    { readerExtensions = readerExtensions defaultHakyllReaderOptions <> githubMarkdownExtensions
+    }
+
 main :: IO ()
-main = hakyll $ do
+main = hakyllWith config $ do
   match "css/*" $ do
     route idRoute
     compile compressCssCompiler
@@ -22,7 +34,7 @@ main = hakyll $ do
   match "*.md" $ do
     route $ setExtension "html"
     compile $
-      pandocCompiler
+      pandocCompilerWith pandocOptions defaultHakyllWriterOptions
         >>= loadAndApplyTemplate "templates/default.html" defaultContext
         >>= relativizeUrls
 

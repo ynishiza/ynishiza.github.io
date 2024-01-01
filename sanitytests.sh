@@ -87,7 +87,7 @@ main() {
 	[[ $# -gt 0 ]] && usageAndExit
 	echo "" >"$LOGFILE"
  	writeLogPipe date
-	test_links "$__dir/notes.md" "$startline" "$startindex"
+	test_links "$__dir/pages/notes.md" "$startline" "$startindex"
 }
 
 test_links() {
