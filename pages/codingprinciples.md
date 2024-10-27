@@ -12,9 +12,9 @@
   e.g. performance problems can be fixed by a more powerful machine, but spaghetti code cannot.\
   Also, as long as it is humans writing the code, what is bad for humans often end up causing more harm than good for the machine as well in the end, if not immediate.\
   * corollary: **semantics (human)** > **performance (machine)**:
-  * **non-readability**: more *abstraction* (e.g. functions, classes, etc) is not unconditionally good, may be worse than no abstraction in some cases.
+  * **non-readable-code-principles**: more *abstraction* (e.g. functions, classes, etc) is not unconditionally good, may be worse than no abstraction in some cases.
   That is, it depends.\
-  e.g. inconsistent abstraction, premature abstraction, abstraction leakage, etc.
+  e.g. higher complexity, inconsistent abstraction, premature abstraction, abstraction leakage, etc.
   * **non-DRY**: *repetition* (aka duplication, replication, redundancy, etc) is not unconditionally bad, may be good in some cases.
   That is, it depends.\
   Indeed, *patterns* are a form of repetition.

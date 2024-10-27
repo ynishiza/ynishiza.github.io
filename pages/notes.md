@@ -6,6 +6,9 @@ permalink: /notes/
 ---
 
 # About
+
+[**NOTE: OUTDATED**. These notes have not been updated since 2023 since I migrated away from EverNote to [DEVONthink](https://www.devontechnologies.com/apps/devonthink). A hacky tool used to cleanup the notes during migration: https://github.com/ynishiza/EvernoteToDEVONthinkMigration]
+
 These are personal notes which I create when trying to learn something new
 i.e. as a method to determine the most natural place for a new thing among the existing things in my consciousness, in order that it may eventually merged with the rest.
 Typically, this involves identifying a structure in itself, so that it may be naturally related to and thus find an optimal fit among other existing structures in my consciousness.

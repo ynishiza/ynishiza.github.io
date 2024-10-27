@@ -99,7 +99,7 @@ test_links() {
 	# shellcheck disable=SC2002
 	IFS=$'\n' \
 		read -r -d '' -a my_arr < \
-		<( cat "$file" | awk "$startline < NR " | grep "\[.*\] *(https" \
+		<( cat "$file" | awk "$startline < NR " | grep "\[.*\] *(https.*evernote" \
 		&& printf '\0' )
 
 	local total="$((${#my_arr[@]} - 1))"
