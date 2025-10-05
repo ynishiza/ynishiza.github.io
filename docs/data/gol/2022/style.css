@@ -1,0 +1,70 @@
+/* 
+ * 2022 Yui Nishizawa
+ */
+/* post container */
+main > {
+	box-sizing: border-box;
+}
+main > .wrapper {
+	max-width: none;
+}
+
+/* ==== GOL === */
+
+#gol_section {
+	border: 1px solid black;
+}
+header {
+	margin: 10px;
+}
+header .gol_controls {
+	margin: 0.5rem 0;
+}
+header .gol_stats label {
+	margin: 0 2rem 0.4rem 0;
+	display: inline-block;
+}
+input[type="file"] {
+	position: absolute !important;
+	width: 1px;
+	height: 1px;
+	clip: rect(1px, 1px, 1px, 1px);
+	overflow: hidden;
+}
+
+#gol_main {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+.gol_container {
+	background: black;
+	padding: 1rem;
+}
+.gol_cell {
+	vertical-align: top;
+	display: inline-block;
+	min-width: 10px;
+	min-height: 10px;
+	background: #444;
+	margin: 1px;
+	font-size: 10px;
+}
+.gol_cell:hover {
+	background: yellow;
+}
+.unselectable {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+.gol_row {
+	height: 11px;
+	margin: 1px;
+}
+input {
+	min-width: 50px;
+}
+.gol_live {
+	background: #8E8;
+}

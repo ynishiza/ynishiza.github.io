@@ -4,12 +4,12 @@ NPM=npm
 
 default: help
 
-install: ## Initial setup 
-	$(STACK) build 
+install: ## Initial setup
+	$(STACK) build
 	# $(BUNDLER) install
 	$(NPM) install
 
-uninstall: ## Clear setup files 
+uninstall: ## Clear setup files
 	rm -r ./.gem ./node_modules
 
 jslint: ## Lint
@@ -20,6 +20,10 @@ sanitytests: ## Sanity test
 
 jstest: ## js test
 	$(NPM) run test
+
+build_site: ## Build the site
+	$(STACK) build
+	$(HAKYLL) rebuild
 
 serve: ## Start test server
 	$(HAKYLL) build

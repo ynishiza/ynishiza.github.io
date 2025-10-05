@@ -8,7 +8,8 @@ import Text.Pandoc.Options
 config :: Configuration
 config =
   defaultConfiguration
-    { providerDirectory = "pages/"
+    { providerDirectory = "pages/",
+      destinationDirectory = "docs/"
     }
 
 pandocOptions :: ReaderOptions

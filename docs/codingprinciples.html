@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Yui's page - codingprinciples</title>
+        <link rel="stylesheet" href="./css/default.css" />
+        <link rel="stylesheet" href="./css/minima.css" />
+        <link rel="stylesheet" href="./css/site.css" />
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="./">Yui's page</a>
+            </div>
+            <nav>
+                <a href="./about.html">About</a>
+            </nav>
+        </header>
+
+        <main role="main">
+            <blockquote>
+<p>“I’m a huge proponent of designing your code around the data, rather the other way around. […] Bad programmers worry about the code. Good programmers worry about the data structures and their relationships” Linus Torvalds</p>
+</blockquote>
+<ul>
+<li><p>Coding is 90% <strong>design</strong>, 10% <strong>code</strong>: writing code is the easy part, design (designing data structures, interfaces, relationships, language, etc) the hard.<br />
+As long as the design is good, code can be fixed and needs to be fixable as many times as needed, as the program evolves.<br />
+On the other hand, all the perfect code in the world still cannot save the smallest speck of a bad design. On the contrary, it often only grows worse as more code is written.</p></li>
+<li><p>Code is a <strong>language</strong>: it consists of a set of basic <em>elements</em> (i.e. the terms of the language, such as the keywords, primitive types, functions, classes, etc), and a <em>combination</em> of these elements (i.e. the phrases of the language according to its grammar, such as expressions, patterns, repetitions, etc).<br />
+Code has a dual, often conflicting, audience: it needs to serve both <em>humans</em> and <em>machines</em>. Humans to read, write, maintain, etc code, and machines to process code.<br />
+Thus code is a constant tension between serving <em>human requirements</em> vs <em>machine requirements</em>.<br />
+e.g. whether to prioritize code semantics (human) over performance (machine).<br />
+But in general, favor <strong>human &gt; machine</strong>: machine problems are often easier to fix and can be fixed systematically.<br />
+e.g. performance problems can be fixed by a more powerful machine, but spaghetti code cannot.<br />
+Also, as long as it is humans writing the code, what is bad for humans often end up causing more harm than good for the machine as well in the end, if not immediate.<br />
+</p>
+<ul>
+<li>corollary: <strong>semantics (human)</strong> &gt; <strong>performance (machine)</strong>:</li>
+<li><strong>non-readable-code-principles</strong>: more <em>abstraction</em> (e.g. functions, classes, etc) is not unconditionally good, may be worse than no abstraction in some cases.
+That is, it depends.<br />
+e.g. higher complexity, inconsistent abstraction, premature abstraction, abstraction leakage, etc.</li>
+<li><strong>non-DRY</strong>: <em>repetition</em> (aka duplication, replication, redundancy, etc) is not unconditionally bad, may be good in some cases.
+That is, it depends.<br />
+Indeed, <em>patterns</em> are a form of repetition.</li>
+</ul></li>
+<li><p><strong>data structure</strong> &gt; <strong>interface</strong> &gt; code<br />
+Data structure is <em>fixed</em>, hence essential and expensive to change. Code, on the other hand, is more incidental i.e. there are often multiple ways of achieving the same result and the choice isn’t critical.<br />
+Indeed, we need to write code <em>against</em> the data structure, but not vice versa.<br />
+And we can change the code without changing the data structure, but not vice versa.<br />
+<a href="https://lwn.net/Articles/193245/">Linus Torvalds: “Bad programmers worry about the code. Good programmers worry about the data structures and their relationships”</a></p></li>
+<li><p><strong>YAGNI</strong> (You Aint Gonna Need IT)</p></li>
+<li><p>coherent code and logic &gt; distinct originality and cleverness</p></li>
+<li><p><a href="https://peps.python.org/pep-0020/">The Zen of Python</a></p></li>
+</ul>
+<pre><code>Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!</code></pre>
+        </main>
+
+        <footer>
+          <ul class="info-list">
+            <li><a class="u-email" href="mailto:yui.nishizawa@gmail.com">yui.nishizawa@gmail.com</a></li>
+            <li><a href="https://github.com/ynishiza" target="_blank"><svg class="svg-icon"><use xlink:href="/css/minima-social-icons.svg#github"></use></svg></a></li>
+          </ul>
+
+          <div class="hakyll">
+            Site generated by
+            <a href="http://jaspervdj.be/hakyll" target="_blank">Hakyll</a>
+          </div>
+        </footer>
+    </body>
+</html>
