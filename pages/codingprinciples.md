@@ -1,8 +1,9 @@
-> “I'm a huge proponent of designing your code around the data, rather the other way around. [...] Bad programmers worry about the code. Good programmers worry about the data structures and their relationships”  Linus Torvalds
+> “I'm a huge proponent of designing your code around the data, rather the other way around. [...] Bad programmers worry about the code. Good programmers worry about the data structures and their relationships”<br>
+> Linus Torvalds
 
-* Coding is 90% **design**, 10% **code**: writing code is the easy part, design (designing data structures, interfaces, relationships, language, etc) the hard.\
-  As long as the design is good, code can be fixed and needs to be fixable as many times as needed, as the program evolves.\
-  On the other hand, all the perfect code in the world still cannot save the smallest speck of a bad design. On the contrary, it often only grows worse as more code is written.
+* Coding is 90% **model design**, 10% **code**: writing code is the easy part, model design (designing data structures, abstractions, interfaces, relationships, language, etc) the hard.\
+  As long as the model is good, code can be fixed and needs to be fixable as many times as needed, as the program evolves.\
+  On the other hand, all the perfect code in the world still cannot save the smallest speck of a bad model. On the contrary, it often only grows worse as more code is written.
 
 * Code is a **language**: it consists of a set of basic *elements* (i.e. the terms of the language, such as the keywords, primitive types, functions, classes, etc), and a *combination* of these elements (i.e. the phrases of the language according to its grammar, such as expressions, patterns, repetitions, etc).\
   Code has a dual, often conflicting, audience: it needs to serve both *humans* and *machines*. Humans to read, write, maintain, etc code, and machines to process code.\
@@ -30,26 +31,39 @@
 
 * coherent code and logic > distinct originality and cleverness
 
+----
+
 * [The Zen of Python](https://peps.python.org/pep-0020/)
 
-```
-Beautiful is better than ugly.
-Explicit is better than implicit.
-Simple is better than complex.
-Complex is better than complicated.
-Flat is better than nested.
-Sparse is better than dense.
-Readability counts.
-Special cases aren't special enough to break the rules.
-Although practicality beats purity.
-Errors should never pass silently.
-Unless explicitly silenced.
-In the face of ambiguity, refuse the temptation to guess.
-There should be one-- and preferably only one --obvious way to do it.
-Although that way may not be obvious at first unless you're Dutch.
-Now is better than never.
-Although never is often better than *right* now.
-If the implementation is hard to explain, it's a bad idea.
-If the implementation is easy to explain, it may be a good idea.
-Namespaces are one honking great idea -- let's do more of those!
-```
+> Beautiful is better than ugly.<br>
+> Explicit is better than implicit.<br>
+> Simple is better than complex.<br>
+> Complex is better than complicated.<br>
+> Flat is better than nested.<br>
+> Sparse is better than dense.<br>
+> Readability counts.<br>
+> Special cases aren't special enough to break the rules.<br>
+> Although practicality beats purity.<br>
+> Errors should never pass silently.<br>
+> Unless explicitly silenced.<br>
+> In the face of ambiguity, refuse the temptation to guess.<br>
+> There should be one-- and preferably only one --obvious way to do it.<br>
+> Although that way may not be obvious at first unless you're Dutch.<br>
+> Now is better than never.<br>
+> Although never is often better than *right* now.<br>
+> If the implementation is hard to explain, it's a bad idea.<br>
+> If the implementation is easy to explain, it may be a good idea.<br>
+> Namespaces are one honking great idea -- let's do more of those!<br>
+
+* [Rob Pike's 5 Rules of Programming](https://www.cs.unc.edu/~stotts/COMP590-059-f24/robsrules.html)
+
+> Rule 1. You can't tell where a program is going to spend its time. Bottlenecks occur in surprising places, so don't try to second guess and put in a speed hack until you've proven that's where the bottleneck is.
+>
+> Rule 2. Measure. Don't tune for speed until you've measured, and even then don't unless one part of the code overwhelms the rest.
+>
+> Rule 3. Fancy algorithms are slow when n is small, and n is usually small. Fancy algorithms have big constants. Until you know that n is frequently going to be big, don't get fancy. (Even if n does get big, use Rule 2 first.)
+>
+> Rule 4. Fancy algorithms are buggier than simple ones, and they're much harder to implement. Use simple algorithms as well as simple data structures.
+>
+> Rule 5. Data dominates. If you've chosen the right data structures and organized things well, the algorithms will almost always be self-evident. Data structures, not algorithms, are central to programming.
+
