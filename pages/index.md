@@ -1,6 +1,7 @@
 Content
 
 * [Coding principles](./codingprinciples.html)
+* [Complexity](./complexity.html)
 * [Notes](./notes.html)
 * [Fun:GOL](./gol2022.html)
 
