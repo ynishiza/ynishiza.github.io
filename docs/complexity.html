@@ -52,6 +52,59 @@ In turn, quality tests are possible only if the system is designed to be efficie
 <p>Furthermore, as the system evolves, it will inevitably also introduce <strong>technical debt</strong> i.e. accidental complexity.
 But resolving technical debt often requires refactoring the code or data model, without breaking the existing system.
 Thus, high quality tests are likewise critical here as well.</p>
+<h2 id="operation">Operation</h2>
+<p>Any non-trivial complex system, no matter how well designed, will encounter unexpected events and failures during operation.
+And as the system becomes more complex, there is an increase in both the possible modes of failure, and the potential impact severity of each failure.
+Thus, having a mechanism to monitor, detect (monitorability), and respond (observability, traceability, debuggability) is critical to managing complexity.</p>
+<p>However, these mechanisms in turn also increase system complexity.</p>
+<ul>
+<li><strong>convergence</strong>: a minimization of complexity towards simplicity. i.e. converging towards only the essential.</li>
+<li><strong>growth</strong>: an expansion of complexity towards a greater strength, such as by generalization.</li>
+</ul>
+<hr />
+<h3 id="rcf1925---the-twelve-networking-truths"><a href="https://datatracker.ietf.org/doc/html/rfc1925">RCF1925 - The Twelve Networking Truths</a></h3>
+<blockquote>
+<ol type="1">
+<li><p>It Has To Work.</p></li>
+<li><p>No matter how hard you push and no matter what the priority,
+you can’t increase the speed of light.</p>
+<p>(2a) (corollary). No matter how hard you try, you can’t make a
+baby in much less than 9 months. Trying to speed this up
+<em>might</em> make it slower, but it won’t make it happen any
+quicker.</p></li>
+<li><p>With sufficient thrust, pigs fly just fine. However, this is
+not necessarily a good idea. It is hard to be sure where they
+are going to land, and it could be dangerous sitting under them
+as they fly overhead.</p></li>
+<li><p>Some things in life can never be fully appreciated nor
+understood unless experienced firsthand. Some things in
+networking can never be fully understood by someone who neither
+builds commercial networking equipment nor runs an operational
+network.</p></li>
+<li><p>It is always possible to aglutenate multiple separate problems
+into a single complex interdependent solution. In most cases
+this is a bad idea.</p></li>
+<li><p>It is easier to move a problem around (for example, by moving
+the problem to a different part of the overall network
+architecture) than it is to solve it.</p>
+<p>(6a) (corollary). It is always possible to add another level of
+indirection.</p></li>
+<li><p>It is always something</p>
+<p>(7a) (corollary). Good, Fast, Cheap: Pick any two (you can’t
+have all three).</p></li>
+<li><p>It is more complicated than you think.</p></li>
+<li><p>For all resources, whatever it is, you need more.</p>
+<p>(9a) (corollary) Every networking problem always takes longer to
+solve than it seems like it should.</p></li>
+<li><p>One size never fits all.</p></li>
+<li><p>Every old idea will be proposed again with a different name and
+a different presentation, regardless of whether it works.</p>
+<p>(11a) (corollary). See rule 6a.</p></li>
+<li><p>In protocol design, perfection has been reached not when there
+is nothing left to add, but when there is nothing left to take
+away.</p></li>
+</ol>
+</blockquote>
         </main>
 
         <footer>

@@ -33,7 +33,7 @@
 
 ----
 
-* [The Zen of Python](https://peps.python.org/pep-0020/)
+### [The Zen of Python](https://peps.python.org/pep-0020/)
 
 > Beautiful is better than ugly.<br>
 > Explicit is better than implicit.<br>
@@ -55,7 +55,7 @@
 > If the implementation is easy to explain, it may be a good idea.<br>
 > Namespaces are one honking great idea -- let's do more of those!<br>
 
-* [Rob Pike's 5 Rules of Programming](https://www.cs.unc.edu/~stotts/COMP590-059-f24/robsrules.html)
+### [Rob Pike's 5 Rules of Programming](https://www.cs.unc.edu/~stotts/COMP590-059-f24/robsrules.html)
 
 > Rule 1. You can't tell where a program is going to spend its time. Bottlenecks occur in surprising places, so don't try to second guess and put in a speed hack until you've proven that's where the bottleneck is.
 >
@@ -66,4 +66,3 @@
 > Rule 4. Fancy algorithms are buggier than simple ones, and they're much harder to implement. Use simple algorithms as well as simple data structures.
 >
 > Rule 5. Data dominates. If you've chosen the right data structures and organized things well, the algorithms will almost always be self-evident. Data structures, not algorithms, are central to programming.
-
