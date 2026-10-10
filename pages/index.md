@@ -3,6 +3,7 @@ Content
 * [Coding principles](./codingprinciples.html)
 * [Complexity](./complexity.html)
 * [Notes](./notes.html)
+* [(OLD) Notes](./notes_old.html)
 * [Fun:GOL](./gol2022.html)
 
 <style>

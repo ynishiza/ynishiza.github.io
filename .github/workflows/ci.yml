@@ -44,6 +44,8 @@ jobs:
         uses: actions/checkout@v3
       - run: |
           ls ${{ github.workspace }}
+      - name: note link validate
+        run: make notes_validate
       # [2025/04] Disabled since Evernote links changed behavior
       # - name: sanitytests
         # run: bash ${{ github.workspace }}/sanitytests.sh
