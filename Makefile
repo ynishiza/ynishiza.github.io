@@ -2,6 +2,8 @@ STACK=stack
 HAKYLL=stack exec -- site
 NPM=npm
 
+NOTES_HOME=./data/notes
+
 default: help
 
 install: ## Initial setup
@@ -32,6 +34,12 @@ serve: ## Start test server
 clean: ## Clean cache
 	$(HAKYLL) clean
 	$(STACK) clean
+
+notes_convert: ## Convert the RTF notes to PDF
+	$(NOTES_HOME)/convertRTF.sh
+
+notes_validate: ## Validate the links to the notes
+	$(NOTES_HOME)/validate_pdf_links.sh
 
 help: ## Display this help
 	@grep -E '^[0-9a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'

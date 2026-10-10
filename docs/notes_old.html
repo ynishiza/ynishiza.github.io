@@ -1,0 +1,729 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Yui's page - Notes</title>
+        <link rel="stylesheet" href="./css/default.css" />
+        <link rel="stylesheet" href="./css/minima.css" />
+        <link rel="stylesheet" href="./css/site.css" />
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="./">Yui's page</a>
+            </div>
+            <nav>
+                <a href="./about.html">About</a>
+            </nav>
+        </header>
+
+        <main role="main">
+            <h1 id="about">About</h1>
+<p>[<strong>NOTE: OUTDATED</strong>. These notes have not been updated since 2023 since I migrated away from EverNote to <a href="https://www.devontechnologies.com/apps/devonthink">DEVONthink</a>. A hacky tool used to cleanup the notes during migration: <a href="https://github.com/ynishiza/EvernoteToDEVONthinkMigration" class="uri">https://github.com/ynishiza/EvernoteToDEVONthinkMigration</a>]</p>
+<p>These are personal notes which I create when trying to learn something new
+i.e. as a method to determine the most natural place for a new thing among the existing things in my consciousness, in order that it may eventually merged with the rest.
+Typically, this involves identifying a structure in itself, so that it may be naturally related to and thus find an optimal fit among other existing structures in my consciousness.
+In short, it is like trying to determine the right place for a new puzzle piece (albeit the piece itself may be malleable).</p>
+<p>As a result, it can also be said conversely, that these notes in turn directly represent how knowledge is organized and appear to me in my consciousness.
+i.e. that these notes are a direct reflection of my mind.</p>
+<p>Hence, while it would of course be a pleasure if another being also discovers some utility in it, please note that these notes were not intended for that purpose.
+In particular, it does not necessarily correspond to the structuring of the same knowledge in another’s mind, or that it is in an optimal form for another nor another usage.</p>
+<h1 id="contents">Contents</h1>
+<ol type="1">
+<li><a href="#concepts">Concepts</a></li>
+<li><a href="#vim">Vim</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#unix-based-system">Unix-based system</a></li>
+<li><a href="#programming">Programming</a></li>
+<li><a href="#studies">Studies</a></li>
+</ol>
+<hr />
+<h1 id="concepts">Concepts</h1>
+<ul>
+<li><a href="https://www.evernote.com/l/ALnCqXCE9KpIuqWUrm-939fEhUJxQlLAGHs">Binary</a> <!--PAGETEST:Binary--></li>
+<li><a href="https://www.evernote.com/l/ALkg-s6E53dOj4-m6j8spohbYlGpH9HX5T8">IPC</a> <!--PAGETEST: IPC--></li>
+<li><a href="https://www.evernote.com/l/ALnh3gNNrRJGk5-YbxwtSWSR9tdUvY_SFmc">ASCII</a> <!--PAGETEST: ASCII--></li>
+<li><a href="https://www.evernote.com/l/ALmUrbJ2-VxDhJzPwWjmjPqQQydTIB_JsnA">Unicode</a> <!--PAGETEST: Unicode--></li>
+<li><a href="https://www.evernote.com/l/ALlRojiOM_BO3rcHH9TPG4VjdEG7bPLH-kI">Time, Timezones</a> <!--PAGETEST: Time, Timezones--></li>
+<li><a href="https://www.evernote.com/l/ALn6_Dfy_0ZPA7xyjVaD3lNA5Q_eeSgCIag">UUID</a> <!--PAGETEST: UUID--></li>
+<li><a href="https://www.evernote.com/l/ALk5hbj4olVAY4mzImymOMR51d2Iv0cPcMw">syslog</a> <!--PAGETEST: syslog--></li>
+<li>…</li>
+</ul>
+<h2 id="database">Database</h2>
+<ul>
+<li><a href="https://www.evernote.com/l/ALluyTgp1cZP5ZW6mx5Y1OKBe-zSsXdlHFY">General</a> <!--PAGETEST: general--></li>
+<li><a href="https://www.evernote.com/l/ALkbJaNChU1DEZkjuaBuRt8Y0U5mgtvwXGk">Database types</a> <!--PAGETEST: types--></li>
+<li><a href="https://www.evernote.com/l/ALmEp2FBeTJDgYHS8Y0__-6uBjCrSY5iXwo">Mismatches</a> <!--PAGETEST: mismatch--></li>
+</ul>
+<h1 id="distributed-systems">Distributed Systems</h1>
+<ul>
+<li><a href="https://www.evernote.com/l/ALmai9VJyv5LLoALGx_shbEJAFz8qYuATlU">General</a> <!--PAGETEST: distributed sys--></li>
+<li><a href="https://www.evernote.com/l/ALkOfJE2m99DU4_kyTDrDcNQ6Nhwrb2Krac">CAP theorem</a> <!--PAGETEST: CAP--></li>
+<li><a href="https://www.evernote.com/l/ALnzyBSEWqJDdbkRZq05clbW1J_hC4yrAKQ">Consistency</a> <!--PAGETEST: consistency--></li>
+</ul>
+<h2 id="http">HTTP</h2>
+<ul>
+<li><a href="https://www.evernote.com/l/ALmSc8A97g5Jh6lC3oGKLKiXUJyPQM4YPTo">General</a> <!--PAGETEST: General--></li>
+<li><a href="https://www.evernote.com/l/ALnqHLzRspBP_pBqhAxywRmIGSSaUTGJ5wQ">Authentication</a> <!--PAGETEST: Authentication--></li>
+<li><a href="https://www.evernote.com/l/ALkzE4thJ15HbZ83LC3zf6d2-1FdfQ2pLkg">Basic Authentication</a> <!--PAGETEST: Basic Authentication--></li>
+<li><a href="https://www.evernote.com/l/ALnhA4z9SxJC4b9cop58LxKraI6_-esK1TI">HTTP Cache</a> <!--PAGETEST: HTTP Cache--></li>
+<li><a href="https://www.evernote.com/l/ALmi0m0k9UhKJ7ZwsT-X67j9D_8a9AnNZas">Cookie</a> <!--PAGETEST: Cookie--></li>
+<li><a href="https://www.evernote.com/l/ALmEAEh-LxtF0rtBVXZQ_OEj2U0Q2jE4pR8">Security - Same Origin Policy (SOP)</a> <!--PAGETEST: Same Origin Policy (SOP)--></li>
+<li><a href="https://www.evernote.com/l/ALkLgn2ufXFOIqKw6Mnin0ja_sxGMZq7_6U">Security - Cross Origin Resource Sharing (CORS)</a> <!--PAGETEST: Cross Origin Resource Sharing (CORS)--></li>
+<li><a href="https://www.evernote.com/l/ALmQOXU9LI9F8Jk6TUHRvwhjhLKZsIumO3o">Security - Content Security Policy (CSP)</a> <!--PAGETEST: Content Security Policy (CSP)--></li>
+<li><a href="https://www.evernote.com/l/ALnds1gQdtJEsZPgfur4MXXba2hpE0VJpNk">Security - HTTP Strict Transport Security (HSTS)</a> <!--PAGETEST: HTTP Strict Transport Security (HSTS)--></li>
+<li><a href="https://www.evernote.com/l/ALkuOScGAVVBGachrSCG8PH4h3z6IwoznlI">Websockets</a> <!--PAGETEST: Websockets--></li>
+</ul>
+<h2 id="machine">Machine</h2>
+<ul>
+<li><a href="https://www.evernote.com/l/ALlmOuAeMShNDKA6pxuMfv0C73Hv56TkCSQ">Application Binary Interface (ABI)</a> <!--PAGETEST: ABI--></li>
+<li><a href="https://www.evernote.com/l/ALkvROSnVkRM6p7SBL5LKmsqqH3O_tNbTL4">Architecture</a> <!--PAGETEST: Architec--></li>
+<li><a href="https://www.evernote.com/l/ALmnoUFipElOn5eDSUF7dJXCF41cSHodFgY">Machine code</a> <!--PAGETEST: Machine code--></li>
+</ul>
+<h2 id="network">Network</h2>
+<ul>
+<li><a href="https://www.evernote.com/l/ALkhAKoPveBEe43vCW5Uu-CqqFsO9c6wxqs">URI</a> <!--PAGETEST: URI--></li>
+<li><a href="https://www.evernote.com/l/ALlzJRLjZq1E8JCh6XrO2o9aZ-7hbfa7YNc">Network layers</a> <!--PAGETEST: Network Layers--></li>
+<li><a href="https://www.evernote.com/l/ALkMfhIJmitC4qp5RnikMRY8Wttn4SKVGqM">IP - routing</a> <!--PAGETEST: routing--></li>
+<li><a href="https://www.evernote.com/l/ALmsavygXtJIQqz0Em7BpJGVn35oTzP13nY">IPv4</a> <!--PAGETEST: IPv4--></li>
+<li><a href="https://www.evernote.com/l/ALl-hsGhQNZL6JZI-pIKZMkqWWwq9yfFQ_Y">IPv4 - address</a> <!--PAGETEST: address--></li>
+<li><a href="https://www.evernote.com/l/ALll8msFeBhGQqAUI07sqonHrjVhMGuEwYQ">IPv4 - CIDR</a> <!--PAGETEST: CIDR--></li>
+<li><a href="https://www.evernote.com/l/ALmccaNDNFVLoJaUlC1PWONvm4r5B0cRZAk">IPv4 - NAT</a> <!--PAGETEST: NAT--></li>
+<li><a href="https://www.evernote.com/l/ALmPaniAn9lKrYFNodVsen6_JH34NKdPp6I">IPv6</a> <!--PAGETEST: IPv6--></li>
+<li><a href="https://www.evernote.com/l/ALln4ZKcp85CKrvKae6-9unh3FEd_r0GyAU">IPv6 - address</a> <!--PAGETEST: address--></li>
+<li><a href="https://www.evernote.com/l/ALmH9ZfT6vtJO4z1nVmU0hMTrrzW3i8UacM">IPv6 - Neighborhood Discovery Protocol (NDP)</a> <!--PAGETEST: Neighborhood Discovery Protocol (NDP)--></li>
+<li><a href="https://www.evernote.com/l/ALnM76DOaUtOh4VIrIunGCY3XZ0yq5LsQxU">TCP</a> <!--PAGETEST: TCP--></li>
+<li><a href="https://www.evernote.com/l/ALk3G2JQ1VhKlYQMJUET7whD8vY7bf6vw8o">UDP</a> <!--PAGETEST: UDP--></li>
+<li><a href="https://www.evernote.com/l/ALmPsxa3fQNCCJAnAf2pBIEZM4lCzbCN4Us">DNS</a> <!--PAGETEST: DNS--></li>
+<li><a href="https://www.evernote.com/l/ALlEpFKB6wBNQLC5fXf_J3DiIMjpXHK4SkE">DNS - domain name space</a> <!--PAGETEST: domain name space--></li>
+<li><a href="https://www.evernote.com/l/ALmljrl8XRxEw4-pgjtxccdV1yfIwJNWCc0">DNS - DNSSEC</a> <!--PAGETEST: DNSSEC--></li>
+<li><a href="https://www.evernote.com/l/ALnkoRBddmRLdam7hYdFP8kTSoN8KaoFtMc">DNS - servers</a> <!--PAGETEST: servers--></li>
+<li><a href="https://www.evernote.com/l/ALnqCXI8QyFPNZYt7ug3LClp9mXQTtSCb_k">ARP</a> <!--PAGETEST: ARP--></li>
+<li><a href="https://www.evernote.com/l/ALl24YLXcqhEgK_4jbqjBduMLeNSUPEaoh0">DHCP</a> <!--PAGETEST: DHCP--></li>
+<li><a href="https://www.evernote.com/l/ALlTD-ibFitILYoucMGU9jNN3w6FBm1y2R8">ICMP</a> <!--PAGETEST: ICMP--></li>
+<li><a href="https://www.evernote.com/l/ALmNAvcsYwRMtr1tmgWJL1VWRTPnbU4IDwk">SOCK</a> <!--PAGETEST: SOCK--></li>
+<li><a href="https://www.evernote.com/l/ALnLPtfj4JRKP53gEWKLVmaGL-mECjDJPCg">Packet Analysis</a> <!--PAGETEST: Packet analysis--></li>
+<li>…</li>
+</ul>
+<h2 id="programming-concepts">Programming concepts</h2>
+<ul>
+<li><a href="https://www.evernote.com/l/ALkXIG5jF-BMGZhGSD1hghHBZymBSh3p4CM">Algebraic effects</a> <!--PAGETEST: Algebraic effects--></li>
+<li><a href="https://www.evernote.com/l/ALlWpHtiw7pAl4WvyiEG0iBe26FU_l0rvmI">Concurrent programming</a> <!--PAGETEST: Concurrent programming--></li>
+<li><a href="https://www.evernote.com/l/ALkNkSv7-qlDObNYJwiiRZUbSjp8KH7SEZk">Continuation</a> <!--PAGETEST: continuation--></li>
+<li><a href="https://www.evernote.com/l/ALmDUJryEBNBtpg8n7qm-d3raBISeX0sBOQ">Paradigms</a> <!--PAGETEST: Paradigms--></li>
+<li><a href="https://www.evernote.com/l/ALkEf4BCfSRCzbSC6863oIdfUVoGjHaWl_0">Principles and patterns</a> <!--PAGETEST: Principles and Patterns--></li>
+<li><a href="https://www.evernote.com/l/ALlArFgZEdlJ8pizhOWcRq9_YzvKlSflShI">Program execution</a> <!--PAGETEST: execution--></li>
+<li><a href="https://www.evernote.com/l/ALlhkplE_aRHOobl3h9t9_pTHInTorkT-7M">Programming language theory</a> <!--PAGETEST: theory--></li>
+<li><a href="https://www.evernote.com/l/ALnFF0Jfp-dITpIsl17FmFMzNYRj-QuDfwY">Programming languages - grammar</a> <!--PAGETEST: grammar--></li>
+<li><a href="https://www.evernote.com/l/ALnA9Hgj8uhIc4MnOWkfNvFOmu6ohsfHUKc">Programming languages - parsing</a> <!--PAGETEST: parsing--></li>
+<li><a href="https://www.evernote.com/l/ALn7g2l-mKJFc5dClO_MROaEBcBmxe4JWS8">Type system</a> <!--PAGETEST: Type system--></li>
+</ul>
+<h2 id="security">Security</h2>
+<ul>
+<li><a href="https://www.evernote.com/l/ALk23gotFmFOXbWtYOg4gD5UrhAzzX7K4XI">Basics</a> <!--PAGETEST: Cryptography--></li>
+<li><a href="https://www.evernote.com/l/ALn-HZbhPONI5YhQKcjDLZgOZxfiS2OakTE">Public-Key Cryptography Standards (PKCS)</a> <!--PAGETEST: PKCS --></li>
+<li><a href="https://www.evernote.com/l/ALnVCrIkKT1BeKosb3gj33v1OdXGBY70QhM">Diffie-Hellman</a> <!--PAGETEST: Diffie-Hellman--></li>
+<li><a href="https://www.evernote.com/l/ALnNfjR-whBMFpAADYUPiYcx6EM8CDC0RWQ">X.509 + PKIX</a> <!--PAGETEST: X.509 --></li>
+<li><a href="https://www.evernote.com/l/ALmJuOMXC-pNHpD2MH6vr05urIfZVbHoc-M">RSA</a> <!--PAGETEST: RSA--></li>
+<li><a href="https://www.evernote.com/l/ALmiB2Gw6QlIyYGDGbQIzWzlxB9ec5FHYeQ">DSA</a> <!--PAGETEST: DSA--></li>
+<li><a href="https://www.evernote.com/l/ALm75cWIzgxF_LsJ3m-CYVsR3FDlFLk_9nQ">Elgamal</a> <!--PAGETEST: Elgamal--></li>
+<li><a href="https://www.evernote.com/l/ALnFTpgXcVJIOZqMM8d59a6IrlJDUZIfmiQ">ASN1 (X.680,X.690)</a> <!--PAGETEST: ASN1 --></li>
+<li><a href="https://www.evernote.com/l/ALmO5nuFk9JHA7ExI39qAX6kYyE700zZPP0">Message Authenticaion Code (MAC, HMAC)</a> <!--PAGETEST: MAC--></li>
+<li><a href="https://www.evernote.com/l/ALk_v1yTDehISLp-90xLlNz6nrcUBFHnD9Q">OpenPGP</a> <!--PAGETEST: OpenPGP--></li>
+<li>…</li>
+</ul>
+<h2 id="web">Web</h2>
+<ul>
+<li><a href="https://www.evernote.com/l/ALktpZtDOGtGZoqRvQbK646ZEOnuDujlxPw">JSON Web Token (JWT)</a> <!--PAGETEST: JSON Web Token (JWT)--></li>
+<li><a href="https://www.evernote.com/l/ALmlXbiW-CVF1KLqIZ-ysjFj8HSqIniDuTY">OAuth</a> <!--PAGETEST: OAuth--></li>
+<li><a href="https://www.evernote.com/l/ALllCUTiPxhI1I39_-ToOJL1kkYs4BQu9vI">OpenID</a> <!--PAGETEST: OpenID--></li>
+</ul>
+<h2 id="notesthoughts">Notes/thoughts</h2>
+<ul>
+<li><a href="https://www.evernote.com/l/ALk8aeD48vpJwLyE-VCU4yjJ5ZOKyrcSIak">logging</a> <!--PAGETEST: logging--></li>
+<li><a href="https://www.evernote.com/l/ALnSez7fJSlDcLdE3AodPxHyEVzbKQj21CQ">protocol design</a> <!--PAGETEST: protocol design--></li>
+<li><a href="https://www.evernote.com/l/ALn-8E28lstMUaciFphaQdCkyWWJKjp-K6M">rate limiting</a> <!--PAGETEST: rate limiting--></li>
+<li>…</li>
+</ul>
+<p>…</p>
+<p><a href="#contents">Top</a></p>
+<hr />
+<h1 id="vim">Vim</h1>
+<ul>
+<li><a href="https://www.evernote.com/l/ALndqCq3p9xGA5n1LK-w75hq_PRNGyEdnEM">Basics</a> <!--PAGETEST: basics--></li>
+<li><a href="https://www.evernote.com/l/ALkjnFvZWxREsbaB78TsXXmFEde5-n-cIX8">Basics - buffers</a> <!--PAGETEST: buffers--></li>
+<li><a href="https://www.evernote.com/l/ALlwQ9osUq1GYpSEAVnix-0LA9BWv4kWqF8">Basics - commands</a> <!--PAGETEST: commands--></li>
+<li><a href="https://www.evernote.com/l/ALlseQuiBHtCmpQTrmq3Nrfr1Ll5-7a91Qo">Basics - file type and syntax</a> <!--PAGETEST: file type and syntax--></li>
+<li><a href="https://www.evernote.com/l/ALmAublUK1BAz5EN7jGs_ns7360s5w_9Rng">Basics - functions</a> <!--PAGETEST: functions--></li>
+<li><a href="https://www.evernote.com/l/ALnm05XMxZNGepaLHaZMsikUVb56PQyyHTY">Basics - options</a> <!--PAGETEST: options--></li>
+<li><a href="https://www.evernote.com/l/ALl8mG9UjohOfKcmaEY38HvQxLTnuJT50Pw">Basics - ranges</a> <!--PAGETEST: ranges--></li>
+<li><a href="https://www.evernote.com/l/ALllo8E8H8FHvJUP9Rw9OVJOKSAukfeWbeg">Basics - search &amp; replace</a> <!--PAGETEST: search --></li>
+<li><a href="https://www.evernote.com/l/ALlPE-o7cppIO5SvkR2-NNj0CR9ExGVxNnc">Basics - special characters</a> <!--PAGETEST: special characters--></li>
+<li><a href="https://www.evernote.com/l/ALkEdVnjkfpHXpCUm36FC8a2L1_-Hn_5hsY">mode - insert</a> <!--PAGETEST: insert--></li>
+<li><a href="https://www.evernote.com/l/ALnLcVseI15MnZb2mB1ASjn_q0B8hCo6Vig">mode - commandline</a> <!--PAGETEST: commandline--></li>
+<li><a href="https://www.evernote.com/l/ALlptfff-_pMpaelldCTqWjM7G5qVn8b5z4">mode - visual</a> <!--PAGETEST: visual--></li>
+<li><a href="https://www.evernote.com/l/ALkDP5y339lC26QoDz6R6Ld_d6kHp0oF-yQ">feature - basics</a> <!--PAGETEST: feature--></li>
+<li><a href="https://www.evernote.com/l/ALlYqM7qd4pHmYLS8J_nibX2ANdUYXMQdvo">feature - completion</a> <!--PAGETEST: completion--></li>
+<li><a href="https://www.evernote.com/l/ALle4Fr8vEJAcpElmA0IvWaticeT_QtMAtY">feature - fold</a> <!--PAGETEST: fold--></li>
+<li><a href="https://www.evernote.com/l/ALk90ByFCJlPvK-bqTyzceuI_4wKxSS-lf8">feature - map</a> <!--PAGETEST: map--></li>
+<li><a href="https://www.evernote.com/l/ALkpYvdA5Z5EmLKdmV2Jr3fEQwVDW-8xBhs">feature - marks</a> <!--PAGETEST: marks--></li>
+<li><a href="https://www.evernote.com/l/ALn_iY7Wcs5LFYeQ4W1S18Upvqx33PgpFFs">feature - registers</a> <!--PAGETEST: registers--></li>
+<li><a href="https://www.evernote.com/l/ALnt_osHWZJN5LIoJG_eY8DWgK4P5myNAKs">feature - repeats (macros)</a> <!--PAGETEST: repeats (macros)--></li>
+<li><a href="https://www.evernote.com/l/ALnj1dhg-ShDbpIvWBaxAIaDuPlNqX7Q9a0">vimscript</a> <!--PAGETEST: vimscript--></li>
+<li><a href="https://www.evernote.com/l/ALkBmrbDF_pB3YxpHJcKdlxESB5bQ2wImtg">tricks - editing</a> <!--PAGETEST: editing--></li>
+<li><a href="https://www.evernote.com/l/ALnV7zMW2SNNYKBD3bG-nsMJqNZOOY48C7Q">tricks - editor + settings</a> <!--PAGETEST: editor + settings--></li>
+<li><a href="https://www.evernote.com/l/ALmkC4mYKn1DC4WJKAUOOtf_uUTRSCRu17s">tricks - vimscript</a> <!--PAGETEST: vimscript--></li>
+</ul>
+<h2 id="neovim">Neovim</h2>
+<ul>
+<li><a href="https://www.evernote.com/l/ALmN2i38e0JHt5yKNcubryrRsQGIDG6YvVo">neovim - basic</a> <!--PAGETEST: neovim--></li>
+<li><a href="https://www.evernote.com/l/ALkhIf8ZV6RJ94F8C8pzZRSTTQvi5e2Iv6s">neovim - LSP</a> <!--PAGETEST: LSP--></li>
+<li><a href="https://www.evernote.com/l/ALlQr32UH11DRqJrSqJ5SImsJ3IZFeq0v9k">neovim - LSP language servers</a> <!--PAGETEST: server--></li>
+<li><a href="https://www.evernote.com/l/ALl26n5ERa1E86lxC8AubPwDfELuSP8-meE">neovim - LSP usage</a> <!--PAGETEST: LSP usage--></li>
+<li><a href="https://www.evernote.com/l/ALn9s-qr_t5OMZEhvPqhfvGfzEaqHNe_Su8">tricks</a> <!--PAGETEST: tricks --></li>
+</ul>
+<p><a href="#contents">Top</a></p>
+<hr />
+<h1 id="tools">Tools</h1>
+<h2 id="ansible">Ansible</h2>
+<ul>
+<li><a href="https://www.evernote.com/l/ALmML_keR95LeI77BeK1p0KSyMv0p36ULcM">Notes</a> <!--PAGETEST: Notes--></li>
+<li><a href="https://www.evernote.com/l/ALkOVoO6LCpCa60wAzZSM1aOCKf3m2hpTlk">Basics</a> <!--PAGETEST: Ansible--></li>
+<li><a href="https://www.evernote.com/l/ALnQ-D4-UYdBobWcCN8d-Fv7ZuhsGG0ZvIA">Basics - roles</a> <!--PAGETEST: roles--></li>
+<li><a href="https://www.evernote.com/l/ALlC2KKelcxDIZJ3PbkDgCJhrzKqLAQ-ibs">Basics - hosts</a> <!--PAGETEST: hosts--></li>
+<li><a href="https://www.evernote.com/l/ALkdEWIRsWdHIYY1x66oI2SMKeAEpO8HSgo">Basics - variables</a> <!--PAGETEST: variables--></li>
+<li><a href="https://www.evernote.com/l/ALmSjqb9fMVB3rPvF6dvzhSXN6MxgzM8Zr4">Basics - special variables + facts</a> <!--PAGETEST: special variables + facts--></li>
+<li><a href="https://www.evernote.com/l/ALmvc39j-jdPAJz2Pb8V3UbTY9UTIevkwhc">Basics - Jinja</a> <!--PAGETEST: Jinja--></li>
+<li><a href="https://www.evernote.com/l/ALljWz2InedAA5Pghhh9HN3AaKMU-Hauwu0">Modules</a> <!--PAGETEST: Modules--></li>
+<li><a href="https://www.evernote.com/l/ALkyeS76O9dMrrh8xYKRpJy9GzWiyRTaDrU">Tricks</a> <!--PAGETEST: Tricks--></li>
+</ul>
+<h2 id="docker">Docker</h2>
+<ul>
+<li><a href="https://www.evernote.com/l/ALndczHp1i5B87GOEWhsrcQZiwumciIhwig">Notes</a> <!--PAGETEST: Notes--></li>
+<li><a href="https://www.evernote.com/l/ALkecJ32VBNDXay_-1D9R2LZN5tptLLea1E">CLI</a> <!--PAGETEST: CLI--></li>
+<li><a href="https://www.evernote.com/l/ALlVxLq146VBp4gWh9CVETIjxsG82Ti6Fb4">Registry</a> <!--PAGETEST: Registry--></li>
+<li><a href="https://www.evernote.com/l/ALlXk6Bc2hJDZZ4gOZ1XlKNagF8JPD2mJQs">Usage + troubleshooting</a> <!--PAGETEST: troubleshooting--></li>
+</ul>
+<h2 id="elasticsearch">Elasticsearch</h2>
+<ul>
+<li><a href="https://www.evernote.com/l/ALnqb3wQojFBXI7eN7Yy5_swS8kPWstiOYI">Notes</a> <!--PAGETEST: Notes--></li>
+<li><a href="https://www.evernote.com/l/ALnc8iAA1iJI86nXOxe77CBum4d2qBfTBDY">API</a> <!--PAGETEST: API--></li>
+<li><a href="https://www.evernote.com/l/ALkGR0p1l-ZA2baRE9ywBNIuT6BCiIak--g">queries</a> <!--PAGETEST: queries--></li>
+</ul>
+<h2 id="git">git</h2>
+<ul>
+<li><a href="https://www.evernote.com/l/ALnYJmT9LIhGYIYHTzyl1nTjNWiw4p2yoVk">Notes</a> <!--PAGETEST: Notes--></li>
+<li><a href="https://www.evernote.com/l/ALmZH-3S-r5LG7MRq12wCrvWSFgX1b7oqMo">CLI</a> <!--PAGETEST: CLI--></li>
+<li><a href="https://www.evernote.com/l/ALlPBBLf1xxIIYaBKBYlA1Jc1U9-LeGBhAc">refs</a> <!--PAGETEST: refs--></li>
+<li><a href="https://www.evernote.com/l/ALkg6rFwpPRIqpjWjQFeEoX65rNBEcBcD8M">config</a> <!--PAGETEST: config--></li>
+<li><a href="https://www.evernote.com/l/ALl8DZO6GZFOJIRViREQP3cC1SVCM8hZf6c">plumbing</a> <!--PAGETEST: plumbing--></li>
+<li><a href="https://www.evernote.com/l/ALm2S_OyQDtBwpC6qbdxnasgobVcZP2DS_I">idioms</a> <!--PAGETEST: idioms--></li>
+<li><a href="https://www.evernote.com/l/ALk5_4hHkehDFp8zBtRe9MEQUofcVjgRxEE">troubleshooting</a> <!--PAGETEST: troubleshooting--></li>
+</ul>
+<h2 id="gpg">gpg</h2>
+<ul>
+<li><a href="https://www.evernote.com/l/ALndLmrAChpNupAsf38BB1zG30RkIAByFuY">Basics</a> <!--PAGETEST: gpg--></li>
+<li><a href="https://www.evernote.com/l/ALkGahcei9dD64O5kJAeq9SlOWT4t47MarI">Basics - Key Management</a> <!--PAGETEST: Key Management--></li>
+<li><a href="https://www.evernote.com/l/ALnZMkuNrPRCqrfteHK7Td0y5JsWjUF_qlM">Usage</a> <!--PAGETEST: Usage--></li>
+<li><a href="https://www.evernote.com/l/ALk0ihanQy9Ct6KDkQFNx-LUPnyXEagiQtI">Configuration</a> <!--PAGETEST: Configuration--></li>
+<li><a href="https://www.evernote.com/l/ALk-fT25mUpPNp-q28b9MGhenJb4V3MV5kc">gpgconf</a> <!--PAGETEST: gpgconf--></li>
+<li><a href="https://www.evernote.com/l/ALk9IgA5IrVPiq5e5C6TYxb_4NxJ5vklNII">gpg-agent</a> <!--PAGETEST: gpg-agent--></li>
+<li><a href="https://www.evernote.com/l/ALlGdz0dvXhEbqwQdD-YP1wgfp93MqAbklk">dirmngr</a> <!--PAGETEST: dirmngr--></li>
+</ul>
+<h2 id="jenkins">Jenkins</h2>
+<ul>
+<li><a href="https://www.evernote.com/l/ALn6MOZBB1hIu4eFvwbdVEd6hpTKx_lQlCA">Notes</a> <!--PAGETEST: notes--></li>
+<li><a href="https://www.evernote.com/l/ALmkHUxyiU9KppohVVxRZKTErACnjc-TKP0">Basics</a> <!--PAGETEST: pipeline--></li>
+<li><a href="https://www.evernote.com/l/ALl4mWCuu9tJaKhbcweEtQNEojYWqQSLkn0">Basics - steps</a> <!--PAGETEST: steps--></li>
+<li><a href="https://www.evernote.com/l/ALlBWV7l325IPLoRymGkL8pFmaQpmnldeWo">Tricks</a> <!--PAGETEST: tricks--></li>
+</ul>
+<h2 id="texlatex">TeX/LaTeX</h2>
+<ul>
+<li><a href="https://www.evernote.com/l/ALmhp1qgXd9OjZ1Ashxa9-oGhidmejdTzP0">Notes</a> <!--PAGETEST: notes.*latex--></li>
+<li><a href="https://www.evernote.com/l/ALl56WJnKKdJFKWLGSDL2bKd56fjZzlS38o">Basics</a> <!--PAGETEST: latex--></li>
+<li><a href="https://www.evernote.com/l/ALnCKDeU8I5DToZjJhXj7WxuO1xilWH05CI">Packages</a> <!--PAGETEST: latex.*packages--></li>
+<li><a href="https://www.evernote.com/l/ALm1tAA8PZ5CuZQgNgOe1KQMtzxTr8hAbeY">tricks</a> <!--PAGETEST: latex.*tricks--></li>
+</ul>
+<h2 id="macos">macOS</h2>
+<ul>
+<li><a href="https://www.evernote.com/l/ALkz0UpiILpCObgtAjSL1kqq6bi72I10Fa8">Usage + troubleshooting</a> <!--PAGETEST: usage.*trouble--></li>
+<li><a href="https://www.evernote.com/l/ALllFcuT4npDK4PG52WKs2fZqBZD2xB5UmE">Homebrew: Basics</a> <!--PAGETEST: homebrew--></li>
+<li><a href="https://www.evernote.com/l/ALnBQpu7sW9COZzgy-YWMkzJfnPWJnsDhks">Homebrew: Tricks</a> <!--PAGETEST: tricks--></li>
+</ul>
+<h2 id="make">Make</h2>
+<ul>
+<li><a href="https://www.evernote.com/l/ALkPOLh1QjNKZawXxLAfvrgxAwrHRCW3qlc">Notes</a> <!--PAGETEST: make--></li>
+<li><a href="https://www.evernote.com/l/ALnbjG_G2qxJ56_LpRFtX7wgmWwrF2qVtxc">Basics</a> <!--PAGETEST: Cheatsheet: make--></li>
+<li><a href="https://www.evernote.com/l/ALn1qvP9kS1NcqWnX_-3bUnXSdAbIeH0FdM">Basics - variables</a> <!--PAGETEST: Cheatsheet: make var--></li>
+<li><a href="https://www.evernote.com/l/ALlNXCI00Y9GsqprTSJj8FBkae3zxynKrn8">Basics - functions</a> <!--PAGETEST: Cheatsheet: make func--></li>
+<li><a href="https://www.evernote.com/l/ALmyq38bEvNEXKPOL3FzU0esalfqjkGlr40">Basics - implicit rules</a> <!--PAGETEST: Cheatsheet: make implicit--></li>
+<li><a href="https://www.evernote.com/l/ALnnBabYafNC-bNEmeQK26_Q_hSLvluvnbY">Tricks</a> <!--PAGETEST: Tricks--></li>
+<li><a href="https://www.evernote.com/l/ALnMzzS9NiJLUIjQHTsWu0lakpM7x0wVbKY">Usage</a> <!--PAGETEST: Usage--></li>
+</ul>
+<h2 id="mongodb">MongoDB</h2>
+<ul>
+<li><a href="https://www.evernote.com/l/ALk4-GYVtyxNBpyqBvAgOcqfE8ZwDWgLSpI">Notes</a> <!--PAGETEST: Notes--></li>
+<li><a href="https://www.evernote.com/l/ALlJbNO_h4FJVYUjsrUpOv3jPI8e9dOQDp4">Basics</a> <!--PAGETEST: mongodb--></li>
+<li><a href="https://www.evernote.com/l/ALnWds_bn2lC1pSGxxAmbNzHMFHK6eFngM8">Basics - cursors</a> <!--PAGETEST: cursor--></li>
+<li><a href="https://www.evernote.com/l/ALmfVO3TkCFFJKJF0Ht2eChZP0WxsglyxFA">Basics - bulkWrite</a> <!--PAGETEST: bulkWrite--></li>
+<li><a href="https://www.evernote.com/l/ALn9yJdjj4JDA4zR8i9Tp3lt4GUzwplFP-I">Basics - operators</a> <!--PAGETEST: operators--></li>
+<li><a href="https://www.evernote.com/l/ALnueb8w139COISlctIAx_26OYtcq-uzA2E">Basics - operators - aggregation</a> <!--PAGETEST: operators - aggregation--></li>
+<li><a href="https://www.evernote.com/l/ALkMGgp8frVLlp3Rz6SbBLKzKd-_bagY8r4">Basics - operators - update</a> <!--PAGETEST: operators - update--></li>
+<li><a href="https://www.evernote.com/l/ALmIA5dp7FNBf4_knf4JfZiptkuE5I_Rm30">Basics - index</a> <!--PAGETEST: index--></li>
+<li><a href="https://www.evernote.com/l/ALkBevD9JBRLzLpZ0u1r-O7giLn-3RzWLvo">profiler</a> <!--PAGETEST: profiler--></li>
+<li><a href="https://www.evernote.com/l/ALkW_U5c5KVMa7laHnmPhpownFlQR1uR7ag">queryPlanner, executionStats</a> <!--PAGETEST: queryPlanner, executionStats--></li>
+<li><a href="https://www.evernote.com/l/ALlA4edzJg9F8LMUA-Yt2Q-9kjkZEbzt1Wc">tricks</a> <!--PAGETEST: tricks--></li>
+</ul>
+<h2 id="mysql">MySQL</h2>
+<ul>
+<li><a href="https://www.evernote.com/l/ALn2nmWwcKVHX75MDXMY2xysDypRoRpfYkg">Notes</a> <!--PAGETEST: Notes--></li>
+<li><a href="https://www.evernote.com/l/ALkew-EmaWdBhK_aRz1u-TjFms5zLaAlxTQ">Basics</a> <!--PAGETEST: MySQL--></li>
+<li><a href="https://www.evernote.com/l/ALnjAojexSxLJZCRlRUnr0R61sIXwtQTOYI">Tricks</a> <!--PAGETEST: Tricks--></li>
+</ul>
+<h2 id="rabbitmq">RabbitMQ</h2>
+<ul>
+<li><a href="https://www.evernote.com/l/ALn5o-rDw-tOhoyLljuGb0kbdyanya6qRFk">Notes</a> <!--PAGETEST: Notes--></li>
+</ul>
+<h2 id="redis">redis</h2>
+<ul>
+<li><a href="https://www.evernote.com/l/ALlqVXP4ByRO7oZJct0EJIgi_eaNi9Cz3oM">Notes</a> <!--PAGETEST: Notes--></li>
+<li><a href="https://www.evernote.com/l/ALlBJc1bdnBFFrFDPGVvRhkhlaISEU1xBFQ">Basics</a> <!--PAGETEST: Cheatsheet: redis--></li>
+</ul>
+<h2 id="snort">snort</h2>
+<ul>
+<li><a href="https://www.evernote.com/l/ALmgYLBMg5FPFaOb20j-S2nkEgI7Q07lctY">Basics</a> <!--PAGETEST: Cheatsheet: snort--></li>
+<li><a href="https://www.evernote.com/l/ALnug0A3591K3Z9uu80t9847BknI23KV8hc">Basics - preprocessors</a> <!--PAGETEST: preprocessors--></li>
+<li><a href="https://www.evernote.com/l/ALnTcKpXyB1KopruFFzpIgr2sczQhsaLeVA">Basics - preprocessor rules</a> <!--PAGETEST: preprocessor rules--></li>
+<li><a href="https://www.evernote.com/l/ALmzzlVFaYFGubginfMCkEKKTR5ae8pokdE">pulledpork</a> <!--PAGETEST: pulledpork--></li>
+</ul>
+<h2 id="sumologic">Sumologic</h2>
+<ul>
+<li><a href="https://www.evernote.com/l/ALlPiiPrnSRG_6kFEVbkZv-1x-4r2AHikgU">Notes</a> <!--PAGETEST: Notes.*Sumo--></li>
+<li><a href="https://www.evernote.com/l/ALm7YzMrKXNBIYGtTgBxXaiCFpPZbGUaw6s">Basics</a> <!--PAGETEST: Cheat.*Sumo--></li>
+</ul>
+<h2 id="terraform">Terraform</h2>
+<ul>
+<li><a href="https://www.evernote.com/l/ALndvp0mgI1Ddbg3wK8xb5ukPiDNXdSCVH8">Notes</a> <!--PAGETEST: Notes--></li>
+<li><a href="https://www.evernote.com/l/ALkr_CYOACBAmITmNYN4gGIMSPaVp-SN9lM">Basics</a> <!--PAGETEST: Cheatsheet: terraform--></li>
+<li><a href="https://www.evernote.com/l/ALklvCeZjJRD0LMLH4_Vyp-OtrtIBiG_kl8">Basics - module development</a> <!--PAGETEST: module development--></li>
+<li><a href="https://www.evernote.com/l/ALk-wb7_8KBIbZ_SIF2WNrlDFpFYbsYEOfo">Basics - providers + module</a> <!--PAGETEST: providers + module--></li>
+<li><a href="https://www.evernote.com/l/ALkB120AvYhK8JfzdfPpIwe5kSzQ5mIC5WY">CLI</a> <!--PAGETEST: CLI--></li>
+<li><a href="https://www.evernote.com/l/ALll75zrcjlPGZ8FFU6KTqE4A6-4g-RsHi4">Usage</a> <!--PAGETEST: Usage--></li>
+</ul>
+<h2 id="wireshark">Wireshark</h2>
+<ul>
+<li><a href="https://www.evernote.com/l/ALm1o83GUCRNGLN3WZ7Ai9ePQ00RFd-uipY">Notes</a> <!--PAGETEST: Notes--></li>
+<li><a href="https://www.evernote.com/l/ALn-RF9vcLBO87hRzHzraGtYjfAKVaOtZWo">Basics</a> <!--PAGETEST: Cheatsheet: wireshark--></li>
+<li><a href="https://www.evernote.com/l/ALkI3ZULjodNwLTEnhzpCmH3XNyRd3bZHyY">Display filter</a> <!--PAGETEST: Display filter--></li>
+<li><a href="https://www.evernote.com/l/ALnZOi_LSIlLeqWKodNJ1FWdiRPPPF7AqO0">Usage</a> <!--PAGETEST: Usage--></li>
+<li><a href="https://www.evernote.com/l/ALkoGSTcdAlH556Pnk43WBghZZRYiQNJLDI">Berkley Packet Filter (BPF)</a> <!--PAGETEST: bpf--></li>
+</ul>
+<h2 id="misc">Misc</h2>
+<ul>
+<li><a href="https://www.evernote.com/l/ALkoGSTcdAlH556Pnk43WBghZZRYiQNJLDI">Berkley Packet Filter (BPF)</a> <!--PAGETEST: bpf--></li>
+<li><a href="https://www.evernote.com/l/ALmsGH2jKoxFerYgnOSSuC4E3PTpzug9A08">GraphQL</a> <!--PAGETEST: GraphQL--></li>
+<li>…more</li>
+</ul>
+<p><a href="#contents">Top</a></p>
+<hr />
+<h1 id="unix-based-system">Unix-based system</h1>
+<ul>
+<li><a href="https://www.evernote.com/l/ALkeGhLiJmVFKa5uH3XoG0WwBUd5UQUegnA">Notes - general</a> <!--PAGETEST: general--></li>
+<li><a href="https://www.evernote.com/l/ALnyJfenF0VOHavFAxAOEWhK_rsz1i2pyI8">Notes - <code>/proc</code></a> <!--PAGETEST: /proc--></li>
+<li><a href="https://www.evernote.com/l/ALm85NIXDHNHXozv4ZGsdHeV8JKDZ0tWF6E">Notes - file system</a> <!--PAGETEST: file system--></li>
+<li><a href="https://www.evernote.com/l/ALmc8ES-TztDzoOCw_KHY3Sni5731nw7DPs">Notes - ANSI escape code</a> <!--PAGETEST: ANSI--></li>
+<li><a href="https://www.evernote.com/l/ALm8E_CX-CJIt43fFBLatd1VADNTlU1sTlM">Basics - file permission + ownership</a> <!--PAGETEST: file permission--></li>
+<li><a href="https://www.evernote.com/l/ALldWTHB2v9Mh5EM0MGevCJpirHai4j2sJM">Basics - named pipes</a> <!--PAGETEST: named pipe--></li>
+<li><a href="https://www.evernote.com/l/ALlj_8-lilNFwIieB67Q2HCb8enjngDJtlA">Basics - resolv.conf</a> <!--PAGETEST: resolv.conf--></li>
+<li><a href="https://www.evernote.com/l/ALncoc3A5FVDwbCCAzGRD94AfwNCR0xIBHs">Basics - sysklogd format</a> <!--PAGETEST: sysklogd format--></li>
+<li>…more</li>
+</ul>
+<h2 id="bash">Bash</h2>
+<ul>
+<li><a href="https://www.evernote.com/l/ALmA3IzyI35D5qP8jcCfXWDZaq-C9pN8OIY">Basics</a> <!--PAGETEST: Cheatsheet: bash--></li>
+<li><a href="https://www.evernote.com/l/ALkij0Bm1NdCiJZRAt07okiloR2uvQyK2tA">commands and expressions</a> <!--PAGETEST: commands and expressions--></li>
+<li><a href="https://www.evernote.com/l/ALmDBDwY4FxMdpQm_g_rHbm7WJTYThX9Uhk">expansion (glob, pattern matching)</a> <!--PAGETEST: expansion --></li>
+<li><a href="https://www.evernote.com/l/ALk2UVm2RTNOZZkuT3rlJzGFH-9XVeAqKrQ">history</a> <!--PAGETEST: history--></li>
+<li><a href="https://www.evernote.com/l/ALm2uNb7Ro9DIbS9J0EeHBEawO4_1mSSWp4">quoting</a> <!--PAGETEST: quoting--></li>
+<li><a href="https://www.evernote.com/l/ALkVh2Tu8EpCN7sddJJCr2dI-nBA3mhW4m0">redirection + pipes</a> <!--PAGETEST: redirection --></li>
+<li><a href="https://www.evernote.com/l/ALkfC_kXqA1Djajgv76HQhKqltW2ICcrT8Q">values (PARAMETERS)</a> <!--PAGETEST: values --></li>
+<li><a href="https://www.evernote.com/l/ALkWDvKZBa9McZisZv-FnWWqjTh0dJpUfH4">variables (EXPANSION)</a> <!--PAGETEST: variables --></li>
+<li><a href="https://www.evernote.com/l/ALk_NEZmiEZDNYCu0OkggRpVqb8tZ0SNAX4">Tricks</a> <!--PAGETEST: Tricks--></li>
+<li><a href="https://www.evernote.com/l/ALk6oxf4wwNHfY1mrmbu9Tiiy2UgoRp-eL4">Tricks - values, variables</a> <!--PAGETEST: values--></li>
+<li><a href="https://www.evernote.com/l/ALnDNJNjsOpIKouwYtoJfb0elrDx1yY0qSY">Tricks - conditions</a> <!--PAGETEST: conditions--></li>
+<li><a href="https://www.evernote.com/l/ALmjJPmbwW5GhpQZ98oRQrivxyqqEAP_t88">Tricks - script</a> <!--PAGETEST: script--></li>
+<li><a href="https://www.evernote.com/l/ALlgKuOy1iZLhaVU_lhgLb-780y1_k-YOTU">Tricks - text and file processing</a> <!--PAGETEST: text --></li>
+<li><a href="https://www.evernote.com/l/ALlr6qyg4R1KOox7DbV7tAFaDgscAfVn1QU">Builtins</a> <!--PAGETEST: Builtins--></li>
+<li><a href="https://www.evernote.com/l/ALnHWEP2IjpJgZpiTDFkTQsYLMu1dfYSdjg">Builtins - getopts</a> <!--PAGETEST: getopts--></li>
+<li><a href="https://www.evernote.com/l/ALkkhRQu0eZF9ox8rYRBXHX18yxgLQFzcwg">Builtins - directory stack</a> <!--PAGETEST: directory stack--></li>
+<li><a href="https://www.evernote.com/l/ALmnWqzE9XNJQZhGND1UnhIm2AaJqQsRUbA">Builtins - job/process control</a> <!--PAGETEST: job--></li>
+<li><a href="https://www.evernote.com/l/ALnZTavYo-NFl73Yct-H7gkb-Gs5WPyk8pA">Builtins - printf</a> <!--PAGETEST: printf--></li>
+<li><a href="https://www.evernote.com/l/ALlVJ8Jjy1NHlIjakyPjMul1-ZTiU7AwkvE">Builtins - read</a> <!--PAGETEST: read--></li>
+<li><a href="https://www.evernote.com/l/ALnXrd_EC5NEOrLkShx5ihEFY7FRCqmyqTs">Builtins - set</a> <!--PAGETEST: set--></li>
+<li><a href="https://www.evernote.com/l/ALkbt_KzRqtD9ZA812L9a-1ocjb9uJHyxwc">Builtins - test</a> <!--PAGETEST: test--></li>
+<li><a href="https://www.evernote.com/l/ALnVdh20tqNOdrjhXHkJIa6TcR3ZPZVqL6k">Builtins - ulimit</a> <!--PAGETEST: ulimit--></li>
+<li>…</li>
+</ul>
+<h2 id="commands">Commands</h2>
+<ul>
+<li><a href="https://www.evernote.com/l/ALnHvPdZGaBMSIOGcMxqpziWK8Sd-npp67M">General</a> <!--PAGETEST: general commands--></li>
+<li><a href="https://www.evernote.com/l/ALkcV6QwrrdMU6BBlIxVvNOTYw1kWq58FMU">General - file system</a> <!--PAGETEST: file system--></li>
+<li><a href="https://www.evernote.com/l/ALmrdaUuKutMaLk2xU6aXpRmtOYes7NvfgA">General - user user administration</a> <!--PAGETEST: user administration--></li>
+<li><a href="https://www.evernote.com/l/ALmC7Dd452lEZqGHS5wcei7M2doaP9Eaqrk">General - text processing</a> <!--PAGETEST: text processing--></li>
+<li><a href="https://www.evernote.com/l/ALkud0UWWJFJnbs47t8ANP-V_Lia2xriEWo">arp</a> <!--PAGETEST: arp--></li>
+<li><a href="https://www.evernote.com/l/ALkx7k3Lcv5Jt6TEf4ue2fgEFAvFHhPR8gU">at, batch, atq, atr</a> <!--PAGETEST: batch--></li>
+<li><a href="https://www.evernote.com/l/ALlNOKKapp9O5YCBtO65Lt5R3jP0gW_KTh4">awk</a> <!--PAGETEST: awk--></li>
+<li><a href="https://www.evernote.com/l/ALnQtgiqQKhHTpeanw6IBbT-NtaADrrkQes">curl</a> <!--PAGETEST: curl--></li>
+<li><a href="https://www.evernote.com/l/ALmpQ4OzW0RDtqLNeXAP9rl5U_02RUGomqo">date</a> <!--PAGETEST: date--></li>
+<li><a href="https://www.evernote.com/l/ALmRIJVT9tNELrigN7rLufIjPrVHMWXz4RE">diff, patch</a> <!--PAGETEST: diff--></li>
+<li><a href="https://www.evernote.com/l/ALm7jMbP1AdGeIPcbPkcJvyb236QCf26VCw">dig</a> <!--PAGETEST: dig--></li>
+<li><a href="https://www.evernote.com/l/ALmC52IDg8hPw4sX_IJ-0QMnE16S9i5dlCY">dmesg</a> <!--PAGETEST: dmesg--></li>
+<li><a href="https://www.evernote.com/l/ALnMC50P3sZAMoDHQB6z_C9p8c-cQypUBwQ">dtrace, dtruss</a> <!--PAGETEST: dtrace--></li>
+<li><a href="https://www.evernote.com/l/ALkmuYpGRpRENbFxT9ZtTxxPbwUggdacZSM">find</a> <!--PAGETEST: find--></li>
+<li><a href="https://www.evernote.com/l/ALlpPViq0i1BurrvspKm0EihdHjdOhZq_N0">grep</a> <!--PAGETEST: grep--></li>
+<li><a href="https://www.evernote.com/l/ALnHzKPqdbJHF5AbGiP2RYrH9nk3eH-wR6s">host</a> <!--PAGETEST: host--></li>
+<li><a href="https://www.evernote.com/l/ALlzvmHhnBlGy7oekoQHgpvUmnL5Vf7oLJg">hostname</a> <!--PAGETEST: hostname--></li>
+<li><a href="https://www.evernote.com/l/ALlkez99WeNAr503pZHNYlSrDsp1QYRry9k">ifup, ifdown, ifquery</a> <!--PAGETEST: ifup--></li>
+<li><a href="https://www.evernote.com/l/ALnkepHin9RFEIZ2OxfK4QV5Kc0-uq0bGzs">iptables</a> <!--PAGETEST: iptables--></li>
+<li><a href="https://www.evernote.com/l/ALkVKuwLH5FIBKl5qMnjjlEV_7v_RDDiIIk">less</a> <!--PAGETEST: less--></li>
+<li><a href="https://www.evernote.com/l/ALkSNEp3_e9J2IAbUFKNv1ZuTe36e0rIbMU">ls</a> <!--PAGETEST: ls--></li>
+<li><a href="https://www.evernote.com/l/ALmGeCqsL01Pq7ci_SzsKu5PZTKvI_Wnvys">lsof</a> <!--PAGETEST: lsof--></li>
+<li><a href="https://www.evernote.com/l/ALnpht-b7-xDVJSBTZ5H2xyE70Y515NZ2Qw">lsof - tricks</a> <!--PAGETEST: lsof.*tricks--></li>
+<li><a href="https://www.evernote.com/l/ALmEkPLH9BhKTpdYWai1aAO_81DpumuZ9mk">man</a> <!--PAGETEST: man--></li>
+<li><a href="https://www.evernote.com/l/ALm_ibg6ACpP1boFS6WCEdzP6X6cgpXJA2o">mount</a> <!--PAGETEST: mount--></li>
+<li><a href="https://www.evernote.com/l/ALn3nmwZRV5LVqYgoBASGkIG-aUJYDcclmg">netstat</a> <!--PAGETEST: netstat--></li>
+<li><a href="https://www.evernote.com/l/ALlIkXMADclPJrt7RvA6nXSw7kQC3qIoQlY">openssl</a> <!--PAGETEST: openssl--></li>
+<li><a href="https://www.evernote.com/l/ALn38-fcsldOpIvOlVh7FAUnuDMbxcrKCnI">openssl - LibreSSL</a> <!--PAGETEST:  LibreSSL--></li>
+<li><a href="https://www.evernote.com/l/ALnXXZe7ic5PX6nR4R-p2Fvyb56eeCkxvro">ping</a> <!--PAGETEST: ping--></li>
+<li><a href="https://www.evernote.com/l/ALnd44DidlVIt6zPGsNWAya9EbQ9HHzx-MU">ps,pgrep,pkill</a> <!--PAGETEST: pgrep--></li>
+<li><a href="https://www.evernote.com/l/ALlD9GeocwxM6rKcTMTKjeznWOzx-Nv-QMI">rsync</a> <!--PAGETEST: rsync--></li>
+<li><a href="https://www.evernote.com/l/ALnGvtd64zhBK5BXIyAjuL7eP6PsJh4Y9kM">rsync - tricks</a> <!--PAGETEST: rsync.*tricks--></li>
+<li><a href="https://www.evernote.com/l/ALn-cC_mZ-RC7pkR9s_3hhkPTJwaAjfwQmg">screen</a> <!--PAGETEST: screen--></li>
+<li><a href="https://www.evernote.com/l/ALmEu6qsYWlMqZDyPOgHcgybEslx-4BhQsw">sed</a> <!--PAGETEST: sed--></li>
+<li><a href="https://www.evernote.com/l/ALlYvgK-QuZGtrUHMsE08qhheNgl_NhP2xE">sort</a> <!--PAGETEST: sort--></li>
+<li><a href="https://www.evernote.com/l/ALmF0bPtmcRMjKLqxeu_ImP6M0tBtUhCKbg">ssh,scp,sftp</a> <!--PAGETEST: ssh.*scp--></li>
+<li><a href="https://www.evernote.com/l/ALke89HytM5HDbI3JVbnXIBmUzFz1kdtj6c">ssh,scp,sftp - usage</a> <!--PAGETEST: ssh.*usage--></li>
+<li><a href="https://www.evernote.com/l/ALkMhehXSDxGk4r35EJtS6bgf_U7h9_l6nA">ssh-agent, ssh-add</a> <!--PAGETEST: ssh-agent--></li>
+<li><a href="https://www.evernote.com/l/ALm0jVmKpG1A6bF-0N7YxTPNDUbuAS9NWYE">ssh config</a> <!--PAGETEST: ssh config--></li>
+<li><a href="https://www.evernote.com/l/ALki1kPXO1BK7oakkonvRJCU5C04ZL3yRuw">ssh tricks + troubleshooting</a> <!--PAGETEST: ssh.*tricks--></li>
+<li><a href="https://www.evernote.com/l/ALk2lqDL6k1HOKcBVA0Y0fuRZFLrkcjAb3k">strace</a> <!--PAGETEST: strace--></li>
+<li><a href="https://www.evernote.com/l/ALk0K5RZfTxMJ78eSR-RWF7mSBPTMpDmXk0">sudo</a> <!--PAGETEST: sudo--></li>
+<li><a href="https://www.evernote.com/l/ALkbw-_7Ab1LNKUyBkAYdmee3qurYXdTFXw">tar</a> <!--PAGETEST: tar--></li>
+<li><a href="https://www.evernote.com/l/ALm4b4ed1TVJZrISZg8rv2VbTp_1JlZFbu0">tcpdump</a> <!--PAGETEST: tcpdump--></li>
+<li><a href="https://www.evernote.com/l/ALkRKN9iRA9PRJYHqOMReHunM6SjAJG4KpE">w</a> <!--PAGETEST: w--></li>
+<li><a href="https://www.evernote.com/l/ALkXieVXj0dBqrz9zEWKLyOqDqle0ZbAXX0">whois</a> <!--PAGETEST: whois--></li>
+<li><a href="https://www.evernote.com/l/ALkgrL5Xz7RPSpVZIVVIDe1XdtcUkxjUm34">write, mesg, wall</a> <!--PAGETEST: write--></li>
+<li><a href="https://www.evernote.com/l/ALl8WZOODW5HzblhDyS0zbFHJMwuP_PoROY">xargs</a> <!--PAGETEST: xargs--></li>
+<li><a href="https://www.evernote.com/l/ALn78tHo4rZPQKUTnza2_4V3VayuapnTcr0">xxd</a> <!--PAGETEST: xxd--></li>
+</ul>
+<h2 id="linux">Linux</h2>
+<ul>
+<li><a href="https://www.evernote.com/l/ALk01EAP_r1IAoNsY9UWyWHn2C4XQdOLNOM">apt</a> <!--PAGETEST: apt--></li>
+<li><a href="https://www.evernote.com/l/ALnq9tGtL85GoL_2t0E6CMOCW6_yqVf-kz8">cron, crontab</a> <!--PAGETEST: cron--></li>
+<li><a href="https://www.evernote.com/l/ALli_HIyCilHI63GSx812QFP9QVKrLimS84">logger</a> <!--PAGETEST: logger--></li>
+<li><a href="https://www.evernote.com/l/ALnk7-OilpRJhITryDObv832-6QfiQixiQI">lshw</a> <!--PAGETEST: lshw--></li>
+<li><a href="https://www.evernote.com/l/ALkDo7mENOhCBIvW2ZGF8LqKRsCPdawIMmg">resolvconf</a> <!--PAGETEST: resolv--></li>
+<li><a href="https://www.evernote.com/l/ALm-oYkxbPxIIp7KTQm5IuJTSRAUYphg24E">sysctl</a> <!--PAGETEST: sysctl--></li>
+</ul>
+<h2 id="macos-1">macos</h2>
+<ul>
+<li><a href="https://www.evernote.com/l/ALnNTvE5F7dCB7XBRr0Xx4xYwgUuINYylls">log</a> <!--PAGETEST: log--></li>
+</ul>
+<h2 id="third-party">Third-party</h2>
+<ul>
+<li><a href="https://www.evernote.com/l/ALnCLHCnRKZF_LgH-zq0zQqoxFgPN0E16xU">fzf</a> <!--PAGETEST: fzf--></li>
+<li><a href="https://www.evernote.com/l/ALlSDqrnMoBP2KCo3yaYNga1glfk_quNUpU">htop</a> <!--PAGETEST: htop--></li>
+<li><a href="https://www.evernote.com/l/ALkscI29L9ZNT6VgChujqgd99b7HS5j3dYQ">ncdu</a> <!--PAGETEST: ncdu--></li>
+<li><a href="https://www.evernote.com/l/ALnX1Kp4wIxNz6kGIWenjwaL_0NT0W14O2A">nmap</a> <!--PAGETEST: nmap--></li>
+<li><a href="https://www.evernote.com/l/ALlOYS5ph6hDk45Zh9NUyJqRjiT1mIdikZI">psmisc</a> <!--PAGETEST: psmisc--></li>
+<li><a href="https://www.evernote.com/l/ALnoNiU1EO9JhImQWb7Cm4tlqeKxdWcNJxU">rsyslog</a> <!--PAGETEST: rsyslog--></li>
+<li><a href="https://www.evernote.com/l/ALmzQnypFGBDKpxfh7zTDFGcFp0GG6U8Qi0">tmux</a> <!--PAGETEST: tmux--></li>
+<li><a href="https://www.evernote.com/l/ALnyt8eW6ZFIioS9_Kk3NR6S39HtMaRj9xk">tmuxinator</a> <!--PAGETEST: tmuxinator--></li>
+<li><a href="https://www.evernote.com/l/ALmgs9raEetO37JgJwZkiwUPQzrY5J5ygTI">vsftpd</a> <!--PAGETEST: vsftpd--></li>
+<li><a href="https://www.evernote.com/l/ALleVIPzQD5FabQg8oJEmXneqtKECy-yNks">watchman</a> <!--PAGETEST: watchman--></li>
+</ul>
+<p><a href="#contents">Top</a></p>
+<hr />
+<h1 id="programming">Programming</h1>
+<h2 id="c">C</h2>
+<ul>
+<li><a href="https://www.evernote.com/l/ALm79Kn_0qJK-7Ub2yMREWZZ0LLFD3_50Xw">Notes</a> <!--PAGETEST: Notes--></li>
+<li><a href="https://www.evernote.com/l/ALkvEP9ooaFNY74Cwe2vON30YOl21-evX6I">Basics</a> <!--PAGETEST: Cheatsheet: c--></li>
+<li><a href="https://www.evernote.com/l/ALmpBLC-AZhGVbIb2HpdPcl_qBr7yXFAj_0">Basics - printf format</a> <!--PAGETEST: printf format--></li>
+<li><a href="https://www.evernote.com/l/ALkXSJWeGlNMhKsdeBqOjLiPWwjtLegRHac">Basics - scanf format</a> <!--PAGETEST: scanf format--></li>
+<li><a href="https://www.evernote.com/l/ALlJ6bF2FJ1ClaTyYe9sVM4yybrk8IVaHyE">Basics - standard library</a> <!--PAGETEST: standard library--></li>
+<li><a href="https://www.evernote.com/l/ALmz51jq5UpL15aFTXOOETKhniVHNrrrsvo">CLI - gcc/nm/objdump</a> <!--PAGETEST: CLI - gcc/nm/objdump--></li>
+<li><a href="https://www.evernote.com/l/ALmZPXVC9rhD4YZbTk7b8obacGYxHNVQZzU">CLI - gdb</a> <!--PAGETEST: CLI - gdb--></li>
+<li><a href="https://www.evernote.com/l/ALkbKdk9dBFAg4uy0eWRWgVPr6hpzSyX02U">Tricks</a> <!--PAGETEST: Tricks--></li>
+</ul>
+<h2 id="haskell">Haskell</h2>
+<ul>
+<li><a href="https://www.evernote.com/l/ALn3isr9HMVKJJuQugkFZqqQkM5xFw5Di40">Notes</a> <!--PAGETEST: Haskell--></li>
+<li><a href="https://www.evernote.com/l/ALnX5-EPZBtL7YHbLoF3Q3uyXWzWL9CgwkA">Notes - Functor, Applicative, Monads</a> <!--PAGETEST: monad--></li>
+<li><a href="https://www.evernote.com/l/ALnVGSzqtqFILa-plfSK4MduXTiSEXc9jLk">Notes - monad Transform</a> <!--PAGETEST: monad--></li>
+<li><a href="https://www.evernote.com/shard/s185/sh/404dfb44-40e0-40b5-92b5-bdb1cb6554ce/4oCL4yGJ0oF4oMN_Fv-LBXxk3nwEHg9bB3wQSaQ5F5SNus-MiSg8RpbpzQ">Notes - type,kind</a> <!--PAGETEST: type--></li>
+<li><a href="https://www.evernote.com/shard/s185/client/snv?isnewsnv=true&amp;noteGuid=23fe82c9-1273-4f51-aeb8-671d645b69ab&amp;noteKey=uRdV9bmN46opLOPTcOAq_hvHjS80AAiXTljptf4AaTfRAwLG6CUfysp6xQ&amp;sn=https%3A%2F%2Fwww.evernote.com%2Fshard%2Fs185%2Fsh%2F23fe82c9-1273-4f51-aeb8-671d645b69ab%2FuRdV9bmN46opLOPTcOAq_hvHjS80AAiXTljptf4AaTfRAwLG6CUfysp6xQ&amp;title=%255BMIGRATED%255D%2BNotes%253A%2Bprimitives%2B%2528boxed%252Funboxed%252C%2Blifted%252Funlifted%252C%2Bstrictness%2529">Notes - primitives</a> <!--PAGETEST: primitive--></li>
+<li><a href="https://www.evernote.com/shard/s185/sh/dce4c9b2-5f59-4198-a886-6b700d51057a/tfLoGcUbwSeEgrA4WRMhxIgmLGGDYCQFkCbPEDUA1GLLp6SD8MjoeXlO5A">Notes - dependent types</a> <!--PAGETEST: dependent--></li>
+<li><a href="https://www.evernote.com/l/ALn4tdd8bvNAioFkf66IVrz75rpSx1Rst-E">Basics</a> <!--PAGETEST: Cheatsheet: basics--></li>
+<li><a href="https://www.evernote.com/l/ALn4pqmDdK9KjqOmCQi4pIXYnli7wHbV9eI">Basics - Builtins (Prelude)</a> <!--PAGETEST: Prelude--></li>
+<li><a href="https://www.evernote.com/l/ALnoiY7_7bRCep8hcCvTkHAXSWv3Sea2vss">Basics - Char,String,Show/Read</a> <!--PAGETEST: String--></li>
+<li><a href="https://www.evernote.com/l/ALkv8vlfycVEqbjdmHoXaROVWhqNvCPfu-w">Basics - List,Tuple</a> <!--PAGETEST: List--></li>
+<li><a href="https://www.evernote.com/l/ALky-0KGJbxBko2fOTK9CI-TV-H6CcJLOrg">Basics - functions</a> <!--PAGETEST: function--></li>
+<li><a href="https://www.evernote.com/l/ALnQQ1dIQ5hH_5ChKxMnrfpI130ujXbKihw">Basics - function fixity</a> <!--PAGETEST: fixity--></li>
+<li><a href="https://www.evernote.com/l/ALmlh1nzCvVGjZLMade7FDsxXXhwGqM5dvw">Basics - recursive declarations</a> <!--PAGETEST: recursive--></li>
+<li><a href="https://www.evernote.com/l/ALluNodjBrhHzq_k-XqRSElIgEimsbzIbVQ">Basics - module</a> <!--PAGETEST: module--></li>
+<li><a href="https://www.evernote.com/l/ALkGmIIlrYJBp4-K2yx5GI3dCrqIYblxXfc">Basics - exceptions</a> <!--PAGETEST: exceptions--></li>
+<li><a href="https://www.evernote.com/l/ALnL7Ln6aTZEtJy4E4DLRYTmMjBmNdLiAog">Basics - strictness</a> <!--PAGETEST: strict--></li>
+<li><a href="https://www.evernote.com/l/ALnlQYXV7AJP6bpOhSho0v98N9xlid6Pz1o">Basics - primitives</a> <!--PAGETEST: primitives--></li>
+<li><a href="https://www.evernote.com/l/ALlyFQnIItlMKqmejddm9rNPaXHU12Xre1o">Basics - generics</a> <!--PAGETEST: generics--></li>
+<li><a href="https://www.evernote.com/shard/s185/sh/68364595-7986-4953-b9c6-989c68894cb8/9phDrFiiAHUs1xZM5uCSOQJPW4s3LILIPyBZbQ6ZPBSfgYWlI7fkonQXjw">Basics - templates</a> <!--PAGETEST: template--></li>
+<li><a href="https://www.evernote.com/l/ALl4jFXkaglDfKI8WG0YrKBZLEylDl2BS84">class - Semigroup, Monoid</a> <!--PAGETEST: Semigroup--></li>
+<li><a href="https://www.evernote.com/l/ALkaOhynaM1JPIn1XXD0nHB-G2ixU_0LU60">class - Category, Arrow</a> <!--PAGETEST: Category--></li>
+<li><a href="https://www.evernote.com/l/ALmp7GOxAOBB76c8_57WpQfewQg6bequ9MA">class - Contravariant, Profunctor</a> <!--PAGETEST: Contravariant--></li>
+<li><a href="https://www.evernote.com/l/ALlNj4mAnYZFbqr9tgx6QRtKLhr8mrzvJAM">class - Foldable, Traversable</a> <!--PAGETEST: Foldable--></li>
+<li><a href="https://www.evernote.com/l/ALnxXNFDmZVEjavYgkUVnALGhbyhCMrC9m0">class - Functor, Applicative, Monads</a> <!--PAGETEST: Monad--></li>
+<li><a href="https://www.evernote.com/l/ALm7ycP3AmxISYxrhKtgaGNrLNWfTYCEnP4">class - wrapper types</a> <!--PAGETEST: wrapper--></li>
+<li><a href="https://www.evernote.com/l/ALlVxCxZEuZAN6ACf1ZrP5YWSE_n0ev3ceA">type system - type system</a> <!--PAGETEST: \- type system--></li>
+<li><a href="https://www.evernote.com/l/ALldcOgbsGtF1ZbJ5-AajFqG-73reqHVgws">type system - declaration, bindings</a> <!--PAGETEST: declaration--></li>
+<li><a href="https://www.evernote.com/l/ALlA1dPJtTNBirbGIVN-0Dorwb2L_JEAsCw">type system - coerce</a> <!--PAGETEST:  coerce--></li>
+<li><a href="https://www.evernote.com/l/ALl0XWg7tsFFd7tT-oEIJvvAmid6dpsOx0Y">type system - kind system</a> <!--PAGETEST: kind--></li>
+<li><a href="https://www.evernote.com/l/ALm0ZX7lLGVLD5tMtsl6g6L1ZmuKpwO_794">type system - typeclass</a> <!--PAGETEST: typeclass--></li>
+<li><a href="https://www.evernote.com/shard/s185/sh/827f1305-8488-4d91-9b3f-b11f4e60c224/QRe9LMXDe5szrfKvhy9beQUDEPxyEsVo0rzeCkTKD_lV9cG6d85okvxkAg">type system - dependent types</a> <!--PAGETEST: dependent--></li>
+<li><a href="https://www.evernote.com/l/ALnKuSQG1kdO46LrqIhItmklhOm3lri4I7w">monad -continuation</a> <!--PAGETEST: continuation--></li>
+<li><a href="https://www.evernote.com/l/ALkNkSv7-qlDObNYJwiiRZUbSjp8KH7SEZk">concept - continuation</a> <!--PAGETEST: continuation--></li>
+<li><a href="https://www.evernote.com/l/ALmkBt7kxGtOFpDqL5WZD3XNkXIE_umX8oQ">monad - transformers</a> <!--PAGETEST: transformers--></li>
+<li><a href="https://www.evernote.com/l/ALkmVS8bnQ1LNJ6Pfj9Qr5NMGD5AhD7N3hQ">monad - state</a> <!--PAGETEST: state--></li>
+<li><a href="https://www.evernote.com/shard/s185/sh/756df130-3d8b-4f67-a8f5-a7f93334a7f4/sWJK6QcHNncymNq1QfCX7YYnCVhXOhWGCfUJ1lhNrBrsS1-Jq6UeSPEvaA">monad - free</a> <!--PAGETEST: free--></li>
+<li><a href="https://www.evernote.com/l/ALkfZT59KXVIV7tFZkdtX_--UbNwWNmXSI0">tool - GHC</a> <!--PAGETEST: GHC--></li>
+<li><a href="https://www.evernote.com/l/ALnOIslEdi9H4YocOgpRgITvt4T7YWr6G3E">tool - Stack</a> <!--PAGETEST: Stack--></li>
+<li><a href="https://www.evernote.com/l/ALmALdFVJLRAw7GTlQNcoiJolD10zIeUyCI">modules</a> <!--PAGETEST: Modules--></li>
+<li><a href="https://www.evernote.com/l/ALnqIo9qY4xHyoFoufmJqi0EdAvDQ3shG2U">modules - ST</a> <!--PAGETEST: ST--></li>
+<li><a href="https://www.evernote.com/l/ALnJyH7wga5AtJbu0E3Lf7cmEPuevDXKREQ">modules - System, IO</a> <!--PAGETEST: IO--></li>
+<li><a href="https://www.evernote.com/l/ALnqIo9qY4xHyoFoufmJqi0EdAvDQ3shG2U">modules - mtl</a> <!--PAGETEST: mtl--></li>
+<li><a href="https://www.evernote.com/l/ALnj8Dh_OV1N9ovLbNSzDu8ATDBYyqeJvm4">modules - optparse-applicative</a> <!--PAGETEST: optparse--></li>
+<li><a href="https://www.evernote.com/l/ALlqXMDUCQxKBI4rDDXTgCfOz9bG6fgq948">modules - text,fmt</a> <!--PAGETEST: text--></li>
+<li><a href="https://www.evernote.com/l/ALlBzo3WnWBIpqvLcWQ9qTF-KxWPU51H_S8">modules - testing</a> <!--PAGETEST: testing--></li>
+<li><a href="https://www.evernote.com/shard/s185/sh/7d6d9f94-873c-4826-957d-e198c7b2604b/F74GIdgiqC2YqAbHp76Uejg7Qu_EZPJXu4ltaUinRVUFuWjwUpRdXrDGQQ">modules - network</a> <!--PAGETEST: network--></li>
+<li><a href="https://www.evernote.com/shard/s185/sh/d04c344f-13ed-4366-b6f7-2c14bf679957/u909KgoVXzHgU9BVr8ecEgKTl6eAw9VlSOrYGbfDM-OoATJo39LlEIBLzA">modules - type level (singletons, fin, dec)</a> <!--PAGETEST: type level--></li>
+<li><a href="https://www.evernote.com/l/ALkYmrakuphDBLgQLbGpmPiW0hqVZGOmGMU">examples</a> <!--PAGETEST: examples--></li>
+<li><a href="https://www.evernote.com/l/ALmALdFVJLRAw7GTlQNcoiJolD10zIeUyCI">external modules</a> <!--PAGETEST: modules--></li>
+</ul>
+<h2 id="htmlcss">HTML/CSS</h2>
+<h3 id="css">CSS</h3>
+<ul>
+<li><a href="https://www.evernote.com/l/ALnqCgQOBcRNfYsJ_UYrrBKi1Vv2dKEochQ">Notes</a> <!--PAGETEST: Notes.*- CSS--></li>
+<li><a href="https://www.evernote.com/l/ALm07RFOwA9Aa75crbN1XnjUvUqJRM41Xh8">Notes - BEM</a> <!--PAGETEST: Notes.*BEM--></li>
+<li><a href="https://www.evernote.com/l/ALm8o5Mdj3VJ8Jpa-BXWZTKM3kF-xAF3UKw">Basics</a> <!--PAGETEST: Cheatsheet: css--></li>
+<li><a href="https://www.evernote.com/l/ALkoBZUkwjpC_qSO4GBTltUL1majl9lunYo">Basics - <span class="citation" data-cites="media">@media</span></a> <!--PAGETEST: @media--></li>
+<li><a href="https://www.evernote.com/l/ALleOPxlghdI8bK7ntUuflRNDYCi_OSocRY">Basics - flex box</a> <!--PAGETEST: flex box--></li>
+<li><a href="https://www.evernote.com/l/ALlGGW9qLlBBKIj8THigE8G66ypKcZri41A">Basics - modules</a> <!--PAGETEST: modules--></li>
+<li><a href="https://www.evernote.com/l/ALmE4QYO4NJMfYDw76IoHj3VQiaf-9ILP14">Basics - selectors</a> <!--PAGETEST: selectors--></li>
+<li><a href="https://www.evernote.com/l/ALmjYBmVB_dMVr6DmtgiNdcVg-rMDvaOvZk">Tricks</a> <!--PAGETEST: Tricks--></li>
+</ul>
+<h3 id="html">HTML</h3>
+<ul>
+<li><a href="https://www.evernote.com/l/ALnEQJ6R1JBFMpgOAyHdHm735JPq08eXLPg">Notes</a> <!--PAGETEST: Notes.*- HTML--></li>
+<li><a href="https://www.evernote.com/l/ALlVLuc9eNBPvqCKnWK6BoV3HK4W3_JmoSo">Basics</a> <!--PAGETEST: Cheatsheet: html--></li>
+<li><a href="https://www.evernote.com/l/ALn-toIgeH1Al6XnYVMDvgt7R6GuBGD3vEQ">Tricks</a> <!--PAGETEST: Tricks--></li>
+</ul>
+<h2 id="javascript">JavaScript</h2>
+<ul>
+<li><a href="https://www.evernote.com/l/ALnvvim68exNaKPEb-WzHIzeilcyQfwF_hI">Notes</a> <!--PAGETEST: Notes--></li>
+<li><a href="https://www.evernote.com/l/ALncAhsfn6dJmJ9Q4yJLYmDb7awxhTQnEMc">Basics</a> <!--PAGETEST: Cheatsheet: javascript--></li>
+<li><a href="https://www.evernote.com/l/ALkoSI13NRNGjLdKZ_BMVCQoChNLIs_IqFk">Basics - builtins</a> <!--PAGETEST: builtins--></li>
+<li><a href="https://www.evernote.com/l/ALkg5Jeaui5Ib63TBJOFq3XrzMv98uXv73A">Basics - class</a> <!--PAGETEST: class--></li>
+<li><a href="https://www.evernote.com/l/ALlrssNrL5pIib4_QU82FhgqECWCYjdAfu4">Basics - ES6</a> <!--PAGETEST: ES6--></li>
+<li><a href="https://www.evernote.com/l/ALkuWXr1LPpJqJ8bofxnkCFeRxRKYFi8CVg">Basics - ES6 modules</a> <!--PAGETEST: ES6 modules--></li>
+<li><a href="https://www.evernote.com/l/ALkFQQmmDg1JBZvXo1HefvYnnCG7b41A3_0">Basics - exception handling</a> <!--PAGETEST: exception handling--></li>
+<li><a href="https://www.evernote.com/l/ALk1SONixlhBv4hWZU-krcpYLgYbgMG2l6s">Basics - Promise API</a> <!--PAGETEST: Promise API--></li>
+<li><a href="https://www.evernote.com/l/ALmRhZYqRoxAD78f1_FsjaRPGjP6GxJfbQo">Basics - RegExp</a> <!--PAGETEST: RegExp--></li>
+<li><a href="https://www.evernote.com/l/ALka7JaZfmFHPpD0km_Nr8Ayml1diI-_BYc">lib - codemirror</a> <!--PAGETEST: codemirror--></li>
+<li><a href="https://www.evernote.com/l/ALn57D8BwOZKopo9nks-RHnmA7uXLMxo4C0">lib - D3</a> <!--PAGETEST: D3--></li>
+<li><a href="https://www.evernote.com/l/ALl-fFLT8_BOfoSZYr1RO9BgQXBd8kM3knQ">lib - D3 Notes</a> <!--PAGETEST: Notes.*D3--></li>
+<li><a href="https://www.evernote.com/l/ALmIukqqEN5DppslKIUmGpG7wkM3wklWtjM">lib - Handlebars</a> <!--PAGETEST: Handlebars--></li>
+<li><a href="https://www.evernote.com/l/ALnqkdO_KSNGvY_ghvc5lj-4b6Wu7iCyZVE">lib - immutable</a> <!--PAGETEST: immutable--></li>
+<li><a href="https://www.evernote.com/l/ALnhAedLD4JIL6SqK89M9hB93J-xiHBxbPo">lib - Joi</a> <!--PAGETEST: Joi--></li>
+<li><a href="https://www.evernote.com/l/ALnrDwsgmf9L9YH4n3xi3XiizGmiEj3cWo4">lib - jQuery</a> <!--PAGETEST: jQuery--></li>
+<li><a href="https://www.evernote.com/l/ALlm6zwYRBJMlrBq3DmgyXnQ5GxEQ2iy7Jc">lib - PEG.js</a> <!--PAGETEST: PEG.js--></li>
+<li><a href="https://www.evernote.com/l/ALkeOvZrrqFGC40Z-84eiy4phK0Rh0iU38s">lib - .require.js</a> <!--PAGETEST: .require.js--></li>
+<li><a href="https://www.evernote.com/l/ALloQJPoaR1BWpXLWaa5B3_5V_iHQ_pRUUs">test libs</a> <!--PAGETEST: testing libs--></li>
+<li><a href="https://www.evernote.com/l/ALlxbwWcEHtLVr161SxA1eiC4YZxYGNUmdg">test lib - Chai</a> <!--PAGETEST: Chai--></li>
+<li><a href="https://www.evernote.com/l/ALlRAd8W3rpDjLvxPAeseRHzRZN1wznmRaw">test lib - Karma</a> <!--PAGETEST: Karma--></li>
+<li><a href="https://www.evernote.com/l/ALmALASpS5ZNDK4_9-TSn0p22ma476A62L4">test lib - dom-testing-library</a> <!--PAGETEST: dom-testing-library--></li>
+<li><a href="https://www.evernote.com/l/ALldsCnGAc5EfoCTCFYHgJiOSqE_oHeq8a0">test lib - sinon</a> <!--PAGETEST: sinon--></li>
+<li><a href="https://www.evernote.com/l/ALnJMGICoEBESrqmedcVG9QiIpcYeM7Bca0">Tricks</a> <!--PAGETEST: Tricks--></li>
+</ul>
+<h3 id="dom-webapi">DOM, WebAPI</h3>
+<ul>
+<li><a href="https://www.evernote.com/l/ALlnuZnRSmdAgKFq2nYP-PrMxWNvdiOMdKw">Notes</a> <!--PAGETEST: Notes--></li>
+<li><a href="https://www.evernote.com/l/ALmVgkEw7fVCYo8VfMeVgTXuIbsqlghD7MA">Basics</a> <!--PAGETEST: dom--></li>
+<li><a href="https://www.evernote.com/l/ALnUWO7rfS9POrdf6TnimOI8ccxQpFgNTAY">Basics - events</a> <!--PAGETEST: events--></li>
+<li><a href="https://www.evernote.com/l/ALnPm1qETWtBLLcAAyDEQ9G8WhNrgtJATkE">WebAPI</a> <!--PAGETEST: WebAPI--></li>
+<li><a href="https://www.evernote.com/l/ALlXQr1MEWNF6qc0ecZUvb5k4ZlgVe3S7O4">Tricks</a> <!--PAGETEST: Tricks--></li>
+</ul>
+<h3 id="nodejs">Node.js</h3>
+<ul>
+<li><a href="https://www.evernote.com/l/ALlhR6kpdctHM4mSdpDoa-Nw4eUk2dXz6Y0">Notes</a> <!--PAGETEST: Notes--></li>
+<li><a href="https://www.evernote.com/l/ALlyO2-K7qpNWqzTOrl4kzhcXjSQJKyhGZg">Basics</a> <!--PAGETEST: Cheatsheet: node.js--></li>
+<li><a href="https://www.evernote.com/l/ALmpqiPg399EaK5n3aZJ2Id3DLDaxCBX-E4">Basics - fs</a> <!--PAGETEST: fs--></li>
+<li><a href="https://www.evernote.com/l/ALmD0vRP7qVPALrOZlVCrFHNcBtXIyD94OY">Basics - net,http,https</a> <!--PAGETEST: net--></li>
+<li><a href="https://www.evernote.com/l/ALniFPFdqcVJn6pHQiV8F3FrDMX4P8IJKQQ">Basics - os</a> <!--PAGETEST: os--></li>
+<li><a href="https://www.evernote.com/l/ALmsRM67kBtOqod8bD9rFj4PJHu6d9L62So">CLI - debugger</a> <!--PAGETEST: debugger--></li>
+<li><a href="https://www.evernote.com/l/ALlqdKMNX1lFUqFbIAHk4WFOwYSi9FJiECU">libs</a> <!--PAGETEST: libs--></li>
+<li><a href="https://www.evernote.com/l/ALl-KKekK81La52uhoeFyq3RucPDNt-DejI">lib - Express</a> <!--PAGETEST: Express--></li>
+<li><a href="https://www.evernote.com/l/ALmKCWg4l9hEK6egRFlcJYGkww_RrIHMRRw">lib - Gulp</a> <!--PAGETEST: Gulp--></li>
+<li><a href="https://www.evernote.com/l/ALnlR0onVf5BpI2XzTP0HNwvgSdswxA7liE">lib - Koa</a> <!--PAGETEST: Koa--></li>
+<li><a href="https://www.evernote.com/l/ALnglJ2BK5tIGbx-h1BM9Jv0VkoQ9sIfr70">lib - Koa middleware</a> <!--PAGETEST: middleware--></li>
+<li><a href="https://www.evernote.com/l/ALkb2fTdhxVJSaFb9l82sC0PhmqdGX06vW0">lib - Sails</a> <!--PAGETEST: Sails--></li>
+<li><a href="https://www.evernote.com/l/ALn51O6S_aZM_a3wYGQhpFCaEJ68oLZ7-Oo">lib - socket.io</a> <!--PAGETEST: socket.io--></li>
+<li><a href="https://www.evernote.com/l/ALla0NPjfilOFbBhhIFLxijfh3U1e_7Pa4Y">lib - superagent/superagent test</a> <!--PAGETEST: superagent--></li>
+<li><a href="https://www.evernote.com/l/ALlpKppy4cVCQprNuEPqJEQp9_xtzZlvvaA">lib - winston</a> <!--PAGETEST: winston--></li>
+<li><a href="https://www.evernote.com/l/ALl1g1EOdxtE-qt3q5GgclGZhLFkBaLFNuU">tool - nvm</a> <!--PAGETEST: nvm--></li>
+<li><a href="https://www.evernote.com/l/ALl38usZMd1Lj62yZQ7oK3fuCBFGt0G7xQQ">Tricks</a> <!--PAGETEST: Tricks--></li>
+</ul>
+<h3 id="typescript">TypeScript</h3>
+<ul>
+<li><a href="https://www.evernote.com/l/ALme9diNryNFAKADIwvYVGNAs0-Dvlv4VN4">Basics</a> <!--PAGETEST: Cheatsheet: typescript--></li>
+<li><a href="https://www.evernote.com/l/ALlsktEvFJtFMJbLMb_7XHtJt0H-xUHXazU">Basics - <code>///&lt;reference&gt;</code></a> <!--PAGETEST: reference--></li>
+<li><a href="https://www.evernote.com/l/ALmUGE_qHqlAt7gD3vQpwEoblFiVGF9YOIQ">Basics - builtin types</a> <!--PAGETEST: builtin types--></li>
+<li><a href="https://www.evernote.com/l/ALlgqlZUu3ZLkI15HWtAxvYkphUZ5N99ngs">Basics - declarations</a> <!--PAGETEST: declarations--></li>
+<li><a href="https://www.evernote.com/l/ALngh44ZezpEkplvoiAFGc8_9ViLhzX_vLU">Basics - generics</a> <!--PAGETEST: generics--></li>
+<li><a href="https://www.evernote.com/l/ALn8kwfrowpEMbtVS4Vh4ap9ATMQzSUi9rE">Basics - modules</a> <!--PAGETEST: modules--></li>
+<li><a href="https://www.evernote.com/l/ALlIlumy7rRK4qjLDXm_2EoYaBTdVfM3Lw4">CLI</a> <!--PAGETEST: CLI--></li>
+<li><a href="https://www.evernote.com/l/ALlI3pMdvRZLp4zDDvoA0HYHuTC4xdZsG-Q">tsconfig</a> <!--PAGETEST: tsconfig--></li>
+<li><a href="https://www.evernote.com/l/ALkG6Bx2PUFOZoJ-mSpifFas4krq9nZjcUI">Tricks</a> <!--PAGETEST: Tricks--></li>
+<li><a href="https://www.evernote.com/l/ALknIBRXVSNC37j781YYhyoHnDooK0KA0uc">Tricks - CLI, config</a> <!--PAGETEST: Tricks - CLI, config--></li>
+</ul>
+<h3 id="react">React</h3>
+<ul>
+<li><a href="https://www.evernote.com/l/ALmZY9fY_jxGjLVKrXSsN1BObfub1ji43Dc">Notes</a> <!--PAGETEST: Notes--></li>
+<li><a href="https://www.evernote.com/l/ALm96QUT4tFBD4DddNZqvA6blOjV1krRkd8">Basics</a> <!--PAGETEST: Cheatsheet: react--></li>
+<li><a href="https://www.evernote.com/l/ALnF9A0M_JxLAb9qaRX82h2QC6chKhsFDsw">Basics - Context</a> <!--PAGETEST: Context--></li>
+<li><a href="https://www.evernote.com/l/ALnvFSmRuGVDErmCJwJBj7TcFlI_BhdIwg8">Basics - Hooks</a> <!--PAGETEST: Hooks--></li>
+<li><a href="https://www.evernote.com/l/ALnEBE-h0AVCBIvKxa8cG9niWsxW6jVyq2A">Basics - JSX</a> <!--PAGETEST: JSX--></li>
+<li><a href="https://www.evernote.com/l/ALmwIDiHH5ZPLI_2QNIJYlWkA8goUPQPhF8">Basics - router</a> <!--PAGETEST: router--></li>
+<li><a href="https://www.evernote.com/l/ALkizHGBSKVHJZyEGzykruMPT55AJuMSp4w">libs</a> <!--PAGETEST: libraries--></li>
+<li><a href="https://www.evernote.com/l/ALnFIv5Nft1AGJABRCScbCSmo2clWrLV1aU">Tricks</a> <!--PAGETEST: Tricks--></li>
+</ul>
+<h3 id="cypress">Cypress</h3>
+<ul>
+<li><a href="https://www.evernote.com/l/ALlPuxZcXhhGALvMh3PDOj3DonBuzZ-_R7o">Basics</a> <!--PAGETEST: Cypress--></li>
+<li><a href="https://www.evernote.com/l/ALkpfwVx3xJCLIYVZma5iPzemtEe_p4tdqA">Basics - commands</a> <!--PAGETEST: commands--></li>
+<li><a href="https://www.evernote.com/l/ALm7qeg8qFBJfYgKlMafDTvmynpaBZ2Gdt4">Basics - API</a> <!--PAGETEST: api--></li>
+<li><a href="https://www.evernote.com/l/ALnYnCKWLHRD1LzEQNOaCIwWPhatZDQm1PQ">Basics - plugin</a> <!--PAGETEST: plugin--></li>
+<li><a href="https://www.evernote.com/l/ALnZy-EX_DRDl4mkiBR_89u5pzEraqiGCJw">CLI</a> <!--PAGETEST: cli--></li>
+<li><a href="https://www.evernote.com/l/ALkjpzQagUFHU4haoV5UWUS88th_9ZfooUg">TypeScript</a> <!--PAGETEST: typescript--></li>
+<li><a href="https://www.evernote.com/l/ALlJs6TbwrZBbr7V6oBK4kwV19LuGRV9JAE">Idioms + tricks</a> <!--PAGETEST: idioms--></li>
+<li><a href="https://www.evernote.com/l/ALkH3N85ngJAyKcIglcLFHfz7MCFYewbW60">Troubleshooting</a> <!--PAGETEST: trouble--></li>
+</ul>
+<h2 id="markdown">Markdown</h2>
+<ul>
+<li><a href="https://www.evernote.com/l/ALl6d-rafotJqprd4RN0EFJLXLa-doLVdGY">Basics</a> <!--PAGETEST: Cheatsheet: markdown--></li>
+</ul>
+<h2 id="php">PHP</h2>
+<ul>
+<li><a href="https://www.evernote.com/l/ALlpQ7doE4pGzqg2rUSd5-wO5z9xjELWutg">Notes</a> <!--PAGETEST: Notes--></li>
+<li><a href="https://www.evernote.com/l/ALki12doj49ElIHOvZXLAinkYZM_4ggKpFE">Basics</a> <!--PAGETEST: Cheatsheet: php--></li>
+<li><a href="https://www.evernote.com/l/ALl5SbN2eKtEeZt9yLAy9WVxEqxgR5K1SXc">Tools</a> <!--PAGETEST: tools--></li>
+</ul>
+<h2 id="python">Python</h2>
+<ul>
+<li><a href="https://www.evernote.com/l/ALm5E7XsrTlB_aMDqZnwggs0AIVc_xB8v6k">Notes</a> <!--PAGETEST: Notes--></li>
+<li><a href="https://www.evernote.com/l/ALl3rkjQEMZJ7KKWnKPWEW0AfgBYkkuH4V8">Notes - Package development</a> <!--PAGETEST: Package development--></li>
+<li><a href="https://www.evernote.com/l/ALlmhLneXBFG6Y3DCzExgZKcj1Zawp9zXok">Basics</a> <!--PAGETEST: Cheatsheet: python--></li>
+<li><a href="https://www.evernote.com/l/ALlJqE0vsWJGn7B2xrdUcmMlmjVTRF-GjC8">Basics - Python 2/3</a> <!--PAGETEST: 2/3--></li>
+<li><a href="https://www.evernote.com/l/ALk2yA_2059ImoiofrjmAGYl5fBDpmwlVgo">Basics - debugger</a> <!--PAGETEST: debugger--></li>
+<li><a href="https://www.evernote.com/l/ALnU-cSts4VHBY5WfROwuCuCNPjxmxXZgfc">Basics - builtin functions</a> <!--PAGETEST: builtin--></li>
+<li><a href="https://www.evernote.com/l/ALn29YpXmtBLnZJgoF201tkfmSgc9hvAF-w">Basics - format string</a> <!--PAGETEST: format string--></li>
+<li><a href="https://www.evernote.com/l/ALnSI9gwPJNGc7JjfyhZCUNn1dVVo3sxTtc">Basics - class</a> <!--PAGETEST: class--></li>
+<li><a href="https://www.evernote.com/l/ALmIe9_m84pPGLnLC8r8NDPBX-IcVAQB09k">Basics - module</a> <!--PAGETEST: module--></li>
+<li><a href="https://www.evernote.com/l/ALlv9oKkRyRMO4WMMsAKaOEJtG17dm7Z0U4">Basics - iterators, generators</a> <!--PAGETEST: iterator--></li>
+<li><a href="https://www.evernote.com/l/ALl3n1BXfp1Ctq3ZPSz9qrWCw1Z_woAkCU4">Basics - IO</a> <!--PAGETEST: IO--></li>
+<li><a href="https://www.evernote.com/l/ALmVtFs4VHVOXZ2_LRkO_5ClSqOOIORfVmE">Basics - metaclass</a> <!--PAGETEST: metaclass--></li>
+<li><a href="https://www.evernote.com/l/ALlV3ZAUpQdKubn6Eqd9lfxdSGul4t6YxMQ">Basics - docstring</a> <!--PAGETEST: docstring--></li>
+<li><a href="https://www.evernote.com/l/ALlwHdPefN1GGZHVFNI5U9F2XVtO3XeedUM">Modules</a> <!--PAGETEST: Modules--></li>
+<li><a href="https://www.evernote.com/l/ALmmmae2p_RFV6-lXromiMnFayWYBmDUXh4">Module - logger</a> <!--PAGETEST: logger--></li>
+<li><a href="https://www.evernote.com/l/ALmDt0tTiG9B34CeVdqo4piHh_kqN0x-69A">Module - process, thread</a> <!--PAGETEST: process, thread--></li>
+<li><a href="https://www.evernote.com/l/ALlXpBStkQ5P8KAtZ-Un6SPFG96QE60djl4">Module - sockets</a> <!--PAGETEST: sockets--></li>
+<li><a href="https://www.evernote.com/l/ALnHVp1-3y1FObr3iCOHEnSsANPAU8VamRE">Module - struct</a> <!--PAGETEST: struct--></li>
+<li><a href="https://www.evernote.com/l/ALmX0ziuPMJHiYXkvDqFjA-CG3ZE7uHMkrk">Module - unittest</a> <!--PAGETEST: unittest--></li>
+<li><a href="https://www.evernote.com/l/ALnNU4TimJ5PxKBhM1suh5GkXgJUfrwjX1I">Module - weakref, gc</a> <!--PAGETEST: weakref--></li>
+<li><a href="https://www.evernote.com/l/ALkoy24IRilFzLpjaBUEpbEECyNC2gbIbgc">Packages</a> <!--PAGETEST: Packages--></li>
+<li><a href="https://www.evernote.com/l/ALmZGOyuM6xP9Jp4WPFcgIAyaxNpcVE6Z8U">Package - networkx</a> <!--PAGETEST: Package - networkx--></li>
+<li><a href="https://www.evernote.com/l/ALmDlidvdPJC4oMf_iq8BAh2fZgmgXJdxM8">Tool - pip</a> <!--PAGETEST: pip--></li>
+<li><a href="https://www.evernote.com/l/ALlc8HgNup5E_7ChV_MNygDRUVaAvfroYjc">Tool - virtualenv</a> <!--PAGETEST: virtualenv--></li>
+<li><a href="https://www.evernote.com/l/ALm1kljSPY9F9p8KyBL2A_IOoLFAwp0f3Cs">Tricks</a> <!--PAGETEST: Tricks--></li>
+</ul>
+<h2 id="r">R</h2>
+<ul>
+<li><a href="https://www.evernote.com/l/ALkowtop18xOrZt5wk5ZaB3Fc-diQNIfXmE">Notes</a> <!--PAGETEST: Notes--></li>
+<li><a href="https://www.evernote.com/l/ALl-H24Px8VMeIefo31IrN7Kp8xd4vWBzcQ">Notes - Package development</a> <!--PAGETEST: Package development--></li>
+<li><a href="https://www.evernote.com/l/ALmrVJ6H7JpPS7_1M7OAfyhg2h8tdsbj6CQ">Basics</a> <!--PAGETEST: Cheatsheet: r--></li>
+<li><a href="https://www.evernote.com/l/ALnw4hc4kQNDtaSPBwLzDEc_MuQtSjb3Ris">Basics - builtins</a> <!--PAGETEST: builtins--></li>
+<li><a href="https://www.evernote.com/l/ALmoY0awHMZHFpH20ErsW_oODmu_M8nSAUE">CLI</a> <!--PAGETEST: CLI--></li>
+<li><a href="https://www.evernote.com/l/ALleomkasAlCrqH1xly3xjNl2x7Aj21Ua8A">Packages</a> <!--PAGETEST: Packages--></li>
+<li><a href="https://www.evernote.com/l/ALl5th_NkWFBpJ3y6oByYpE_XU1m61TZj7k">Tricks</a> <!--PAGETEST: Tricks--></li>
+</ul>
+<h2 id="regular-expressions">Regular Expressions</h2>
+<ul>
+<li><a href="https://www.evernote.com/l/ALkVThvygcBKsbmW3R5EshUvBGwwPdwikDg">Basics</a> <!--PAGETEST: Cheatsheet: regex--></li>
+</ul>
+<h2 id="x86">x86</h2>
+<ul>
+<li><a href="https://www.evernote.com/l/ALnU5Hfe1nJMi7Dv2uOEX6ZTjgArRUHXCOU">Notes</a> <!--PAGETEST: Notes--></li>
+<li><a href="https://www.evernote.com/l/ALlY7Z7uTxxF3bWQ72sVR3JvzxB6b9OwEvg">Basics</a> <!--PAGETEST: Cheatsheet: x86--></li>
+</ul>
+<h2 id="misc-1">Misc</h2>
+<ul>
+<li><a href="https://www.evernote.com/l/ALmOdlhHdmpEpr9JqBaUsnOh9WwVmJqXxk0">YAML</a> <!--PAGETEST: yaml--></li>
+</ul>
+<p><a href="#contents">Top</a></p>
+<hr />
+<h1 id="studies">Studies</h1>
+<h2 id="books">Books</h2>
+<ul>
+<li><a href="https://www.evernote.com/l/ALldNEHsjHJKl7goixJrVJYSMWIG-38F8os">DevOps Handbook</a> <!--PAGETEST: DevOps--></li>
+<li><a href="https://www.evernote.com/l/ALli_xHbnn5LV5U3RTHmW_6mo1xo_qDIsyc">Concepts, Techniques, and Models of computer programming</a> <!--PAGETEST: models of computer--></li>
+<li><a href="https://www.evernote.com/l/ALkp3A6rD8pPJbUkRhQYH4c_RThxqXjxkZ4">Distributed Systems Principles and Paradigms</a> <!--PAGETEST: distributed systems--></li>
+<li><a href="https://www.evernote.com/l/ALkA42ZFCa1C4JUKaid3DOOpj-9u6gSIBWY">Mythical Man Month</a> <!--PAGETEST: Mythical--></li>
+<li><a href="https://www.evernote.com/l/ALngRXkK6EdAP44CZ4pgQFJM6qWmepIgKH8">Site Reliability Workbook</a> <!--PAGETEST: site reliability--></li>
+<li><a href="https://www.evernote.com/l/ALlsJNInDIhOTb4HA3GikzYdnzLKR3BX_8s">Structure and Interpretation of Computer Programs (SICP)</a> <!--PAGETEST: SICP--></li>
+<li>…etc</li>
+</ul>
+<h2 id="papers">Papers</h2>
+<ul>
+<li><a href="https://www.evernote.com/l/ALk-0XAj5tRC6aBPgB3L5rxa5sV-UNsYi5A">A critique of the remote procedure call paradigm</a> <!--PAGETEST: critique--></li>
+<li><a href="https://www.evernote.com/l/ALkqjFcJe5lN042zfXOH8tpXMorCfKuFsbA">A note on distributed computing</a> <!--PAGETEST: distributed computing--></li>
+<li><a href="https://www.evernote.com/l/ALmUYMK7FhJIcoWilBFKPTrq2KTIRmVzWEw">Actors - a model of computing</a> <!--PAGETEST: actors--></li>
+<li><a href="https://www.evernote.com/l/ALl8QnOY1yxFcr-UI8-vFfJKx8LfuibHvuk">Architectural style and design of network-based software architectures (REST)</a> <!--PAGETEST: software architectures--></li>
+<li><a href="https://www.evernote.com/l/ALntmvqVtN1AGJug_jD_ns9w372SE835Ii0">First version of a dataflow procedure language</a> <!--PAGETEST: First version--></li>
+<li><a href="https://www.evernote.com/l/ALmaLif90edLd4lbwoYHVAFI5AE9g8nJyw4">Role based access controls</a> <!--PAGETEST: role based--></li>
+<li><a href="https://www.evernote.com/l/ALkw4I3YCkRNArLRWev_VqkBnMiindAj3RI">What is an ontology</a> <!--PAGETEST: ontology--></li>
+<li>…etc</li>
+</ul>
+<h2 id="documentation">Documentation</h2>
+<ul>
+<li><a href="https://www.evernote.com/l/ALnoYHqmCuNOi5HH64gto-LtC33DoNM3K8k">RFC 6455: Websocket protocol</a> <!--PAGETEST: Websocket protocol--></li>
+<li><a href="https://www.evernote.com/l/ALmQtOMYQsdC06Hoceaoh25vNmbDg7yfQDQ">RFC 7230: Hypertext Transfer Protocol (HTTP/1.1) Message syntax and routing</a> <!--PAGETEST: Message syntax and routing--></li>
+<li><a href="https://www.evernote.com/l/ALm7bLpqerFHup9I2n_Hq_i8l6zRv2yWGZc">RFC 7230: Hypertext Transfer Protocol (HTTP/1.1) Semantics and content</a> <!--PAGETEST: Semantics and content--></li>
+<li>…etc</li>
+</ul>
+<p><a href="#contents">Top</a></p>
+<p>etc..</p>
+        </main>
+
+        <footer>
+          <ul class="info-list">
+            <li><a class="u-email" href="mailto:yui.nishizawa@gmail.com">yui.nishizawa@gmail.com</a></li>
+            <li><a href="https://github.com/ynishiza" target="_blank"><svg class="svg-icon"><use xlink:href="/css/minima-social-icons.svg#github"></use></svg></a></li>
+          </ul>
+
+          <div class="hakyll">
+            Site generated by
+            <a href="http://jaspervdj.be/hakyll" target="_blank">Hakyll</a>
+          </div>
+        </footer>
+    </body>
+</html>
